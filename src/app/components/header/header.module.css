@@ -10,12 +10,13 @@
 }
 
 
-.linkList > a{
-  background: rgba(var(--color1), .7);
-
+.linkList >  a{
+  background: rgba(var(--colorB1), .7);
   color: rgba(var(--colorT1), 1);
-  border: 1px solid rgba(var(--colorT1), 1);
-  border-radius: 14px;
+  border-radius: 6px;
   padding: .5rem 1.4rem;
   margin:  0 .8rem;
+                  /*minimo, massimo, preferito */
+  font-size: clamp(1rem, 4vw, 2.5rem);;
+  letter-spacing: .2rem;
 }

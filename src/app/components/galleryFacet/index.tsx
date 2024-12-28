@@ -31,20 +31,11 @@ const GalleryCard: React.FC<GalleryProps> = (props: GalleryProps) => {
       }
    }
 
-
-  
-
    const { scrollYProgress } = useScroll({
      target: targetRef,
    })
     
-
-
   const x = useTransform(scrollYProgress, [0, 1], [xRange.start, xRange.end]);
-
-   const imageContainerStyle: React.CSSProperties = {
-      justifyContent:   props.justifyContent
-   };
 
   
   return (
