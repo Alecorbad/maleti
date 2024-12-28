@@ -1,0 +1,75 @@
+.container{
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.40); 
+  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.40);
+}
+
+.frameContainer{
+  display: flex;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.frameUp, .frameBottom, .frameLeft, .frameRight
+{
+  background: rgb(150, 111, 51);
+  height: 99.5%;
+  width: 99.5%;
+}
+
+.frameUpWrapper, .frameBottomWrapper, .frameLeftWrapper, .frameRightWrapper{
+    position: absolute;
+    background: black;
+    border: 1px solid black;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.frameUpWrapper{
+  top: 0;
+  left: 0;
+}
+.frameBottomWrapper{
+  bottom: 0;
+  left: 0;
+}
+.frameLeftWrapper{
+  top: 0;
+  left: 0;
+}
+.frameRightWrapper{
+  top: 0;
+  right: 0;
+}
+
+.glass{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba( 255, 255, 255, 0.05 );
+}
+
+.imageContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(var(--oldPaper), 1);
+
+}
+
+.image{
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-shadow: 0px 0px 4px 0px #000000; 
+  box-shadow: 0px 0px 4px 0px #000000;
+}
+
+

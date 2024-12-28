@@ -1,0 +1,7 @@
+.pageTransition{
+  display: inherit;
+  width: 100%;
+  min-height: inherit;
+  align-items: inherit;
+  flex-direction: inherit;
+}

@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('reset.css');
+
+ @font-face {
+  font-family: LindenHillMaster;
+  src: url(/static/fonts/linden-hill-master/LindenHill-webfont.woff);
+}
+
+:root {
+  --white: 255, 255, 255;
+  --beige: 255, 250, 245;
+  --lightgrey: 237, 237, 237;
+  --oldPaper: 230, 222, 200;
+  --red: 213, 36, 32;
+  --rednew: 153, 0, 0;
+  --skyblue: 131 188 214;
+  --grey: 196 196 196;
+  --darkgrey: 30, 30, 30;
+  --black: 23, 23 ,23;
+  --blacker: 10, 10 ,10;
+
+  /* Sfondi, ... */
+  --colorB1: var(--beige);
+  --colorB2: var(--grey);
+
+  /* Colori deri testi, bordi, ... */
+  --colorT1: var(--black);
+  --colorT2: var(--darkgrey);
+
+  /* Dimensioni testo */
+  --h1-fs: 12vw; /* 32px */
+  --h2-fs: 10vw; /* 24px */
+  --h3-fs: 8vw; /* 24px */
+  --h4-fs: 6vw; /* 24px */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  /* Sfondi, ... */
+    --colorB1: var(--blacker);
+    --colorB2: var(--black);
+
+  /* Colori deri testi, bordi, ... */
+    --colorT1: var(--lightgrey);
+    --colorT2: var(--grey);
+  }
+}
+
+html{
+  /* scroll-snap-type: y proximity; */
+  scroll-behavior: smooth;
+}
+
+body, .transition {
+  background: rgba(var(--colorB1), 1);
+  color: rgba(var(--colorT1), 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+
+  font-size: 14px;
+}
+
+h1{
+ font-size: var(--h1-fs);
+ font-family: LindenHillMaster;
+}
+
+h2{
+ font-size: var(--h2-fs);
+ font-family: LindenHillMaster;
+}
+
+
+.headerContainer{
+  position: sticky;  
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  min-height: fit-content;
+}
+
+.pageContainer{
+  flex: 1; 
+  scroll-snap-align: start;
+}
+
+.footerContainer{
+  width: 100%;
+  scroll-snap-align: end;
+}
+
+@media (max-width: 767px) {
+  html{
+    scroll-snap-type: none;
+  }
+}
+
+
+
