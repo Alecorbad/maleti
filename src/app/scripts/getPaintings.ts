@@ -13,7 +13,7 @@ export function getPaintings(galleryFolderPath: string){
         id: index, 
         title: filePath, 
         author: 'Simona Maleti', 
-        url: filePath
+        url: `/maleti/${filePath}`
       });
     });
   } 
