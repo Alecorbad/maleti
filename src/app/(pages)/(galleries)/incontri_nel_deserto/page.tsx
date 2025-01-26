@@ -17,9 +17,9 @@ function getGalleries() {
   return res;
 }
 
-export default function About() {
+export default function IncontriNelDeserto() {
   const galleries: Gallery[] = getGalleries()
-  const gallery: Gallery = galleries.filter((g) => g.pageName == "butterfly")[0]
+  const gallery: Gallery = galleries.filter((g) => g.pageName == "incontri_nel_deserto")[0]
 
 
   return <>
