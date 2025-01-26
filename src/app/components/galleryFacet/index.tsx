@@ -101,10 +101,10 @@ function takeRandomPaintings(gallery: Gallery, paintNum: number = 5): Painting[]
 }
 
 
-function generateRandomNumber(min: number, max: number, jump: number = 10){
-   const ran = Math.random() * (max - min) + min;
-  return Math.round(ran / jump) * jump;
-}
+// function generateRandomNumber(min: number, max: number, jump: number = 10){
+//    const ran = Math.random() * (max - min) + min;
+//   return Math.round(ran / jump) * jump;
+// }
 
 export default GalleryCard;
 

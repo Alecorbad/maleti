@@ -1,6 +1,5 @@
 
 "use client";
-import { stagger, useAnimate, animate } from "framer-motion";
 import { motion } from "framer-motion";
 
 import styles from "./header.module.css"

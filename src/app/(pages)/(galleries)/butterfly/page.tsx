@@ -1,12 +1,8 @@
-"use client"
-import { useState, useEffect } from 'react';
-import  React, { useRef } from 'react';
-import { usePathname } from 'next/navigation'
-
 import { Gallery, Painting } from "@/app/types/galleries";
 import Wall from "@/app/components/wall";
 import PaintingComponent from "@/app/components/painting";
 import { generatePaintings } from "@/app/utils/gallery.utils"
+import { getAllGalleries } from "@/app/scripts/getGalleries";
 
 
 enum WallRange{
@@ -16,40 +12,15 @@ enum WallRange{
 }
 
 
-export default function About() {
-  const [gallery, setGallery] = useState<Gallery>();
-  const pageName = usePathname().replace('/', '');
-  const initialized = useRef(false)
-
-     // {gallery ? gallery.paintings.map(
-     // (paint) => {
-       // return <Image
-             // key={paint.id}
-             // src={paint.url ?? ""}
-             // height= {500}
-             // width= {500}
-             // alt="Dipinto non disponibile"
-       // />
-     // })
-     // : "NoGalleryFound"}
+function getGalleries() {
+  const res = JSON.parse(getAllGalleries())
+  return res;
+}
 
 
-useEffect(() => {
-    if (initialized.current) { return }
-    initialized.current = true
-    const fetchGallery = async () => {
-      try {
-        const response = await fetch(`/api/galleries?pageName=${pageName}`);
-        const data = await response.json();
-        setGallery(data); 
-      } catch (error) {
-        console.error('Error fetching butterfly gallery:', error);
-      }
-    };
-    
-    fetchGallery(); 
-  }); 
-
+export default function Butterfly() {
+  const galleries: Gallery[] = getGalleries()
+  const gallery: Gallery = galleries.filter((g) => g.pageName == "butterfly")[0]
 
   return <>
       <Wall mode="grid" 

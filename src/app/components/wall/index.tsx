@@ -1,7 +1,5 @@
 
 "use client";
-import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react"
 import MediaQuery from '@/app/hooks/useMediaQuery';
 
 import styles from "./wall.module.css"
