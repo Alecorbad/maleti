@@ -8,7 +8,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "type": "module",
   "dependencies": {
     "motion": "^12.0.0-alpha.2",
     "next": "15.0.3",
