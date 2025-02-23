@@ -1,5 +1,7 @@
-import React, { createContext, useContext } from 'react';
+"use client"
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Gallery} from "@/app/types/galleries";
+import jsonGalleries from "@/json/galleries.json"
 
 interface GalleryContextType {
   galleries: Gallery[];
@@ -15,13 +17,25 @@ export const useGalleryContext = () => {
   return context;
 };
 
+export async function getStaticProps(){
+  
+}
+
 export const GalleryProvider = ({
-  galleries,
   children,
 }: {
-  galleries: Gallery[];
   children: React.ReactNode;
 }) => {
+  const [galleries, setGalleries] = useState<Gallery[]>([]);
+
+  useEffect(() => {
+    setGalleries(jsonGalleries)
+    // Carica i dati dal JSON generato
+    // fetch('json/galleries.json')
+    //   .then(res => res.json())
+    //   .then(data => setGalleries(data));
+  }, []);
+
   return (
     <GalleryContext.Provider value={{ galleries }}>
       {children}

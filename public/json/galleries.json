@@ -1,0 +1,636 @@
+[
+	{
+		"id": "butterfly",
+		"folderName": "butterfly",
+		"folderPath": "public/static/galleries/butterfly",
+		"pageName": "butterfly",
+		"title": "Butterfly",
+		"description": "Galleria",
+		"paintings": [
+			{
+				"id": 0,
+				"title": "/static/galleries/butterfly/Amore_e_psiche.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Amore_e_psiche.jpg"
+			},
+			{
+				"id": 1,
+				"title": "/static/galleries/butterfly/Chi,_io.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Chi,_io.jpg"
+			},
+			{
+				"id": 2,
+				"title": "/static/galleries/butterfly/Dentro_al_rifiuto_la_guerra.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Dentro_al_rifiuto_la_guerra.jpg"
+			},
+			{
+				"id": 3,
+				"title": "/static/galleries/butterfly/Farfalla_dell'impermanenza.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Farfalla_dell'impermanenza.jpg"
+			},
+			{
+				"id": 4,
+				"title": "/static/galleries/butterfly/Io_amo!.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Io_amo!.jpg"
+			},
+			{
+				"id": 5,
+				"title": "/static/galleries/butterfly/Io_sono_in_a3.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Io_sono_in_a3.jpg"
+			},
+			{
+				"id": 6,
+				"title": "/static/galleries/butterfly/Le_catene_del_karma.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Le_catene_del_karma.jpg"
+			},
+			{
+				"id": 7,
+				"title": "/static/galleries/butterfly/Nativita'_(la_mia).jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Nativita'_(la_mia).jpg"
+			},
+			{
+				"id": 8,
+				"title": "/static/galleries/butterfly/S'ei_piace_ei_lice.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/S'ei_piace_ei_lice.jpg"
+			},
+			{
+				"id": 9,
+				"title": "/static/galleries/butterfly/Scusa.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Scusa.jpg"
+			},
+			{
+				"id": 10,
+				"title": "/static/galleries/butterfly/Sono_tanto_quanto_un_quanto.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Sono_tanto_quanto_un_quanto.jpg"
+			},
+			{
+				"id": 11,
+				"title": "/static/galleries/butterfly/Vita_latente,_vita_manifesta.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/butterfly/Vita_latente,_vita_manifesta.jpg"
+			}
+		]
+	},
+	{
+		"id": "esili_segni",
+		"folderName": "esili_segni",
+		"folderPath": "public/static/galleries/esili_segni",
+		"pageName": "esili_segni",
+		"title": "Esili Segni",
+		"description": "Galleria",
+		"paintings": [
+			{
+				"id": 0,
+				"title": "/static/galleries/esili_segni/CINQUE_MONACI_PER_REGGERE_UNA_CANNA_DA_PESCA.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/CINQUE_MONACI_PER_REGGERE_UNA_CANNA_DA_PESCA.jpg"
+			},
+			{
+				"id": 1,
+				"title": "/static/galleries/esili_segni/CONVEGNO.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/CONVEGNO.jpg"
+			},
+			{
+				"id": 2,
+				"title": "/static/galleries/esili_segni/Corteccia_vitae.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Corteccia_vitae.jpg"
+			},
+			{
+				"id": 3,
+				"title": "/static/galleries/esili_segni/D'ordine_e_quiete.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/D'ordine_e_quiete.jpg"
+			},
+			{
+				"id": 4,
+				"title": "/static/galleries/esili_segni/Dal_seme,_la_vita.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Dal_seme,_la_vita.jpg"
+			},
+			{
+				"id": 5,
+				"title": "/static/galleries/esili_segni/Embrasse_moi.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Embrasse_moi.jpg"
+			},
+			{
+				"id": 6,
+				"title": "/static/galleries/esili_segni/Entanglement.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Entanglement.jpg"
+			},
+			{
+				"id": 7,
+				"title": "/static/galleries/esili_segni/I_due_custodi.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/I_due_custodi.jpg"
+			},
+			{
+				"id": 8,
+				"title": "/static/galleries/esili_segni/I_guardiani_della_vita.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/I_guardiani_della_vita.jpg"
+			},
+			{
+				"id": 9,
+				"title": "/static/galleries/esili_segni/Il_distacco.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Il_distacco.jpg"
+			},
+			{
+				"id": 10,
+				"title": "/static/galleries/esili_segni/Il_sogno_di_sgroi.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Il_sogno_di_sgroi.jpg"
+			},
+			{
+				"id": 11,
+				"title": "/static/galleries/esili_segni/In_viaggio.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/In_viaggio.jpg"
+			},
+			{
+				"id": 12,
+				"title": "/static/galleries/esili_segni/J'accuse!.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/J'accuse!.jpg"
+			},
+			{
+				"id": 13,
+				"title": "/static/galleries/esili_segni/L'arpa_dei_secoli.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/L'arpa_dei_secoli.jpg"
+			},
+			{
+				"id": 14,
+				"title": "/static/galleries/esili_segni/L'evolversi.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/L'evolversi.jpg"
+			},
+			{
+				"id": 15,
+				"title": "/static/galleries/esili_segni/L'uome_e_la_legge.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/L'uome_e_la_legge.jpg"
+			},
+			{
+				"id": 16,
+				"title": "/static/galleries/esili_segni/L'utopia_che_costringe_ad_avanzare.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/L'utopia_che_costringe_ad_avanzare.jpg"
+			},
+			{
+				"id": 17,
+				"title": "/static/galleries/esili_segni/La_luna_sulla_capitale.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/La_luna_sulla_capitale.jpg"
+			},
+			{
+				"id": 18,
+				"title": "/static/galleries/esili_segni/La_musica_del_dharma.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/La_musica_del_dharma.jpg"
+			},
+			{
+				"id": 19,
+				"title": "/static/galleries/esili_segni/La_ruota_del_sole.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/La_ruota_del_sole.jpg"
+			},
+			{
+				"id": 20,
+				"title": "/static/galleries/esili_segni/Le_tre_direzioni.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Le_tre_direzioni.jpg"
+			},
+			{
+				"id": 21,
+				"title": "/static/galleries/esili_segni/Legge_di_causalita'.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Legge_di_causalita'.jpg"
+			},
+			{
+				"id": 22,
+				"title": "/static/galleries/esili_segni/Lo_squarcio_del_daimoku.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Lo_squarcio_del_daimoku.jpg"
+			},
+			{
+				"id": 23,
+				"title": "/static/galleries/esili_segni/Mi_serve_per_volare.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Mi_serve_per_volare.jpg"
+			},
+			{
+				"id": 24,
+				"title": "/static/galleries/esili_segni/Ormeggiato_al_cielo.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Ormeggiato_al_cielo.jpg"
+			},
+			{
+				"id": 25,
+				"title": "/static/galleries/esili_segni/PAGODINA.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/PAGODINA.jpg"
+			},
+			{
+				"id": 26,
+				"title": "/static/galleries/esili_segni/Passa_attraverso.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Passa_attraverso.jpg"
+			},
+			{
+				"id": 27,
+				"title": "/static/galleries/esili_segni/Piccolo_vascello.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Piccolo_vascello.jpg"
+			},
+			{
+				"id": 28,
+				"title": "/static/galleries/esili_segni/Son_partita_da_un_puntino.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Son_partita_da_un_puntino.jpg"
+			},
+			{
+				"id": 29,
+				"title": "/static/galleries/esili_segni/TOTEM.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/TOTEM.jpg"
+			},
+			{
+				"id": 30,
+				"title": "/static/galleries/esili_segni/TRE_MA_NON_TRE.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/TRE_MA_NON_TRE.jpg"
+			},
+			{
+				"id": 31,
+				"title": "/static/galleries/esili_segni/VAGA_IDEA_D'ETERNITA'.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/VAGA_IDEA_D'ETERNITA'.jpg"
+			},
+			{
+				"id": 32,
+				"title": "/static/galleries/esili_segni/VELIERO_1.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/VELIERO_1.jpg"
+			},
+			{
+				"id": 33,
+				"title": "/static/galleries/esili_segni/Veliero.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Veliero.jpg"
+			},
+			{
+				"id": 34,
+				"title": "/static/galleries/esili_segni/Veliero_ad_archetto.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Veliero_ad_archetto.jpg"
+			},
+			{
+				"id": 35,
+				"title": "/static/galleries/esili_segni/Verso_l'alto.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Verso_l'alto.jpg"
+			},
+			{
+				"id": 36,
+				"title": "/static/galleries/esili_segni/Vita_manifesta,_vita_latente.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/esili_segni/Vita_manifesta,_vita_latente.jpg"
+			}
+		]
+	},
+	{
+		"id": "giardino_impermanenza",
+		"folderName": "giardino_impermanenza",
+		"folderPath": "public/static/galleries/giardino_impermanenza",
+		"pageName": "giardino_impermanenza",
+		"title": "Giardino dell'Impermanenza",
+		"description": "Galleria",
+		"paintings": [
+			{
+				"id": 0,
+				"title": "/static/galleries/giardino_impermanenza/Anemoni.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Anemoni.jpg"
+			},
+			{
+				"id": 1,
+				"title": "/static/galleries/giardino_impermanenza/Black_field.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Black_field.jpg"
+			},
+			{
+				"id": 2,
+				"title": "/static/galleries/giardino_impermanenza/Cinque_effimeri.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Cinque_effimeri.jpg"
+			},
+			{
+				"id": 3,
+				"title": "/static/galleries/giardino_impermanenza/Dal_groviglio_della_notte.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Dal_groviglio_della_notte.jpg"
+			},
+			{
+				"id": 4,
+				"title": "/static/galleries/giardino_impermanenza/Fiori_d'acqua.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Fiori_d'acqua.jpg"
+			},
+			{
+				"id": 5,
+				"title": "/static/galleries/giardino_impermanenza/I_cinque_parametri.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/I_cinque_parametri.jpg"
+			},
+			{
+				"id": 6,
+				"title": "/static/galleries/giardino_impermanenza/I_due_papaveri.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/I_due_papaveri.jpg"
+			},
+			{
+				"id": 7,
+				"title": "/static/galleries/giardino_impermanenza/In_viaggio_verso_l'ade.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/In_viaggio_verso_l'ade.jpg"
+			},
+			{
+				"id": 8,
+				"title": "/static/galleries/giardino_impermanenza/L'ADDIO.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/L'ADDIO.jpg"
+			},
+			{
+				"id": 9,
+				"title": "/static/galleries/giardino_impermanenza/L'io_e_la_legge.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/L'io_e_la_legge.jpg"
+			},
+			{
+				"id": 10,
+				"title": "/static/galleries/giardino_impermanenza/Le_pleiadi.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Le_pleiadi.jpg"
+			},
+			{
+				"id": 11,
+				"title": "/static/galleries/giardino_impermanenza/MARGHERITA_QUANTICA.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/MARGHERITA_QUANTICA.jpg"
+			},
+			{
+				"id": 12,
+				"title": "/static/galleries/giardino_impermanenza/Nel_vento.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Nel_vento.jpg"
+			},
+			{
+				"id": 13,
+				"title": "/static/galleries/giardino_impermanenza/Omaggio_a_r._biolchini.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Omaggio_a_r._biolchini.jpg"
+			},
+			{
+				"id": 14,
+				"title": "/static/galleries/giardino_impermanenza/Omaggio_a_raffaele.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Omaggio_a_raffaele.jpg"
+			},
+			{
+				"id": 15,
+				"title": "/static/galleries/giardino_impermanenza/PASSATO,_PRESENTE,_FUTURO.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/PASSATO,_PRESENTE,_FUTURO.jpg"
+			},
+			{
+				"id": 16,
+				"title": "/static/galleries/giardino_impermanenza/Papaveri_nella_bufera.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Papaveri_nella_bufera.jpg"
+			},
+			{
+				"id": 17,
+				"title": "/static/galleries/giardino_impermanenza/Piccolo_prato_impermanente.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Piccolo_prato_impermanente.jpg"
+			},
+			{
+				"id": 18,
+				"title": "/static/galleries/giardino_impermanenza/Praticello.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Praticello.jpg"
+			},
+			{
+				"id": 19,
+				"title": "/static/galleries/giardino_impermanenza/RED_POPPY.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/RED_POPPY.jpg"
+			},
+			{
+				"id": 20,
+				"title": "/static/galleries/giardino_impermanenza/TEMPESTOSI.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/TEMPESTOSI.jpg"
+			},
+			{
+				"id": 21,
+				"title": "/static/galleries/giardino_impermanenza/Vorrei_cristallizzare,_ma....jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Vorrei_cristallizzare,_ma....jpg"
+			},
+			{
+				"id": 22,
+				"title": "/static/galleries/giardino_impermanenza/Zenz'ali,_via_dal_nido.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/Zenz'ali,_via_dal_nido.jpg"
+			},
+			{
+				"id": 23,
+				"title": "/static/galleries/giardino_impermanenza/images\\ESPOSIZIONI\\papavero_secolare.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/images\\ESPOSIZIONI\\papavero_secolare.jpg"
+			},
+			{
+				"id": 24,
+				"title": "/static/galleries/giardino_impermanenza/images\\GALLERIA\\RED_POPPY.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/images\\GALLERIA\\RED_POPPY.jpg"
+			},
+			{
+				"id": 25,
+				"title": "/static/galleries/giardino_impermanenza/imm_contatti2.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/giardino_impermanenza/imm_contatti2.jpg"
+			}
+		]
+	},
+	{
+		"id": "incontri_nel_deserto",
+		"folderName": "incontri_nel_deserto",
+		"folderPath": "public/static/galleries/incontri_nel_deserto",
+		"pageName": "incontri_nel_deserto",
+		"title": "Incontri nel deserto",
+		"description": "Galleria",
+		"paintings": [
+			{
+				"id": 0,
+				"title": "/static/galleries/incontri_nel_deserto/01_ah_l_amour.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/01_ah_l_amour.jpg"
+			},
+			{
+				"id": 1,
+				"title": "/static/galleries/incontri_nel_deserto/02_il_sentiero_dell_eternita__e__circolare.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/02_il_sentiero_dell_eternita__e__circolare.jpg"
+			},
+			{
+				"id": 2,
+				"title": "/static/galleries/incontri_nel_deserto/03_coppia_di_effimeri.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/03_coppia_di_effimeri.jpg"
+			},
+			{
+				"id": 3,
+				"title": "/static/galleries/incontri_nel_deserto/04_come_in_una_danza_infinita_l_eterno_ritorna.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/04_come_in_una_danza_infinita_l_eterno_ritorna.jpg"
+			},
+			{
+				"id": 4,
+				"title": "/static/galleries/incontri_nel_deserto/05_la_fretta_di_esistere.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/05_la_fretta_di_esistere.jpg"
+			},
+			{
+				"id": 5,
+				"title": "/static/galleries/incontri_nel_deserto/06_la_visione_nella_dualita_.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/06_la_visione_nella_dualita_.jpg"
+			},
+			{
+				"id": 6,
+				"title": "/static/galleries/incontri_nel_deserto/07_mon_ami.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/07_mon_ami.jpg"
+			},
+			{
+				"id": 7,
+				"title": "/static/galleries/incontri_nel_deserto/08_passaggio_a_est.png",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/08_passaggio_a_est.png"
+			},
+			{
+				"id": 8,
+				"title": "/static/galleries/incontri_nel_deserto/09_io_cerco_d_io.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/09_io_cerco_d_io.jpg"
+			},
+			{
+				"id": 9,
+				"title": "/static/galleries/incontri_nel_deserto/10_lÉgami-legÀmi.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/10_lÉgami-legÀmi.jpg"
+			},
+			{
+				"id": 10,
+				"title": "/static/galleries/incontri_nel_deserto/11_io_amo.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/11_io_amo.jpg"
+			},
+			{
+				"id": 11,
+				"title": "/static/galleries/incontri_nel_deserto/12_il_passaggio.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/12_il_passaggio.jpg"
+			},
+			{
+				"id": 12,
+				"title": "/static/galleries/incontri_nel_deserto/13_allegoria_della_morte.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/13_allegoria_della_morte.jpg"
+			},
+			{
+				"id": 13,
+				"title": "/static/galleries/incontri_nel_deserto/14_il_cuore_dimentica_cio__che_lo_spirito_innalza.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/14_il_cuore_dimentica_cio__che_lo_spirito_innalza.jpg"
+			},
+			{
+				"id": 14,
+				"title": "/static/galleries/incontri_nel_deserto/15_ti_voglio.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/15_ti_voglio.jpg"
+			},
+			{
+				"id": 15,
+				"title": "/static/galleries/incontri_nel_deserto/16_risonanza.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/16_risonanza.jpg"
+			},
+			{
+				"id": 16,
+				"title": "/static/galleries/incontri_nel_deserto/17_chi_e__senza_pietra_scagli_in_aria_un_peccato.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/17_chi_e__senza_pietra_scagli_in_aria_un_peccato.jpg"
+			},
+			{
+				"id": 17,
+				"title": "/static/galleries/incontri_nel_deserto/18_lo_specchio_celeste.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/18_lo_specchio_celeste.jpg"
+			},
+			{
+				"id": 18,
+				"title": "/static/galleries/incontri_nel_deserto/19__la_fioritura_dell_essere_.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/19__la_fioritura_dell_essere_.jpg"
+			},
+			{
+				"id": 19,
+				"title": "/static/galleries/incontri_nel_deserto/20_e__diverso_e__un_pericolo.png",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/20_e__diverso_e__un_pericolo.png"
+			},
+			{
+				"id": 20,
+				"title": "/static/galleries/incontri_nel_deserto/21_meditazione_di_un_papavero.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/21_meditazione_di_un_papavero.jpg"
+			},
+			{
+				"id": 21,
+				"title": "/static/galleries/incontri_nel_deserto/22_mi_stai_ascoltando.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/22_mi_stai_ascoltando.jpg"
+			},
+			{
+				"id": 22,
+				"title": "/static/galleries/incontri_nel_deserto/23_gli_effimeri_si_nutrono_dell_attimo.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/23_gli_effimeri_si_nutrono_dell_attimo.jpg"
+			},
+			{
+				"id": 23,
+				"title": "/static/galleries/incontri_nel_deserto/24_inesorabile.jpg",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/incontri_nel_deserto/24_inesorabile.jpg"
+			}
+		]
+	}
+]

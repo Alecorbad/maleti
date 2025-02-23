@@ -1,4 +1,38 @@
 
+.mobileBanner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: .3rem;
+}
+
+.mobileBanner .left{
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  margin-left: 1rem;
+}
+
+.mobile-banner .center{
+}
+.mobile-banner .right{
+  margin-right: 1rem;
+}
+
+.menuButton{
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  padding: .3rem;
+}
+
+.menuButton .bar{
+ width: 1.5rem; 
+ height: .3rem;
+ background: black;
+ margin: .2rem;
+ border-radius: .5rem;
+}
+
 .header{
   display: flex;
   justify-content: center;

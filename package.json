@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "prebuild": "tsx ./src/app/scripts/generateGalleries.ts",
+    "build": "npm run prebuild && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,7 +14,8 @@
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "swr": "^2.3.0"
+    "swr": "^2.3.0",
+    "tsx": "^4.19.3"
   },
   "devDependencies": {
     "@types/node": "^20.17.16",
@@ -24,6 +26,7 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.3"
   }
 }

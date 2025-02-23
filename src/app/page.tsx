@@ -1,17 +1,14 @@
+"use client"
 import { motion } from "framer-motion";
 import Image from 'next/image'
 import Header from "./components/header";
 import Footer from "./components/footer";
 import GalleryFacetComponent from './components/galleryFacet';
-import { Gallery } from '@/app/types/galleries';
 import StylesHomePage from './homepage.module.css';
-import { getAllGalleries } from "./scripts/getGalleries";
+import { Gallery } from '@/app/types/galleries';
+import { useGalleryContext } from "@/app/providers/gallery.provider"
 
 
-function getGalleries() {
-  const res = JSON.parse(getAllGalleries())
-  return res;
-}
 
 
 function getAnimateState(){
@@ -26,7 +23,8 @@ function getAnimateState(){
 
 
 export default function Home() {
-  const galleries: Gallery[] = getGalleries()
+  const galleriesContext = useGalleryContext()
+  const galleries = galleriesContext.galleries
   const bannerGallery: Gallery = galleries.filter((g) => g.pageName == "esili_segni")[0]
   const shouldAnimate = getAnimateState();
 

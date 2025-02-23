@@ -1,8 +1,7 @@
-
 import { Gallery } from '@/app/types/galleries';
 import {getPaintings} from './getPaintings'
-import path from 'path';
-import fs from 'fs';
+import * as path from 'path';
+import * as fs from 'fs';
 
 
 export enum GalleryFolderName{
@@ -49,7 +48,7 @@ export function getGallery(searchData: string): Gallery{
    }
 
    if(searchData == GalleryFolderName.Croste || searchData == GalleryPage.Croste){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Butterfly}`
+     const folderPath = `${baseGalleryPath}${GalleryFolderName.Croste}`
      return new Gallery({
        id: GalleryFolderName.Croste,
        paintings: getPaintings(folderPath),
@@ -193,6 +192,8 @@ export function getAllGalleries() {
    return stats.isDirectory();
  });
 
- return JSON.stringify(galleryNames.map((galleryName) => getGallery(galleryName)));
+  return galleryNames.map(galleryName => 
+    getGallery(galleryName) // Adatta la tua funzione getGallery
+  );
 }
 

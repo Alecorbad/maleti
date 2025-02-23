@@ -1,22 +1,34 @@
 
 "use client";
 import { motion } from "framer-motion";
+import MediaQuery from '@/app/hooks/useMediaQuery';
+;
 
 import styles from "./header.module.css"
 import Link from 'next/link'
 
 const Header = () => {
-
-
-         //    {("Home").split('').map((letter, index) => (
-         //       <motion.span
-         //         variants={textMotion}
-         //         className="letter relative inline-block h-8 leading-8 after:absolute after:left-0 after:top-full after:h-8 after:content-[attr(data-letter)]"
-         //         key={`${letter}-${index}`}
-         //       >
-         //         {letter}
-         //       </motion.span>
-         // ))}
+  const isMobile = MediaQuery(768);
+  if(isMobile){
+    return (
+      <>
+        <div className={styles.mobileBanner}>
+          <div className={styles.left}>
+            <div className={styles.menuButton}>
+              <div className={styles.bar}></div>
+              <div className={styles.bar}></div>
+              <div className={styles.bar}></div>
+            </div>
+          </div>
+          <div className={styles.center}>
+          </div>
+          <div className={styles.right}>
+          </div>
+        </div>
+      </>
+    )
+  }
+  
   return (
     <>
     <div className={styles.header} >
