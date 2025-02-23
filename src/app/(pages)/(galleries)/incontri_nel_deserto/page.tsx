@@ -42,6 +42,7 @@ export default function IncontriNelDeserto() {
               gridArea={`p${key}`}
               frameWidth="100%"
               framePadding="1rem"
+              frameColor="white"
           />},
           gallery ? gallery?.paintings : [],
           {from: WallRange.zero, to: WallRange.first}
@@ -61,6 +62,7 @@ export default function IncontriNelDeserto() {
               margin="1rem"
               frameWidth="100%"
               framePadding="1rem"
+              frameColor="rgb(255, 255, 255)"
               painting={paint} 
               gridArea={`p${key}`}
           />},

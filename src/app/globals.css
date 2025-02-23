@@ -22,7 +22,7 @@
   --blacker: 10, 10 ,10;
 
   /* Sfondi, ... */
-  --colorB1: var(--beige);
+  --colorB1: var(--lightgrey);
   --colorB2: var(--grey);
 
   /* Colori deri testi, bordi, ... */

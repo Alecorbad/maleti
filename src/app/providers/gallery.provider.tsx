@@ -1,7 +1,8 @@
 "use client"
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Gallery} from "@/app/types/galleries";
-import jsonGalleries from "@/json/galleries.json"
+import galleriesJson from "@/json/galleries.json"
+
 
 interface GalleryContextType {
   galleries: Gallery[];
@@ -29,7 +30,7 @@ export const GalleryProvider = ({
   const [galleries, setGalleries] = useState<Gallery[]>([]);
 
   useEffect(() => {
-    setGalleries(jsonGalleries)
+    setGalleries(galleriesJson)
     // Carica i dati dal JSON generato
     // fetch('json/galleries.json')
     //   .then(res => res.json())
