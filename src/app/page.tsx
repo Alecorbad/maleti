@@ -72,20 +72,20 @@ export default function Home() {
 }
 
 function animateBanner(){
-    sessionStorage.setItem("animationDone", "true");
-    return <motion.div className={StylesHomePage.titleContainer}
-                      animate= {{
-                        height: ["20rem", "3rem"],
-                      }}
-                      transition={{
-                        times: [1],
-                        duration: 1,
-                        ease: "easeInOut", 
-                      }}
-                  >
-                    <h1 className={StylesHomePage.title1}>
-                      Simona Maleti
-                    </h1>
-                  </motion.div>
+  sessionStorage.setItem("animationDone", "true");
+  return <motion.div className={StylesHomePage.titleContainer}
+  animate= {{
+    height: ["20rem", "3rem"],
+  }}
+  transition={{
+    times: [1],
+    duration: 1,
+    ease: "easeInOut", 
+  }}
+  >
+  <h1 className={StylesHomePage.title1}>
+  Simona Maleti
+  </h1>
+  </motion.div>
 
 }

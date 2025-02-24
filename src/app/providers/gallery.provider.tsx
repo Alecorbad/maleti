@@ -31,10 +31,6 @@ export const GalleryProvider = ({
 
   useEffect(() => {
     setGalleries(galleriesJson)
-    // Carica i dati dal JSON generato
-    // fetch('json/galleries.json')
-    //   .then(res => res.json())
-    //   .then(data => setGalleries(data));
   }, []);
 
   return (
