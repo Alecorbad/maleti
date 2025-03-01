@@ -25,7 +25,7 @@ function getAnimateState(){
 export default function Home() {
   const galleriesContext = useGalleryContext()
   const galleries = galleriesContext.galleries
-  const bannerGallery: Gallery = galleries.filter((g) => g.pageName == "esili_segni")[0]
+  const bannerGallery: Gallery = galleries.filter((g) => g.pageName == "floras")[0]
   const shouldAnimate = getAnimateState();
 
 

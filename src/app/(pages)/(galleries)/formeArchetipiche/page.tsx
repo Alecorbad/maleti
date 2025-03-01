@@ -1,0 +1,44 @@
+
+
+"use client"
+import { Gallery, Painting } from "@/app/types/galleries";
+import Wall from "@/app/components/wall";
+import PaintingComponent from "@/app/components/painting";
+import { generatePaintings } from "@/app/utils/gallery.utils"
+import { useGalleryContext } from "@/app/providers/gallery.provider"
+
+
+export default function FormeArchetipiche() {
+  const galleriesContext = useGalleryContext();
+  const galleries: Gallery[] = galleriesContext.galleries
+  const gallery: Gallery = galleries.filter((g) => g.pageName == "formeArchetipiche")[0]
+
+
+  return <>
+
+      <Wall mode="flex"  width="100%">
+      {
+         generatePaintings((paint: Painting, key: number) => {
+          return <PaintingComponent 
+              key={paint.id} 
+              objectFit="contain"
+              height="20rem"
+              width="25rem"
+              margin="1rem"
+              frameWidth="100%"
+              framePadding="1rem"
+              frameColor="rgb(255, 255, 255)"
+              painting={paint} 
+              gridArea={`p${key}`}
+          />},
+          gallery ? gallery?.paintings : []
+        )
+      }
+      </Wall>
+      
+
+  </>;
+}
+
+
+

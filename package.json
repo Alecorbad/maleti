@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "tsx ./src/app/scripts/generateGalleries.ts",
+    "genGalleriesJson": "tsx ./src/app/scripts/generateGalleries.ts",
+    "prebuild": "genGalleriesJson",
     "build": "npm run prebuild && next build",
     "start": "next start",
     "lint": "next lint"
