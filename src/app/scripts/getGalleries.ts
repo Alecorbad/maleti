@@ -1,4 +1,4 @@
-import { Gallery } from '@/app/types/galleries';
+import { Gallery, Painting } from '@/app/types/galleries';
 import {getPaintings} from './getPaintings'
 import * as path from 'path';
 import * as fs from 'fs';
@@ -49,242 +49,91 @@ export enum GalleryPage{
   None = 'none'
 }
 
-export function getGallery(searchData: string): Gallery{
+
+ function galleryFactory(galleriesPath: string, title: string, galleryFolder: GalleryFolderName, galleryPage: GalleryPage): Gallery{
+     const folderPath = `${galleriesPath}${galleryFolder}`
+     const paintings: Painting [] =  getPaintings(folderPath) ?? [];
+     const gallery = new Gallery({
+       id: galleryFolder,
+       paintings: paintings,
+       title: title, 
+       folderName: galleryFolder,
+       folderPath: folderPath,
+       pageName: galleryPage,
+       description: "Galleria", 
+     });
+     return gallery;
+}
+
+export  function getGallery(searchData: string): Gallery{
  const baseGalleryPath: string = `public/static/galleries/`;
 
    if(searchData == GalleryFolderName.FrammentiInconscio || searchData == GalleryPage.FrammentiInconscio){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.FrammentiInconscio}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.FrammentiInconscio,
-       paintings: getPaintings(folderPath),
-       title: "Frammenti dell'Inconscio", 
-       folderName: GalleryFolderName.FrammentiInconscio,
-       folderPath: folderPath,
-       pageName: GalleryPage.FrammentiInconscio,
-       description: "Galleria", 
-     });
-     return gallery;
+    return  galleryFactory(baseGalleryPath, "Frammenti dell'Inconscio",GalleryFolderName.FrammentiInconscio, GalleryPage.FrammentiInconscio);
    }
 
    if(searchData == GalleryFolderName.FormeArchetipiche || searchData == GalleryPage.FormeArchetipiche){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.FormeArchetipiche}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.FormeArchetipiche,
-       paintings: getPaintings(folderPath),
-       title: "Forme Archetipiche", 
-       folderName: GalleryFolderName.FormeArchetipiche,
-       folderPath: folderPath,
-       pageName: GalleryPage.FormeArchetipiche,
-       description: "Galleria", 
-     });
-     return gallery;
+    return  galleryFactory(baseGalleryPath, "Forme Archetipiche",GalleryFolderName.FormeArchetipiche, GalleryPage.FormeArchetipiche);
    }
 
    if(searchData == GalleryFolderName.Cartoni || searchData == GalleryPage.Cartoni){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Cartoni}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.Cartoni,
-       paintings: getPaintings(folderPath),
-       title: "Cartoni", 
-       folderName: GalleryFolderName.Cartoni,
-       folderPath: folderPath,
-       pageName: GalleryPage.Cartoni,
-       description: "Galleria", 
-     });
-     return gallery;
+    return  galleryFactory(baseGalleryPath, "Cartoni",GalleryFolderName.Cartoni, GalleryPage.Cartoni);
    }
 
    if(searchData == GalleryFolderName.LettereNuovoMondo || searchData == GalleryPage.LettereNuovoMondo){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.LettereNuovoMondo}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.LettereNuovoMondo,
-       paintings: getPaintings(folderPath),
-       title: "Lettere del Nuovo Mondo", 
-       folderName: GalleryFolderName.LettereNuovoMondo,
-       folderPath: folderPath,
-       pageName: GalleryPage.LettereNuovoMondo,
-       description: "Galleria", 
-     });
-     return gallery;
+    return  galleryFactory(baseGalleryPath, "Lettere dal Nuovo Mondo",GalleryFolderName.LettereNuovoMondo, GalleryPage.LettereNuovoMondo);
    }
-
 
    if(searchData == GalleryFolderName.AgiliFragili || searchData == GalleryPage.AgiliFragili){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.AgiliFragili}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.AgiliFragili,
-       paintings: getPaintings(folderPath),
-       title: "Agili Fragili", 
-       folderName: GalleryFolderName.AgiliFragili,
-       folderPath: folderPath,
-       pageName: GalleryPage.AgiliFragili,
-       description: "Galleria", 
-     });
-     return gallery;
+    return  galleryFactory(baseGalleryPath, "Agili Fragili",GalleryFolderName.AgiliFragili, GalleryPage.AgiliFragili);
+   }
+
+   if(searchData == GalleryFolderName.Floras || searchData == GalleryPage.Floras){
+    return  galleryFactory(baseGalleryPath, "Floras",GalleryFolderName.Floras, GalleryPage.Floras);
    }
   
-   if(searchData == GalleryFolderName.Floras || searchData == GalleryPage.Floras){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Floras}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.Floras,
-       paintings: getPaintings(folderPath),
-       title: "Floras", 
-       folderName: GalleryFolderName.Floras,
-       folderPath: folderPath,
-       pageName: GalleryPage.Floras,
-       description: "Galleria", 
-     });
-     return gallery;
-   }
-
-
    if(searchData == GalleryFolderName.Ikebana || searchData == GalleryPage.Ikebana){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Ikebana}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.Ikebana,
-       paintings: getPaintings(folderPath),
-       title: "Ikebana", 
-       folderName: GalleryFolderName.Ikebana,
-       folderPath: folderPath,
-       pageName: GalleryPage.Ikebana,
-       description: "Galleria", 
-     });
-     return gallery;
+    return  galleryFactory(baseGalleryPath, "Ikebana",GalleryFolderName.Ikebana, GalleryPage.Ikebana);
    }
 
    if(searchData == GalleryFolderName.Frammenti || searchData == GalleryPage.Frammenti){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Frammenti}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.Frammenti,
-       paintings: getPaintings(folderPath),
-       title: "Frammenti", 
-       folderName: GalleryFolderName.Frammenti,
-       folderPath: folderPath,
-       pageName: GalleryPage.Frammenti,
-       description: "Galleria", 
-     });
-     return gallery;
+    return  galleryFactory(baseGalleryPath, "Frammenti",GalleryFolderName.Frammenti, GalleryPage.Frammenti);
    }
 
    if(searchData == GalleryFolderName.Butterfly || searchData == GalleryPage.Butterfly){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Butterfly}`
-     const gallery = new Gallery({
-       id: GalleryFolderName.Butterfly,
-       paintings: getPaintings(folderPath),
-       title: "Butterfly", 
-       folderName: GalleryFolderName.Butterfly,
-       folderPath: folderPath,
-       pageName: GalleryPage.Butterfly,
-       description: "Galleria", 
-     });
-     return gallery;
+    return  galleryFactory(baseGalleryPath, "Butterfly",GalleryFolderName.Butterfly, GalleryPage.Butterfly);
    }
 
    if(searchData == GalleryFolderName.Croste || searchData == GalleryPage.Croste){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Croste}`
-     return new Gallery({
-       id: GalleryFolderName.Croste,
-       paintings: getPaintings(folderPath),
-       title: "Croste", 
-       folderName: GalleryFolderName.Croste,
-       folderPath: folderPath,
-       pageName: GalleryPage.Croste,
-       description: "Galleria", 
-     });
+    return  galleryFactory(baseGalleryPath, "Croste",GalleryFolderName.Croste, GalleryPage.Croste);
    }
 
    if(searchData == GalleryFolderName.DiecimilaMondi || searchData == GalleryPage.DiecimilaMondi){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.DiecimilaMondi}`
-     return new Gallery({
-       id: GalleryFolderName.DiecimilaMondi,
-       paintings: getPaintings(folderPath),
-       title: "Diecimila Mondi", 
-       folderName: GalleryFolderName.DiecimilaMondi,
-       folderPath: folderPath,
-       pageName: GalleryPage.DiecimilaMondi,
-       description: "Galleria", 
-     });
+    return  galleryFactory(baseGalleryPath, "Diecimila Mondi",GalleryFolderName.DiecimilaMondi, GalleryPage.DiecimilaMondi);
    }
-
 
    if(searchData == GalleryFolderName.EsiliSegni || searchData == GalleryPage.EsiliSegni){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.EsiliSegni}`
-     return new Gallery({
-       id: GalleryFolderName.EsiliSegni,
-       paintings: getPaintings(folderPath),
-       title: "Esili Segni", 
-       folderName: GalleryFolderName.EsiliSegni,
-       folderPath: folderPath,
-       pageName: GalleryPage.EsiliSegni,
-       description: "Galleria", 
-     });
+    return  galleryFactory(baseGalleryPath, "Esili Segni",GalleryFolderName.EsiliSegni, GalleryPage.EsiliSegni);
    }
 
-
    if(searchData == GalleryFolderName.GiardinoImpermanenza || searchData == GalleryPage.GiardinoImpermanenza){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.GiardinoImpermanenza}`
-     return new Gallery({
-       id: GalleryFolderName.GiardinoImpermanenza,
-       paintings: getPaintings(folderPath),
-       title: "Giardino dell'Impermanenza", 
-       folderName: GalleryFolderName.GiardinoImpermanenza,
-       folderPath: folderPath,
-       pageName: GalleryPage.GiardinoImpermanenza,
-       description: "Galleria", 
-     });
+    return  galleryFactory(baseGalleryPath, "Giardino dell'Impermanenza",GalleryFolderName.GiardinoImpermanenza, GalleryPage.GiardinoImpermanenza);
    }
 
    if(searchData == GalleryFolderName.Matite || searchData == GalleryPage.Matite){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Matite}`
-     return new Gallery({
-       id: GalleryFolderName.Matite,
-       paintings: getPaintings(folderPath),
-       title: "Matite", 
-       folderName: GalleryFolderName.Matite,
-       folderPath: folderPath,
-       pageName: GalleryPage.Matite,
-       description: "Galleria", 
-     });
+    return  galleryFactory(baseGalleryPath, "Matite",GalleryFolderName.Matite, GalleryPage.Matite);
    }
 
    if(searchData == GalleryFolderName.Squosh || searchData == GalleryPage.Squosh){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Squosh}`
-     return new Gallery({
-       id: GalleryFolderName.Squosh,
-       paintings: getPaintings(folderPath),
-       title: "Squosh", 
-       folderName: GalleryFolderName.Squosh,
-       folderPath: folderPath,
-       pageName: GalleryPage.Squosh,
-       description: "Galleria", 
-     });
+    return  galleryFactory(baseGalleryPath, "Squosh",GalleryFolderName.Squosh, GalleryPage.Squosh);
    }
 
-
    if(searchData == GalleryFolderName.Torri || searchData == GalleryPage.Torri){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.Torri}`
-     return new Gallery({
-       id: GalleryFolderName.Torri,
-       paintings: getPaintings(folderPath),
-       title: "Torri", 
-       folderName: GalleryFolderName.Torri,
-       folderPath: folderPath,
-       pageName: GalleryPage.Torri,
-       description: "Galleria", 
-     });
+    return  galleryFactory(baseGalleryPath, "Torri",GalleryFolderName.Torri, GalleryPage.Torri);
    }
 
    if(searchData == GalleryFolderName.IncontriDeserto || searchData == GalleryPage.IncontriDeserto){
-     const folderPath = `${baseGalleryPath}${GalleryFolderName.IncontriDeserto}`
-     return new Gallery({
-       id: GalleryFolderName.IncontriDeserto,
-       paintings: getPaintings(folderPath),
-       title: "Incontri nel deserto", 
-       folderName: GalleryFolderName.IncontriDeserto,
-       folderPath: folderPath,
-       pageName: GalleryPage.IncontriDeserto,
-       description: "Galleria", 
-     });
+    return  galleryFactory(baseGalleryPath, "Incontri nel Deserto",GalleryFolderName.IncontriDeserto, GalleryPage.IncontriDeserto);
    }
 
    return new Gallery({
@@ -300,7 +149,7 @@ export function getGallery(searchData: string): Gallery{
 
 
 
-function orderGalleries(galleries: Gallery[]){
+ function orderGalleries(galleries: Gallery[]){
   const order: GalleryFolderName[] = [
   GalleryFolderName.IncontriDeserto,
   GalleryFolderName.Frammenti ,
@@ -324,7 +173,7 @@ function orderGalleries(galleries: Gallery[]){
  * Recupera tutte le gallerie disponibili nella directory delle gallerie.
  * @returns Array di oggetti Gallery.
  */
-export function getAllGalleries() {
+export  function getAllGalleries() {
  const galleriesFolder = `public/static/galleries`;
  const excludedGalleries: string[] = []
 
@@ -336,7 +185,12 @@ export function getAllGalleries() {
    return stats.isDirectory();
  });
 
- const orderedGalleries = orderGalleries(galleryNames.map(galleryName => getGallery(galleryName)))
+  const galleries = galleryNames.map(galleryName => {
+    const gallery: Gallery = getGallery(galleryName)
+    return gallery;
+  });
+
+ const orderedGalleries = orderGalleries(galleries)
  return orderedGalleries
 }
 

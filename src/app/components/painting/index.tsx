@@ -31,6 +31,7 @@ interface PaintingProps{
 const Painting = (props: PaintingProps) => {
   const stdFrameTickness: string = ".5rem";
   const stdFrameBackground: string = "rgb(150, 111, 51)";
+  console.log(props.painting)
 
 
   const containerStyle: React.CSSProperties = {
@@ -131,8 +132,8 @@ const Painting = (props: PaintingProps) => {
                 className={styles.image}
                 key={props.painting.id ?? "none"}
                 src={props.painting.url ?? ""}
-                height= {1000}
-                width= {1000}
+                height= { props.painting.dimensions ? (props.painting.dimensions.height ?? 500) : 500}
+                width= { props.painting.dimensions ? (props.painting.dimensions.width ?? 500) : 500}
                 alt="Dipinto non disponibile"
                 style={imageStyle}
               />

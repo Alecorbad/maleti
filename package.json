@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "genGalleriesJson": "tsx ./src/app/scripts/generateGalleries.ts",
-    "prebuild": "genGalleriesJson",
+    "prebuild": "npm run genGalleriesJson",
     "build": "npm run prebuild && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "image-size": "^2.0.0",
     "motion": "^12.0.0-alpha.2",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
