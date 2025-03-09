@@ -28,7 +28,7 @@ export enum GalleryFolderName{
 
 
 export enum GalleryPage{
-  IncontriDeserto = 'incontri_nel_deserto',
+  IncontriDeserto = 'incontriDeserto',
   Frammenti = 'frammenti',
   Floras = 'floras',
   Ikebana = 'ikebana',

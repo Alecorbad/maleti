@@ -4,12 +4,15 @@ import Wall from "@/app/components/wall";
 import PaintingComponent from "@/app/components/painting";
 import { generatePaintings } from "@/app/utils/gallery.utils"
 import { useGalleryContext } from "@/app/providers/gallery.provider"
+import { usePathname } from "next/navigation";
+
 
 
 export default function Ikebana() {
   const galleriesContext = useGalleryContext();
   const galleries: Gallery[] = galleriesContext.galleries
-  const gallery: Gallery = galleries.filter((g) => g.pageName == "ikebana")[0]
+  const pageName: string = usePathname().replace('/', '');
+  const gallery: Gallery = galleries.filter((g) => g.pageName == pageName)[0]
 
 
   return <>

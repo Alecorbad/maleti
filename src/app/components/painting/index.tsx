@@ -31,7 +31,6 @@ interface PaintingProps{
 const Painting = (props: PaintingProps) => {
   const stdFrameTickness: string = ".5rem";
   const stdFrameBackground: string = "rgb(150, 111, 51)";
-  console.log(props.painting)
 
 
   const containerStyle: React.CSSProperties = {
