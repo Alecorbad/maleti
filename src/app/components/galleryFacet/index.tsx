@@ -6,8 +6,8 @@ import Link from 'next/link'
 
 import PaintingComponent from "@/app/components/painting";
 
-import { motion, useMotionValueEvent, useTransform, useScroll } from "framer-motion";
-import { useRef, useState } from "react"
+import { motion, useTransform, useScroll } from "framer-motion";
+import { useRef } from "react"
 
 
 interface GalleryProps {
