@@ -2098,5 +2098,225 @@
 				}
 			}
 		]
+	},
+	{
+		"id": "torri_preziose",
+		"folderName": "torri_preziose",
+		"folderPath": "public/static/galleries/torri_preziose",
+		"pageName": "torriPreziose",
+		"title": "Torri Preziose",
+		"description": "Galleria",
+		"paintings": [
+			{
+				"id": 0,
+				"title": "/static/galleries/torri_preziose/dscn0263.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0263.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1652
+				}
+			},
+			{
+				"id": 1,
+				"title": "/static/galleries/torri_preziose/dscn0269.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0269.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 2,
+				"title": "/static/galleries/torri_preziose/dscn0270.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0270.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1723
+				}
+			},
+			{
+				"id": 3,
+				"title": "/static/galleries/torri_preziose/dscn0273.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0273.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1613
+				}
+			},
+			{
+				"id": 4,
+				"title": "/static/galleries/torri_preziose/dscn0275.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0275.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 5,
+				"title": "/static/galleries/torri_preziose/dscn0277.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0277.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1670
+				}
+			},
+			{
+				"id": 6,
+				"title": "/static/galleries/torri_preziose/dscn0279.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0279.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1786
+				}
+			},
+			{
+				"id": 7,
+				"title": "/static/galleries/torri_preziose/dscn0281.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0281.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 8,
+				"title": "/static/galleries/torri_preziose/dscn0283.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0283.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1660
+				}
+			},
+			{
+				"id": 9,
+				"title": "/static/galleries/torri_preziose/dscn0285.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0285.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1642
+				}
+			},
+			{
+				"id": 10,
+				"title": "/static/galleries/torri_preziose/dscn0287.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0287.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 11,
+				"title": "/static/galleries/torri_preziose/dscn0290.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0290.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 12,
+				"title": "/static/galleries/torri_preziose/dscn0293 copia.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0293 copia.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 13,
+				"title": "/static/galleries/torri_preziose/dscn0294.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0294.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 14,
+				"title": "/static/galleries/torri_preziose/dscn0296.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0296.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1678
+				}
+			},
+			{
+				"id": 15,
+				"title": "/static/galleries/torri_preziose/dscn0299.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0299.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1538
+				}
+			},
+			{
+				"id": 16,
+				"title": "/static/galleries/torri_preziose/dscn0302.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0302.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1708
+				}
+			},
+			{
+				"id": 17,
+				"title": "/static/galleries/torri_preziose/dscn0304.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0304.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 18,
+				"title": "/static/galleries/torri_preziose/dscn0310.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0310.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 19,
+				"title": "/static/galleries/torri_preziose/dscn0312.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0312.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			},
+			{
+				"id": 20,
+				"title": "/static/galleries/torri_preziose/dscn0314.webp",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/torri_preziose/dscn0314.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1600
+				}
+			}
+		]
 	}
 ]

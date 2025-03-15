@@ -6,6 +6,7 @@
  @font-face {
   font-family: LindenHillMaster;
   src: url(/maleti/static/fonts/linden-hill-master/LindenHill-webfont.woff);
+  font-display: swap;
 }
 
 :root {

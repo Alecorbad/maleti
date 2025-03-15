@@ -16,6 +16,7 @@ export enum GalleryFolderName{
   FormeArchetipiche = 'forme_archetipiche',
   Croste = 'croste',
   FrammentiInconscio = 'frammenti_inconscio',
+  TorriPreziose = 'torri_preziose',
   // IL RESTO è IN PIù
   Butterfly = 'butterfly',
   DiecimilaMondi = 'diecimila_mondi',
@@ -39,6 +40,7 @@ export enum GalleryPage{
   FormeArchetipiche = 'formeArchetipiche',
   Croste = 'croste',
   FrammentiInconscio = 'frammentiInconscio',
+  TorriPreziose = 'torriPreziose',
   // IL RESTO è IN PIù
   Butterfly = 'butterfly',
   DiecimilaMondi = 'diecimila_mondi',
@@ -136,6 +138,10 @@ export  function getGallery(searchData: string): Gallery{
     return  galleryFactory(baseGalleryPath, "Incontri nel Deserto",GalleryFolderName.IncontriDeserto, GalleryPage.IncontriDeserto);
    }
 
+   if(searchData == GalleryFolderName.TorriPreziose || searchData == GalleryPage.TorriPreziose){
+    return  galleryFactory(baseGalleryPath, "Torri Preziose",GalleryFolderName.TorriPreziose, GalleryPage.TorriPreziose);
+   }
+
    return new Gallery({
      id: GalleryFolderName.None,
      paintings: [],
@@ -162,6 +168,7 @@ export  function getGallery(searchData: string): Gallery{
   GalleryFolderName.FormeArchetipiche ,
   GalleryFolderName.Croste ,
   GalleryFolderName.FrammentiInconscio ,
+  GalleryFolderName.TorriPreziose ,
   ] 
 
   return order.map(o => {
