@@ -1,7 +1,7 @@
 
 
-/* Default Gallery */
-.defaultGalleryContainer{
+/*  Gallery */
+.GalleryContainer{
   overflow-x: hidden;
   height: 100%;
   position: relative;
@@ -9,13 +9,13 @@
   scroll-snap-type: x proximity;
   scroll-behavior: smooth;
 }
-  .defaultGalleryWrapper{
+  .GalleryWrapper{
     position: relative;
-    width: 100%;
     height: 100%;
+    width: 200rem;
   }
 
-.defaultGalleryName{
+.GalleryName{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -26,23 +26,22 @@
     align-items: center;
     container-type: size;
     resize: horizontal;
-    z-index: 1;
+    z-index: 3;
   }
 
-  .defaultGalleryName h2{
+  .GalleryName h1{
     width: fit-content;
-    font-size: 5vw;
-    color: rgb(251 231 196);
+    color: var(--colorB1);
     text-shadow: 1px 1px 12px rgba(0,0,0,1);
     letter-spacing: .6rem;
   }
-  .defaultImagesContainer{
+  .ImagesContainer{
     display: flex;
     align-items: center;
     height: 100%;
   }
 
-.defaultImagesContainer img{
+.ImagesContainer img{
   object-fit: contain;
   margin: 0 1rem;
   height: 100%;
@@ -51,42 +50,12 @@
   scroll-snap-stop: always;
 }
 
-.defaultGalleryContainer img:first-of-type {
+.GalleryContainer img:first-of-type {
   scroll-snap-align: start;
 }
 
-.defaultGalleryContainer img:last-of-type {
+.GalleryContainer img:last-of-type {
   scroll-snap-align: end;
 }
 
 
-
-/* Puzzle Gallery */
-
-.puzzleGalleryContainer{
-  display: flex;
-}
-
-  .puzzleGalleryName{
-
-  }
-
-  .puzzleGalleryName h2{
-    font-size: var(--h3-fs);
-    text-shadow: 1px 1px 15px rgba(0,0,0,1);
-  }
-
-
-  .puzzleGalleryImageContainer{
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-
-  
-@media (max-width: 767px) {
-   .defaultGalleryName h2{
-    font-size: 3rem;
-  }
-}

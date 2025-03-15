@@ -34,8 +34,8 @@ const Painting = (props: PaintingProps) => {
 
 
   const containerStyle: React.CSSProperties = {
-        width: (props.width ?? '100%'),
-        height: (props.height ?? '100%'),
+        width: (props.width ?? 'auto'),
+        height: (props.height ?? 'auto'),
         margin: (props.margin ?? "0"),
         position: props.position,
         gridArea: props.gridArea,

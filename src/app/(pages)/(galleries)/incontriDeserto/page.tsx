@@ -9,13 +9,6 @@ import { useGalleryContext } from "@/app/providers/gallery.provider"
 import { usePathname } from "next/navigation";
 
 
-enum WallRange{
-  zero = 0,
-  first = 7,
-  second = 30
-}
-
-
 
 export default function IncontriDeserto() {
   const galleriesContext = useGalleryContext();
@@ -24,37 +17,34 @@ export default function IncontriDeserto() {
   const gallery: Gallery = galleries.filter((g) => g.pageName == pageName)[0]
 
 
+//<Wall mode="grid" 
+      //gridTemplateAreas={`
+         //"p0 p1 p2" 
+         //"p4 p4 p4" 
+         //"p3 p5 p6" 
+        //`}
+      //gridGap="1rem"
+      //gridRowsTemplate="30vh 60vh 30vh"
+      //gridMobileRowsTemplate="auto auto auto"
+      //gridColsTemplate="30% 30% 30%"
+      //>
+//{
+  //generatePaintings((paint: Painting, key: number) => {
+    //return <PaintingComponent 
+        //key={paint.id} 
+        //objectFit="contain"
+        //painting={paint} 
+        //gridArea={`p${key}`}
+        //frameWidth="100%"
+        //framePadding="1rem"
+        //frameColor="white"
+    ///>},
+    //gallery ? gallery?.paintings : [],
+  //)
+//}
+//</Wall>
+
   return <>
-
-      <Wall mode="grid" 
-            gridTemplateAreas={`
-               "p0 p1 p2" 
-               "p4 p4 p4" 
-               "p3 p5 p6" 
-              `}
-            gridGap="1rem"
-            gridRowsTemplate="30vh 60vh 30vh"
-            gridMobileRowsTemplate="auto auto auto"
-            gridColsTemplate="30% 30% 30%"
-            >
-      {
-        generatePaintings((paint: Painting, key: number) => {
-          return <PaintingComponent 
-              key={paint.id} 
-              objectFit="contain"
-              painting={paint} 
-              gridArea={`p${key}`}
-              frameWidth="100%"
-              framePadding="1rem"
-              frameColor="white"
-          />},
-          gallery ? gallery?.paintings : [],
-          {from: WallRange.zero, to: WallRange.first}
-        )
-      }
-      </Wall>
-
-
       <Wall mode="flex"  width="100%">
       {
          generatePaintings((paint: Painting, key: number) => {
@@ -71,7 +61,6 @@ export default function IncontriDeserto() {
               gridArea={`p${key}`}
           />},
           gallery ? gallery?.paintings : [],
-          {from: WallRange.first}
         )
       }
       </Wall>

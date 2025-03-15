@@ -1,11 +1,13 @@
 "use client";
 import galleryFacetStyles from "./galleryFacet.module.css"
-import Image from 'next/image'
 import { Gallery, Painting} from '@/app/types/galleries';
 import Link from 'next/link'
 
-import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react"
+
+import PaintingComponent from "@/app/components/painting";
+
+import { motion, useMotionValueEvent, useTransform, useScroll } from "framer-motion";
+import { useRef, useState } from "react"
 
 
 interface GalleryProps {
@@ -21,45 +23,56 @@ const GalleryCard: React.FC<GalleryProps> = (props: GalleryProps) => {
    let xRange: {start: string, end: string};
 
    if(justifyContent == "flex-end"){
-     xRange = { start: (props.xRange ? props.xRange.start : "0"), 
-       end: (props.xRange ? props.xRange.end : "30%")
+     xRange = { 
+       start: (props.xRange ? props.xRange.start : "0"), 
+       end: (props.xRange ? props.xRange.end : "30rem")
      }
    }
    else{
-      xRange = { start: (props.xRange ? props.xRange.start : "0%"), 
-        end: (props.xRange ? props.xRange.end : "-30%")
+      xRange = { 
+        start: (props.xRange ? props.xRange.start : "0"), 
+        end: (props.xRange ? props.xRange.end : "-30rem")
       }
    }
 
    const { scrollYProgress } = useScroll({
      target: targetRef,
+     offset: ["start end", "end end"],
    })
     
-  const x = useTransform(scrollYProgress, [0, 1], [xRange.start, xRange.end]);
+
+
+  const xTranslate = useTransform(scrollYProgress, [0, 1], [xRange.start, xRange.end]);
 
   
   return (
     <>
-     <div className={`${galleryFacetStyles.defaultGalleryContainer}`} ref={targetRef}>
-          <div className={`${galleryFacetStyles.defaultGalleryName}`}>
+     <div className={`${galleryFacetStyles.GalleryContainer}`} ref={targetRef}>
+          <div className={`${galleryFacetStyles.GalleryName}`}>
              <Link href={`/${props.gallery.pageName}`}>
-                <h2> {props.gallery.title} </h2>
+                <h1> {props.gallery.title} </h1>
              </Link>
           </div>
-           <div className={`${galleryFacetStyles.defaultGalleryWrapper}`}>
+           <div className={`${galleryFacetStyles.GalleryWrapper}`}>
               <motion.div 
-                className={`${galleryFacetStyles.defaultImagesContainer}`} 
-                style={{x, justifyContent: justifyContent}}>
+                className={`${galleryFacetStyles.ImagesContainer}`} 
+                style={{xTranslate, justifyContent: justifyContent}}>
               {
                  takeRandomPaintings(props.gallery, 10).map(
                     (paint) => {
-                      return <Image
-                            key={paint.id}
-                            src={paint.url ?? ""}
-                            height= {500}
-                            width= {500}
-                            alt="Dipinto non disponibile"
-                      />
+                      return <PaintingComponent 
+                            key={paint.id} 
+                            objectFit="contain"
+                            height="100%"
+                            width="30rem"
+                            margin="1rem"
+                            frameWidth="fit-content"
+                            frameHeight="fit-content"
+                            framePadding=".3rem"
+                            frameColor="rgb(255, 255, 255)"
+                            painting={paint} 
+                            gridArea={`p${paint.id}`}
+                        />
                   })
               }
               </motion.div>
