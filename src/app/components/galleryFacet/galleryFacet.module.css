@@ -12,7 +12,7 @@
   .GalleryWrapper{
     position: relative;
     height: 100%;
-    width: 200rem;
+    width: 100rem;
   }
 
 .GalleryName{
@@ -20,7 +20,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@
 
   .GalleryName h1{
     width: fit-content;
-    color: var(--colorB1);
+    color: rgba(var(--colorB1), 1);
     text-shadow: 1px 1px 12px rgba(0,0,0,1);
     letter-spacing: .6rem;
   }
