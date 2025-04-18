@@ -3,15 +3,17 @@ import "../globals.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
+
 export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <>
           <div className={`headerContainer`}>
-              <Header />
+            <Header />
           </div>
           <div className={`container pageContainer`}>
               {children}
@@ -22,3 +24,4 @@ export default function Layout({
     </>
   );
 }
+

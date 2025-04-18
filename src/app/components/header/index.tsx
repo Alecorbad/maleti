@@ -1,7 +1,8 @@
 
 "use client";
 import { motion } from "framer-motion";
-import React, {  useState } from 'react';
+import React from 'react';
+import { useState } from 'react'
 import MediaQuery from '@/app/hooks/useMediaQuery';
 // createContext, useContext, useEffect,
 
@@ -25,6 +26,10 @@ const Header = () => {
       href: "/contact-us"
     }
   ];
+
+
+
+
   if(isMobile){
     return (
       <>
@@ -84,7 +89,7 @@ const Header = () => {
                 animate={
                   !menuState ?
                   { width: 0, opacity: 0} :
-                  { width: "70vw", opacity: 1 }
+                  { width: "35vw", opacity: 1 }
                 } 
                 transition={{
                   duration: 0.75,
@@ -94,10 +99,12 @@ const Header = () => {
             <div style={{width: "100%", height: "4rem"}}></div>
             {
               pages.map((p, index)=>{
-                return <Link href={p.href} key={index}>
-                  <AnimatedText text={p.name} delay={0.05}/>
-                </Link>
-              })
+                return <div className={styles.mobileLink} key={index}>
+                  <Link href={p.href}>
+                    <AnimatedText text={p.name} delay={0.05}/>
+                  </Link>
+                </div>
+                return               })
             }
             </motion.div>
           </div>
@@ -145,6 +152,7 @@ export const AnimatedText = ({
 }: AnimatedTextProps) => {
     const divProperties: React.CSSProperties = {
     }
+  
 
     return <Wrapper 
         className={className}
@@ -152,13 +160,13 @@ export const AnimatedText = ({
       <motion.div 
         initial="initial" 
         whileHover="hovered"
-        className="relative block overflow-hidden whitespace-nowrap"
+        className={`relative block overflow-hidden whitespace-nowrap `}
       >
         <div className="sr-only">{text}</div>
         <div aria-hidden style={divProperties}>
           {text.split('').map((c, i) => (
             <motion.span key={`${c}-${i}`}
-              className="inline-block"
+              className={`inline-block ${styles.letter}`}
               variants={{
                 initial: { y: 0 },
                 hovered: { y: "-100%" }
@@ -176,7 +184,7 @@ export const AnimatedText = ({
         <div aria-hidden className="absolute inset-0" style={divProperties}>
               {text.split('').map((c, i) => (
                 <motion.span key={`${c}-${i}`}
-                  className="inline-block"
+                className={`inline-block ${styles.letter}`}
                   variants={{
                     initial: { y: "100%" },
                     hovered: { y: "0" }

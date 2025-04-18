@@ -57,7 +57,7 @@
 }
 
 html{
-  /* scroll-snap-type: y proximity; */
+  /*scroll-snap-type: y proximity; */
   scroll-behavior: smooth;
 }
 
@@ -94,7 +94,6 @@ h2{
 
 .pageContainer{
   flex: 1; 
-  scroll-snap-align: start;
 }
 
 .footerContainer{

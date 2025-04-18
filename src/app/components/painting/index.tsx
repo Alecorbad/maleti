@@ -2,8 +2,10 @@
 
 import { Painting as PaintingType } from "@/app/types/galleries";
 import Image from "next/image"
+import { useState } from "react";
 
 import styles from "./painting.module.css"
+import ImageLoading from "@/app/animations/ImageLoading";
 
 enum FrameParts{
   Up="up",
@@ -21,6 +23,7 @@ interface PaintingProps{
   position?: ('absolute' | 'relative' | 'fixed');
   gridArea?: string;
 
+  frame?: boolean;
   frameTickness?: string;
   framePadding?: string;
   frameWidth?: string;
@@ -31,7 +34,14 @@ interface PaintingProps{
 const Painting = (props: PaintingProps) => {
   const stdFrameTickness: string = ".5rem";
   const stdFrameBackground: string = "rgb(150, 111, 51)";
+  const [isImageLoaded, setImageLoaded] = useState(false);
 
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
+  const handleImageError = () => {
+  };
 
   const containerStyle: React.CSSProperties = {
         width: (props.width ?? 'auto'),
@@ -43,6 +53,7 @@ const Painting = (props: PaintingProps) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        opacity: 0
       };
 
   const imageStyle: React.CSSProperties = {
@@ -105,7 +116,7 @@ const Painting = (props: PaintingProps) => {
 
   return (
     <>
-      <div className={styles.container} style={containerStyle}>
+      <ImageLoading isLoaded={isImageLoaded} className={`${styles.container}`} style={containerStyle}>
         <div className={styles.frameContainer} style ={frameContainerStyle}>
           <div className={styles.frameUpWrapper}     style={frameUpWrapperStyle}>
             <div className={styles.frameUp}     style={frameUpStyle}>
@@ -128,6 +139,8 @@ const Painting = (props: PaintingProps) => {
             {
               props.painting ? 
                 <Image 
+                onLoad={handleImageLoad}
+                onError={handleImageError}
                 className={styles.image}
                 key={props.painting.id ?? "none"}
                 src={props.painting.url ?? ""}
@@ -140,7 +153,7 @@ const Painting = (props: PaintingProps) => {
             }
           </div>
         </div>
-      </div>
+      </ImageLoading>
     </>
   )
 };

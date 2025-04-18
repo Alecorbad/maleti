@@ -5,13 +5,7 @@ import PaintingComponent from "@/app/components/painting";
 import { generatePaintings } from "@/app/utils/gallery.utils"
 import { useGalleryContext } from "@/app/providers/gallery.provider"
 import { usePathname } from "next/navigation";
-
-
-enum WallRange{
-  zero = 0,
-  first = 6,
-  second = 7
-}
+import MediaQuery from '@/app/hooks/useMediaQuery';
 
 
 
@@ -22,49 +16,59 @@ export default function Butterfly() {
   const pageName: string = usePathname().replace('/', '');
   const gallery: Gallery = galleries.filter((g) => g.pageName == pageName)[0]
 
+  //import MediaQuery from '@/app/hooks/useMediaQuery';
+  const isMobile = MediaQuery(768);
+   if(isMobile){
   return <>
-      <Wall mode="grid" 
-            gridTemplateAreas={`
-               "p0 p1 p2" 
-               "p3 p4 p5" 
-              `}
-            gridGap="0 3rem"
-            gridColsTemplate="30vh 30vh 30vh"
-            itemsAlign="stretch"
-            >
-      {
-        generatePaintings((paint: Painting, key: number) => {
-          return <PaintingComponent 
-              key={paint.id} 
-              objectFit="contain"
-              painting={paint} 
-              gridArea={`p${key}`}
-          />},
-          gallery ? gallery?.paintings : [],
-          {from: WallRange.zero, to: WallRange.first}
-        )
-      }
-      </Wall>
-
-
       <Wall mode="flex"  width="100%">
       {
-         generatePaintings((paint: Painting, key: number) => {
-          return <PaintingComponent 
-              key={paint.id} 
-              objectFit="cover"
-              height="15rem"
-              width="15rem"
-              painting={paint} 
-              gridArea={`p${key}`}
-          />},
+        generatePaintings((paint: Painting, key: number) => {
+        return <div key={paint.id}>
+        <PaintingComponent 
+          objectFit="contain"
+          height="auto"
+          width="100%"
+          margin="0 1rem 6rem 0"
+          frameWidth="100%"
+          framePadding="1rem"
+          frameColor="rgb(255, 255, 255)"
+          painting={paint} 
+          gridArea={`p${key}`}
+          />
+          </div>
+        },
+
           gallery ? gallery?.paintings : [],
-          {from: WallRange.first}
         )
       }
       </Wall>
-      
   </>;
+  }else{
+  return <>
+      <Wall mode="flex"  width="100%">
+      {
+        generatePaintings((paint: Painting, key: number) => {
+        return <div key={paint.id}>
+        <PaintingComponent 
+          objectFit="contain"
+          height="95vh"
+          width="auto"
+          margin="1rem 1rem 10rem 1rem"
+          frameWidth="100%"
+          framePadding="1rem"
+          frameColor="rgb(255, 255, 255)"
+          painting={paint} 
+          gridArea={`p${key}`}
+          />
+          </div>
+        },
+
+          gallery ? gallery?.paintings : [],
+        )
+      }
+      </Wall>
+  </>;
+  }
 }
 
 

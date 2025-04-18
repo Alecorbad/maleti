@@ -6,6 +6,7 @@ import PaintingComponent from "@/app/components/painting";
 import { generatePaintings } from "@/app/utils/gallery.utils"
 import { useGalleryContext } from "@/app/providers/gallery.provider"
 import { usePathname } from "next/navigation";
+import MediaQuery from '@/app/hooks/useMediaQuery';
 
 
 export default function GiardinoImpermanenza() {
@@ -15,31 +16,59 @@ export default function GiardinoImpermanenza() {
   const gallery: Gallery = galleries.filter((g) => g.pageName == pageName)[0]
 
 
+  //import MediaQuery from '@/app/hooks/useMediaQuery';
+  const isMobile = MediaQuery(768);
+   if(isMobile){
   return <>
-
       <Wall mode="flex"  width="100%">
       {
-         generatePaintings((paint: Painting, key: number) => {
-          return <PaintingComponent 
-              key={paint.id} 
-              objectFit="contain"
-              height="20rem"
-              width="25rem"
-              margin="1rem"
-              frameWidth="100%"
-              framePadding="1rem"
-              frameColor="rgb(255, 255, 255)"
-              painting={paint} 
-              gridArea={`p${key}`}
-          />},
-          gallery ? gallery?.paintings : []
+        generatePaintings((paint: Painting, key: number) => {
+        return <div key={paint.id}>
+        <PaintingComponent 
+          objectFit="contain"
+          height="auto"
+          width="100%"
+          margin="0 1rem 6rem 0"
+          frameWidth="100%"
+          framePadding="1rem"
+          frameColor="rgb(255, 255, 255)"
+          painting={paint} 
+          gridArea={`p${key}`}
+          />
+          </div>
+        },
+
+          gallery ? gallery?.paintings : [],
         )
       }
       </Wall>
-      
-
   </>;
-}
+  }else{
+  return <>
+      <Wall mode="flex"  width="100%">
+      {
+        generatePaintings((paint: Painting, key: number) => {
+        return <div key={paint.id}>
+        <PaintingComponent 
+          objectFit="contain"
+          height="95vh"
+          width="auto"
+          margin="1rem 1rem 10rem 1rem"
+          frameWidth="100%"
+          framePadding="1rem"
+          frameColor="rgb(255, 255, 255)"
+          painting={paint} 
+          gridArea={`p${key}`}
+          />
+          </div>
+        },
 
+          gallery ? gallery?.paintings : [],
+        )
+      }
+      </Wall>
+  </>;
+  }
+}
 
 

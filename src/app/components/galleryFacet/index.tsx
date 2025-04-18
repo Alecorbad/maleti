@@ -2,9 +2,9 @@
 import galleryFacetStyles from "./galleryFacet.module.css"
 import { Gallery, Painting} from '@/app/types/galleries';
 import Link from 'next/link'
+import Image from 'next/image'
 
-
-import PaintingComponent from "@/app/components/painting";
+//import PaintingComponent from "@/app/components/painting";
 
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react"
@@ -17,7 +17,7 @@ interface GalleryProps {
 }
 
 
-const GalleryCard: React.FC<GalleryProps> = (props: GalleryProps) => {
+const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
    const targetRef = useRef(null); 
    const justifyContent = (props.justifyContent ? props.justifyContent : "flex-start");
    let xRange: {start: string, end: string};
@@ -60,19 +60,29 @@ const GalleryCard: React.FC<GalleryProps> = (props: GalleryProps) => {
               {
                  takeRandomPaintings(props.gallery, 10).map(
                     (paint) => {
-                      return <PaintingComponent 
-                            key={paint.id} 
-                            objectFit="contain"
-                            height="100%"
-                            width="30rem"
-                            margin="1rem"
-                            frameWidth="fit-content"
-                            frameHeight="fit-content"
-                            framePadding=".3rem"
-                            frameColor="rgb(255, 255, 255)"
-                            painting={paint} 
-                            gridArea={`p${paint.id}`}
-                        />
+                      return <Image
+                        key={paint.id}
+                        src={paint.url ?? ''}
+                        width={500}
+                        height={500}
+                        alt="Picture of the author"
+                      >
+                      
+
+                      </Image>
+                      // return <PaintingComponent 
+                            // key={paint.id} 
+                            // objectFit="contain"
+                            // height="100%"
+                            // width="30rem"
+                            // margin="1rem"
+                            // frameWidth="fit-content"
+                            // frameHeight="fit-content"
+                            // framePadding=".3rem"
+                            // frameColor="rgb(255, 255, 255)"
+                            // painting={paint} 
+                            // gridArea={`p${paint.id}`}
+                        // />
                   })
               }
               </motion.div>
@@ -119,5 +129,5 @@ function takeRandomPaintings(gallery: Gallery, paintNum: number = 5): Painting[]
 //   return Math.round(ran / jump) * jump;
 // }
 
-export default GalleryCard;
+export default GalleryFacet;
 

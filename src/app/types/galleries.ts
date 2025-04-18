@@ -1,12 +1,12 @@
 
 export class Painting {
-  id: number | null = null;
+  id: string | null = null;
   title: string | null = null;
   author: string | null = null;
   url: string | null = null;
   dimensions: { width: number, height: number} | null = null;
 
-  constructor(data: {id?: number, title?: string, author?: string, url?: string, dimensions?: { width: number, height: number}}){
+  constructor(data: {id?: string, title?: string, author?: string, url?: string, dimensions?: { width: number, height: number}}){
     this.id = data.id ?? null;
     this.title = data.title ?? null;
     this.author = data.author ?? null;

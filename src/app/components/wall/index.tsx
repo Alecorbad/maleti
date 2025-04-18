@@ -51,7 +51,7 @@ const Wall = (props: WallProps) => {
         width: (props.width ?? '100%'),
         height: (props.height ?? 'auto'),
         padding: (props.padding ?? '1rem'),
-        margin: (props.margin ?? '4rem 0'),
+        margin: (props.margin ?? '0'),
         scrollSnapAlign: (props.scrollAlign ?? 'none'),
         alignItems: (props.itemsAlign ?? 'center'),
         justifyItems: (props.itemsJustify ?? 'center'),
@@ -122,7 +122,7 @@ const Wall = (props: WallProps) => {
     <>
     <div className={styles.wallContainer} style={dynamicStyles}>
         {
-          React.Children.toArray(props.children)
+          props.children
         }
       </div>
     </>
