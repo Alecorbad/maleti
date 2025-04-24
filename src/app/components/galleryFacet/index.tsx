@@ -3,7 +3,6 @@ import galleryFacetStyles from "./galleryFacet.module.css"
 import { Gallery, Painting} from '@/app/types/galleries';
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRef} from "react";
 import { motion,  useDragControls } from "framer-motion";
 import MediaQuery from '@/app/hooks/useMediaQuery';
 
@@ -17,7 +16,6 @@ interface GalleryProps {
 
 
 const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
-   const targetRef = useRef(null); 
    const dragControls = useDragControls();
 
    const isMobile = MediaQuery(768);
