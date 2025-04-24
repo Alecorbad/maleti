@@ -11,6 +11,6 @@ export function generatePaintings(
   if(!range.to) range.to = 1000;
   return paintings.slice(range.from, range.to).map(
     (paint, key) => {
-      return  foo(paint, key);
+      return foo(paint, key);
     })
 }

@@ -8,6 +8,7 @@ import { generatePaintings } from "@/app/utils/gallery.utils"
 import { useGalleryContext } from "@/app/providers/gallery.provider"
 import { usePathname } from "next/navigation";
 import MediaQuery from '@/app/hooks/useMediaQuery';
+import GalleriesStyle from '../../pagesLayout.module.css';
 
 
 export default function FormeArchetipiche() {
@@ -24,7 +25,8 @@ export default function FormeArchetipiche() {
       <Wall mode="flex"  width="100%">
       {
         generatePaintings((paint: Painting, key: number) => {
-        return <div key={paint.id}>
+          return <div key={paint.id} 
+          className={`${GalleriesStyle.paintingFocus}`}>
         <PaintingComponent 
           objectFit="contain"
           height="auto"
@@ -49,7 +51,8 @@ export default function FormeArchetipiche() {
       <Wall mode="flex"  width="100%">
       {
         generatePaintings((paint: Painting, key: number) => {
-        return <div key={paint.id}>
+          return <div key={paint.id} 
+          className={`${GalleriesStyle.paintingFocus}`}>
         <PaintingComponent 
           objectFit="contain"
           height="95vh"

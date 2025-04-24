@@ -4,10 +4,9 @@ import { Gallery, Painting} from '@/app/types/galleries';
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRef } from "react";
+import { motion,  useDragControls } from "framer-motion";
+import MediaQuery from '@/app/hooks/useMediaQuery';
 
-//import PaintingComponent from "@/app/components/painting";
-
-import { motion, useTransform, useScroll, useDragControls } from "framer-motion";
 
 
 interface GalleryProps {
@@ -20,47 +19,27 @@ interface GalleryProps {
 const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
    const targetRef = useRef(null); 
    const dragControls = useDragControls();
-   const justifyContent = (props.justifyContent ? props.justifyContent : "flex-start");
-   let xRange: {start: string, end: string};
-
-   if(justifyContent == "flex-end"){
-     xRange = { 
-       start: (props.xRange ? props.xRange.start : "0"), 
-       end: (props.xRange ? props.xRange.end : "30rem")
-     }
-   }
-   else{
-      xRange = { 
-        start: (props.xRange ? props.xRange.start : "0"), 
-        end: (props.xRange ? props.xRange.end : "-30rem")
-      }
-   }
-
-   const { scrollYProgress } = useScroll({
-     target: targetRef,
-     offset: ["start end", "end end"],
-   })
-
-  const xTranslate = useTransform(scrollYProgress, [0, 1], [xRange.start, xRange.end]);
-
+   const isMobile = MediaQuery(768);
+   //const justifyContent = (props.justifyContent ? props.justifyContent : "flex-start");
+ 
 
   
   return (
     <>
      <div className={`${galleryFacetStyles.GalleryContainer}`} ref={targetRef} >
-          <div className={`${galleryFacetStyles.GalleryName}`} onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }} >
+          <div className={`${galleryFacetStyles.GalleryName} unmovable`} onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }}>
              <Link href={`/${props.gallery.pageName}`}>
                 <h1> {props.gallery.title} </h1>
              </Link>
           </div>
-           <div className={`${galleryFacetStyles.GalleryWrapper}`} onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }} >
+           <div className={`${galleryFacetStyles.GalleryWrapper}`}>
               <motion.div 
                 dragConstraints={targetRef}
-                drag="x"
+                drag= {isMobile ? "x" : false}
                 dragControls={dragControls}
                 dragListener={false}
                 className={`${galleryFacetStyles.ImagesContainer}`} 
-                style={{xTranslate, justifyContent: justifyContent}}>
+                style={{justifyContent: "center"}}>
               {
                  takeRandomPaintings(props.gallery, 10).map(
                     (paint) => {

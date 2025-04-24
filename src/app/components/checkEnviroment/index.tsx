@@ -3,6 +3,6 @@
 
 export const checkEnvironment = () => {
   return process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
+      ? "http://192.168.178.174:3000"
       : "https://example.com"; // https://v2ds.netlify.app
 };

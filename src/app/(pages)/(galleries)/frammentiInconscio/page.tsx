@@ -6,6 +6,7 @@ import { generatePaintings } from "@/app/utils/gallery.utils"
 import { useGalleryContext } from "@/app/providers/gallery.provider"
 import { usePathname } from "next/navigation";
 import MediaQuery from '@/app/hooks/useMediaQuery';
+import GalleriesStyle from '../../pagesLayout.module.css';
 
 
 export default function FrammentiInconscio() {
@@ -22,7 +23,8 @@ export default function FrammentiInconscio() {
       <Wall mode="flex"  width="100%">
       {
         generatePaintings((paint: Painting, key: number) => {
-          return <div>
+          return <div key={paint.id} 
+          className={`${GalleriesStyle.paintingFocus}`}>
           <PaintingComponent 
           key={paint.id} 
           objectFit="contain"
@@ -48,7 +50,8 @@ export default function FrammentiInconscio() {
       <Wall mode="flex"  width="100%">
       {
         generatePaintings((paint: Painting, key: number) => {
-          return <div>
+          return <div key={paint.id} 
+          className={`${GalleriesStyle.paintingFocus}`}>
           <PaintingComponent 
           key={paint.id} 
           objectFit="contain"

@@ -34,8 +34,8 @@
 
   /* Dimensioni testo */
   --body-text: clamp(16px, 17px, 18px);
-  --h0-fs: clamp(calc(var(--body-text) * 3.5),    15vw, calc(var(--body-text) * 8)); 
-  --h1-fs: clamp(calc(var(--body-text) * 1.8),  10vw,  calc(var(--body-text) * 4)); 
+  --h0-fs: clamp(calc(var(--body-text) * 3.5),  15vw, calc(var(--body-text) * 8)); 
+  --h1-fs: clamp(calc(var(--body-text) * 2),    6vw,  calc(var(--body-text) * 4)); 
   --h2-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.84)); 
   --h3-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.78)); 
   --h4-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.76)); 
@@ -57,7 +57,7 @@
 }
 
 html{
-  /*scroll-snap-type: y proximity; */
+  scroll-snap-type: y proximity; 
   scroll-behavior: smooth;
 }
 
@@ -100,6 +100,17 @@ h2{
   width: 100%;
   scroll-snap-align: end;
 }
+
+
+.unmovable{
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 
 @media (max-width: 767px) {
   html{

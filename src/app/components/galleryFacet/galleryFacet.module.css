@@ -6,8 +6,9 @@
   height: 100%;
   position: relative;
   top: 0;
-  scroll-snap-type: x proximity;
-  scroll-behavior: smooth;
+  touch-action: "pan-y";
+  /* scroll-snap-type: x proximity;*/
+  /* scroll-behavior: smooth;*/
 }
   .GalleryWrapper{
     position: relative;
@@ -24,9 +25,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     container-type: size;
     resize: horizontal;
     z-index: 3;
+    min-height: 70%;
+  }
+
+  .GalleryName a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .GalleryName h1{
@@ -55,7 +64,7 @@
 }
 
 .GalleryContainer img:last-of-type {
-  scroll-snap-align: end;
+  scroll-snap-align: center;
 }
 
 
