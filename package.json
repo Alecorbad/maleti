@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "tsx ./scripts/open-browser.ts",
     "dev": "next dev",
-    "genGalleriesJson": "tsx ./src/app/scripts/generateGalleries.ts",
+    "genGalleriesJson": "tsx ./scripts/generateGalleries.ts",
     "prebuild": "npm run genGalleriesJson",
     "build": "npm run prebuild && next build",
     "start": "next start",

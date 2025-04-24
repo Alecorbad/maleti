@@ -75,7 +75,4 @@
   .homepageHeader{
     flex: 0 0 auto;
   }
-  .titleContainer .title1{
-    font-size: var(--h0-fs);
-  }
-}
+ }

@@ -34,7 +34,7 @@
 
   /* Dimensioni testo */
   --body-text: clamp(16px, 17px, 18px);
-  --h0-fs: clamp(calc(var(--body-text) * 4),    15vw, calc(var(--body-text) * 8)); 
+  --h0-fs: clamp(calc(var(--body-text) * 3.5),    15vw, calc(var(--body-text) * 8)); 
   --h1-fs: clamp(calc(var(--body-text) * 1.8),  10vw,  calc(var(--body-text) * 4)); 
   --h2-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.84)); 
   --h3-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.78)); 

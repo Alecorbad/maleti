@@ -3,11 +3,11 @@ import galleryFacetStyles from "./galleryFacet.module.css"
 import { Gallery, Painting} from '@/app/types/galleries';
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRef } from "react";
 
 //import PaintingComponent from "@/app/components/painting";
 
-import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react"
+import { motion, useTransform, useScroll, useDragControls } from "framer-motion";
 
 
 interface GalleryProps {
@@ -19,6 +19,7 @@ interface GalleryProps {
 
 const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
    const targetRef = useRef(null); 
+   const dragControls = useDragControls();
    const justifyContent = (props.justifyContent ? props.justifyContent : "flex-start");
    let xRange: {start: string, end: string};
 
@@ -39,22 +40,25 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
      target: targetRef,
      offset: ["start end", "end end"],
    })
-    
-
 
   const xTranslate = useTransform(scrollYProgress, [0, 1], [xRange.start, xRange.end]);
+
 
   
   return (
     <>
-     <div className={`${galleryFacetStyles.GalleryContainer}`} ref={targetRef}>
-          <div className={`${galleryFacetStyles.GalleryName}`}>
+     <div className={`${galleryFacetStyles.GalleryContainer}`} ref={targetRef} >
+          <div className={`${galleryFacetStyles.GalleryName}`} onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }} >
              <Link href={`/${props.gallery.pageName}`}>
                 <h1> {props.gallery.title} </h1>
              </Link>
           </div>
-           <div className={`${galleryFacetStyles.GalleryWrapper}`}>
+           <div className={`${galleryFacetStyles.GalleryWrapper}`} onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }} >
               <motion.div 
+                dragConstraints={targetRef}
+                drag="x"
+                dragControls={dragControls}
+                dragListener={false}
                 className={`${galleryFacetStyles.ImagesContainer}`} 
                 style={{xTranslate, justifyContent: justifyContent}}>
               {
