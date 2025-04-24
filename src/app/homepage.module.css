@@ -55,7 +55,7 @@
 
   .galleryContainer{
     margin: 3rem 0;
-    height: 70vh;
+    height: 80vh;
     scroll-snap-align: center;
     scroll-snap-stop: always;
   }
@@ -70,7 +70,7 @@
     flex: 0 1 20vh;
   }
   .galleryContainer{
-    height: 25vh;
+    height: 40vh;
   }
   .homepageHeader{
     flex: 0 0 auto;

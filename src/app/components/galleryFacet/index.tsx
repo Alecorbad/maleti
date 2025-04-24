@@ -56,7 +56,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
 
   // Gestire l'animazione
   const animation = (isMobile) ? {} : selectedTransaction;
-  const costraint = (10 * 200 / 2);
+  const costraint = (10 * 300 / 2);
 
   
   return (
