@@ -2,18 +2,14 @@
 
 /*  Gallery */
 .GalleryContainer{
-  overflow-x: hidden;
   height: 100%;
   position: relative;
   top: 0;
-  touch-action: "pan-y";
-  /* scroll-snap-type: x proximity;*/
-  /* scroll-behavior: smooth;*/
+  /* touch-action: "pan-y"; */
 }
   .GalleryWrapper{
     position: relative;
     height: 100%;
-    width: 100rem;
   }
 
 .GalleryName{
@@ -48,6 +44,7 @@
     display: flex;
     align-items: center;
     height: 100%;
+    touch-action: none;
   }
 
 .ImagesContainer img{
@@ -55,16 +52,13 @@
   margin: 0 1rem;
   height: 100%;
   width: auto;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
+  will-change: transform;
 }
 
-.GalleryContainer img:first-of-type {
-  scroll-snap-align: start;
+/*.GalleryContainer img:first-of-type {
 }
 
 .GalleryContainer img:last-of-type {
-  scroll-snap-align: center;
-}
+}*/
 
 

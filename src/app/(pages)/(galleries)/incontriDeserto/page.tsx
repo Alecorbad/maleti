@@ -10,7 +10,6 @@ import { usePathname } from "next/navigation";
 import MediaQuery from '@/app/hooks/useMediaQuery';
 
 import GalleriesStyle from '../../pagesLayout.module.css';
-// import GalleryStyle from './incontriDeserto.module.css';
 
 
 
@@ -25,32 +24,6 @@ export default function IncontriDeserto() {
 
 
 
-//<Wall mode="grid" 
-      //gridTemplateAreas={`
-         //"p0 p1 p2" 
-         //"p4 p4 p4" 
-         //"p3 p5 p6" 
-        //`}
-      //gridGap="1rem"
-      //gridRowsTemplate="30vh 60vh 30vh"
-      //gridMobileRowsTemplate="auto auto auto"
-      //gridColsTemplate="30% 30% 30%"
-      //>
-//{
-  //generatePaintings((paint: Painting, key: number) => {
-    //return <PaintingComponent 
-        //key={paint.id} 
-        //objectFit="contain"
-        //painting={paint} 
-        //gridArea={`p${key}`}
-        //frameWidth="100%"
-        //framePadding="1rem"
-        //frameColor="white"
-    ///>},
-    //gallery ? gallery?.paintings : [],
-  //)
-//}
-//</Wall>
 
   if(isMobile){
   return <>

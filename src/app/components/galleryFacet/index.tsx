@@ -3,7 +3,7 @@ import galleryFacetStyles from "./galleryFacet.module.css"
 import { Gallery, Painting} from '@/app/types/galleries';
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRef } from "react";
+import { useRef} from "react";
 import { motion,  useDragControls } from "framer-motion";
 import MediaQuery from '@/app/hooks/useMediaQuery';
 
@@ -19,27 +19,67 @@ interface GalleryProps {
 const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
    const targetRef = useRef(null); 
    const dragControls = useDragControls();
+
    const isMobile = MediaQuery(768);
-   //const justifyContent = (props.justifyContent ? props.justifyContent : "flex-start");
- 
+   const justifyContent = (props.justifyContent ? props.justifyContent : "flex-start");
+
+  const transAB = {
+    x: ['20%', '100%'],
+    transition: {
+      duration: 100,
+      ease: 'linear', 
+      repeat: Infinity,
+      repeatType: 'alternate',
+    }
+  };
+
+  const transBA = {
+    x: ['-20%', '-100%'],
+    transition: {
+      duration: 100,
+      ease: 'linear',
+      repeat: Infinity,
+      repeatType: 'alternate',
+    }
+  };
+
+  let selectedTransaction;
+  switch (justifyContent) {
+    case 'flex-end':
+      selectedTransaction = transAB;
+      break;
+    case 'flex-start':
+      selectedTransaction = transBA;
+      break;
+  }
+
+
+  // Gestire l'animazione
+  const animation = (isMobile) ? {} : selectedTransaction;
+  const costraint = (10 * 200 / 2);
 
   
   return (
     <>
-     <div className={`${galleryFacetStyles.GalleryContainer}`} ref={targetRef} >
-          <div className={`${galleryFacetStyles.GalleryName} unmovable`} onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }}>
+     <div className={`${galleryFacetStyles.GalleryContainer}`} >
+          <div className={`${galleryFacetStyles.GalleryName} unmovable`} 
+          onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }}>
              <Link href={`/${props.gallery.pageName}`}>
                 <h1> {props.gallery.title} </h1>
              </Link>
           </div>
-           <div className={`${galleryFacetStyles.GalleryWrapper}`}>
+           <div className={`${galleryFacetStyles.GalleryWrapper}`} ref={targetRef} >
               <motion.div 
-                dragConstraints={targetRef}
                 drag= {isMobile ? "x" : false}
+                dragConstraints={{
+                  left: -costraint,                   
+                  right: costraint
+                }}
                 dragControls={dragControls}
                 dragListener={false}
                 className={`${galleryFacetStyles.ImagesContainer}`} 
-                style={{justifyContent: "center"}}>
+                animate={animation}
+                style={{justifyContent: isMobile ? "center" : justifyContent}}>
               {
                  takeRandomPaintings(props.gallery, 10).map(
                     (paint) => {
