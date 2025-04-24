@@ -62,13 +62,12 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   return (
     <>
      <div className={`${galleryFacetStyles.GalleryContainer}`} >
-          <div className={`${galleryFacetStyles.GalleryName} unmovable`} 
-          onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }}>
+          <div className={`${galleryFacetStyles.GalleryName} unmovable`}>
              <Link href={`/${props.gallery.pageName}`}>
-                <h1> {props.gallery.title} </h1>
+                <h1 onPointerDown={event => dragControls.start(event)} style={{ touchAction: "none" }}> {props.gallery.title} </h1>
              </Link>
           </div>
-           <div className={`${galleryFacetStyles.GalleryWrapper}`} ref={targetRef} >
+           <div className={`${galleryFacetStyles.GalleryWrapper}`} >
               <motion.div 
                 drag= {isMobile ? "x" : false}
                 dragConstraints={{
