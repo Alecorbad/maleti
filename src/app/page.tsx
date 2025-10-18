@@ -11,6 +11,8 @@ import GalleryFacetComponent from './components/galleryFacet';
 import StylesHomePage from './homepage.module.css';
 import { Gallery } from '@/app/types/galleries';
 import { useGalleryContext } from "@/app/providers/gallery.provider"
+import VerticalScrollbar from "./components/verticalScrollBar"; 
+// import MusicPlayer from "./components/musicPlayer"; 
 
 
   function animateBanner(){
@@ -47,12 +49,15 @@ export default function Home() {
      }
   }, []);
 
+
+  // <MusicPlayer />
   return (
     <>
+      <VerticalScrollbar />
       <div className={`${StylesHomePage.homepageBanner}`}>
         {
             bannerGallery ? bannerGallery.paintings.slice(0, 5).map((paint, key) => {
-              return <Image className={StylesHomePage.bannerImage} height={500} width ={300} key={key} src={paint.url ?? ""} alt=""/>
+              return <Image className={StylesHomePage.bannerImage} height={500} width={300} key={key} src={paint.url ?? ""} alt=""/>
             }) : <></>
         }
         <div className={StylesHomePage.titleWrapper}>
@@ -69,10 +74,10 @@ export default function Home() {
           }
         </div>
       </div>
-      <div className={`${StylesHomePage.homepageHeader} headerContainer`}>
-          <Header />
-      </div>
-      <div className={`${StylesHomePage.homepageContainer} pageContainer container`}>
+
+      <Header />
+
+      <div className={`${StylesHomePage.homepageContainer} pageContainer`}>
       {
           galleries.map((gallery, key) => (
             <div className={`${StylesHomePage.galleryContainer}`} key={`galCont_${gallery.title}`}>

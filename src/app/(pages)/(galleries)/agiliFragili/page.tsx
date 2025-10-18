@@ -58,7 +58,6 @@ export default function AgiliFragili() {
           width="auto"
           margin="1rem 1rem 10rem 1rem"
           frameWidth="100%"
-          framePadding="1rem"
           frameColor="rgb(255, 255, 255)"
           painting={paint} 
           gridArea={`p${key}`}

@@ -36,8 +36,7 @@ const Painting = (props: PaintingProps) => {
   const stdFrameTickness: string = ".5rem";
   const stdFrameBackground: string = "rgb(150, 111, 51)";
   const [isImageLoaded, setImageLoaded] = useState(false);
-  const displayFrame: boolean | undefined = (props.displayFrame || false);
-  const framePadding: string | undefined = props.framePadding ?? "1rem";
+  props.displayFrame = true;
 
   const handleImageLoad = () => {
     setImageLoaded(true);
@@ -56,9 +55,7 @@ const Painting = (props: PaintingProps) => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        opacity: 0,
-        WebkitBoxShadow: (displayFrame) ? "0px 0px 3px 1px rgba(0,0,0,0.40)" : "none",
-        boxShadow: (displayFrame) ? "0px 0px 3px 1px rgba(0,0,0,0.40)" : "none"
+        opacity: 0
       };
 
   const imageStyle: React.CSSProperties = {
@@ -70,12 +67,11 @@ const Painting = (props: PaintingProps) => {
    const frameContainerStyle: React.CSSProperties = {
           height: (props.frameHeight ?? "100%"),
           width: (props.frameWidth ?? "fit-content"),
-          padding: (displayFrame == true && props.frameTickness) ? props.frameTickness : "0",
+          padding: (props.displayFrame == true && props.frameTickness) ? props.frameTickness : "0",
    }
 
    const imageContainerStyle: React.CSSProperties = {
-    padding: (displayFrame == true && framePadding) ? framePadding : "0",
-    background: (displayFrame == true ) ? "rgba(var(--oldPaper), 1)" : "none"
+     padding: (props.displayFrame == true && props.framePadding) ? props.framePadding : "0",
    }
  
 
@@ -83,56 +79,50 @@ const Painting = (props: PaintingProps) => {
     width: "100%", 
     height: props.frameTickness ?? stdFrameTickness,
     clipPath: clipFramePart(FrameParts.Up, props.frameTickness ?? stdFrameTickness),
-    display: displayFrame == true ?  "block" : "none",
+    display: props.displayFrame == null ? "none" : "block",
   }
   const frameRightWrapperStyle: React.CSSProperties = {
     width: props.frameTickness ?? stdFrameTickness, 
     height: "100%",
     clipPath: clipFramePart(FrameParts.Right, props.frameTickness ?? stdFrameTickness),
-    display: displayFrame == true ?  "block" : "none",
+    display: props.displayFrame == null ? "none" : "block",
   }
   const frameBottomWrapperStyle: React.CSSProperties = {
     width: "100%", 
     height: props.frameTickness ?? stdFrameTickness,
     clipPath: clipFramePart(FrameParts.Bottom, props.frameTickness ?? stdFrameTickness),
-    display: displayFrame == true ?  "block" : "none",
+    display: props.displayFrame == null ? "none" : "block",
   }
   const frameLeftWrapperStyle: React.CSSProperties = {
     width: props.frameTickness ?? stdFrameTickness, 
     height: "100%",
     clipPath: clipFramePart(FrameParts.Left, props.frameTickness ?? stdFrameTickness),
-    display: displayFrame == true ?  "block" : "none",
+    display: props.displayFrame == null ? "none" : "block",
   }
 
 
   const frameUpStyle: React.CSSProperties = {
     backgroundColor: calcColor(stdFrameBackground, FrameParts.Up, props.frameColor),
-    clipPath: clipFramePart(FrameParts.Up, props.frameTickness ?? stdFrameTickness),
-    display: displayFrame == true ?  "block" : "none",
+    clipPath: clipFramePart(FrameParts.Up, props.frameTickness ?? stdFrameTickness)
   }
   const frameRightStyle: React.CSSProperties = {
     backgroundColor: calcColor(stdFrameBackground, FrameParts.Right, props.frameColor),
-    clipPath: clipFramePart(FrameParts.Right, props.frameTickness ?? stdFrameTickness),
-    display: displayFrame == true ?  "block" : "none",
+    clipPath: clipFramePart(FrameParts.Right, props.frameTickness ?? stdFrameTickness)
   }
   const frameBottomStyle: React.CSSProperties = {
     backgroundColor: calcColor(stdFrameBackground, FrameParts.Bottom, props.frameColor),
-    clipPath: clipFramePart(FrameParts.Bottom, props.frameTickness ?? stdFrameTickness),
-    display: displayFrame == true ?  "block" : "none",
+    clipPath: clipFramePart(FrameParts.Bottom, props.frameTickness ?? stdFrameTickness)
   }
   const frameLeftStyle: React.CSSProperties = {
     backgroundColor: calcColor(stdFrameBackground, FrameParts.Left, props.frameColor),
-    clipPath: clipFramePart(FrameParts.Left, props.frameTickness ?? stdFrameTickness),
-    display: displayFrame == true ?  "block" : "none",
+    clipPath: clipFramePart(FrameParts.Left, props.frameTickness ?? stdFrameTickness)
   }
   
 
 
   return (
     <>
-      <ImageLoading isLoaded={isImageLoaded} 
-      className={`${styles.container}`} 
-      style={containerStyle}>
+      <ImageLoading isLoaded={isImageLoaded} className={`${styles.container}`} style={containerStyle}>
         <div className={styles.frameContainer} style ={frameContainerStyle}>
           <div className={styles.frameUpWrapper}     style={frameUpWrapperStyle}>
             <div className={styles.frameUp}     style={frameUpStyle}>

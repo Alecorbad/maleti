@@ -5,6 +5,7 @@
   height: 100%;
   position: relative;
   top: 0;
+  overflow: hidden;
   /* touch-action: "pan-y"; */
 }
   .GalleryWrapper{

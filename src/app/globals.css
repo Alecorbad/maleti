@@ -33,10 +33,10 @@
   --colorT2: var(--darkgrey);
 
   /* Dimensioni testo */
-  --body-text: clamp(16px, 17px, 18px);
+  --body-text: clamp(12px, 10px + .5vw, 18px);
   --h0-fs: clamp(calc(var(--body-text) * 3.5),  15vw, calc(var(--body-text) * 8)); 
   --h1-fs: clamp(calc(var(--body-text) * 2),    6vw,  calc(var(--body-text) * 4)); 
-  --h2-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.84)); 
+  --h2-fs: clamp(calc(var(--body-text) * 1.5),    8vw,  calc(var(--body-text) * 1.84)); 
   --h3-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.78)); 
   --h4-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.76)); 
 }
@@ -86,11 +86,7 @@ h2{
 
 
 .headerContainer{
-  position: sticky;  
-  top: 0;
-  z-index: 5;
-  width: 100%;
-  min-height: fit-content;
+
 }
 
 .pageContainer{

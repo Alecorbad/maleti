@@ -12,9 +12,8 @@ export default function Layout({
 
   return (
     <>
-          <div className={`headerContainer`}>
-            <Header />
-          </div>
+          <Header />
+
           <div className={`container pageContainer`}>
               {children}
           </div>

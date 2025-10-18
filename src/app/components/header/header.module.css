@@ -1,9 +1,86 @@
 
+.wrapper{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: sticky;
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
+  z-index: 5;
+  height: 15vh;
+  width: 100%;
+  top: -1px;                       /* ➜ the trick */
+  padding: 0em;
+}
+
+.base{
+  height: inherit;
+  padding-top: inherit;
+}
+
+
+.headerContainer{
+  position: absolute;  
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: inherit;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 1rem;
+}
+
+.hoverMenuContainer{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 4rem;
+}
+
+.hoverMenu{
+  font-size: 1.3rem;
+  padding: 0 2rem 1rem 2rem;
+  border-radius: 0 0 30px 30px;
+  background: rgba(255, 255, 255, .7);
+}
+
+
+.linkList{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.linkList >  a{
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  padding: .5rem 1.4rem;
+  margin:  0 .8rem;
+  letter-spacing: .2rem;
+  flex: 0 1 20vw;
+  font-size: 5vh;
+}
+
+
+
+/* HEADER MOBILE */
+
+
 .mobileBanner{
   display: flex;
   justify-content: space-between;
   align-items: center; 
   padding: .3rem 0 0 0;
+  height: inherit;
+  position: absolute;
+  top: 0;
 }
 
 .mobileBanner .left,
@@ -57,7 +134,11 @@
     margin: .5rem 0;
     padding: .3rem;
     border-radius: 0 7px 7px 0;
-    border: .5px solid black;
+    border: 1px 1px 1px 1px;
+    border-color: black;
+    border-style: solid;
+    font-size: 3vh;
+    letter-spacing: .2rem;
 }
 
 .menu{
@@ -69,26 +150,16 @@
   border-radius: .5rem;
 }
 
-.header{
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.linkList{
-  display: flex;
-}
-
-
-.linkList >  a{
-  border-radius: 6px;
-  padding: .5rem 1.4rem;
-  margin:  0 .8rem;
-  letter-spacing: .2rem;
-}
-
 .letter{
   /*minimo, massimo, preferito */
-  font-size: clamp(1rem, 3vw, 3rem);;
+  container-name: sidebar
 }
+
+
+@media (max-width: 767px) {
+  .wrapper{
+    height: 3rem;
+  }
+}
+
 
