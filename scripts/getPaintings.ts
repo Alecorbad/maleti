@@ -13,10 +13,17 @@ export function getPaintings(galleryFolderPath: string): Painting[]{
               filePath = path.relative(process.cwd(), filePath);
               const buffer = readFileSync(filePath)
               const dimensions = imageSize(buffer)
+
+              const fileNameWithoutExt = path.parse(file).name; // rimuove estensione
+
+              const title = fileNameWithoutExt
+              .replace(/_/g, ' ')  
+              .replace(/-/g, "'");
+
               filePath = filePath.replace('public', '');
               return new Painting({
                 id: uuid(), 
-                title: filePath, 
+                title: title, 
                 author: 'Simona Maleti', 
                 url: `/maleti${filePath}`,
                 dimensions: {width: dimensions.width, height: dimensions.height}

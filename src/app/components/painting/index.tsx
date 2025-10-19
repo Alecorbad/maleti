@@ -23,6 +23,7 @@ interface PaintingProps{
   position?: ('absolute' | 'relative' | 'fixed');
   gridArea?: string;
   displayFrame?: boolean; 
+  displayTitle?: boolean; 
 
   frame?: boolean;
   frameTickness?: string;
@@ -37,6 +38,7 @@ const Painting = (props: PaintingProps) => {
   const stdFrameBackground: string = "rgb(150, 111, 51)";
   const [isImageLoaded, setImageLoaded] = useState(false);
   const displayFrame: boolean | undefined = (props.displayFrame || false);
+  const displayTitle: boolean | undefined = (props.displayTitle || true);
   const framePadding: string | undefined = props.framePadding ?? "1rem";
 
   const handleImageLoad = () => {
@@ -68,7 +70,7 @@ const Painting = (props: PaintingProps) => {
       };
 
    const frameContainerStyle: React.CSSProperties = {
-          height: (props.frameHeight ?? "100%"),
+          height: (props.frameHeight ?? (displayTitle ? "90%" : "100%")),
           width: (props.frameWidth ?? "fit-content"),
           padding: (displayFrame == true && props.frameTickness) ? props.frameTickness : "0",
    }
@@ -131,8 +133,8 @@ const Painting = (props: PaintingProps) => {
   return (
     <>
       <ImageLoading isLoaded={isImageLoaded} 
-      className={`${styles.container}`} 
-      style={containerStyle}>
+        className={`${styles.container}`} 
+        style={containerStyle}>
         <div className={styles.frameContainer} style ={frameContainerStyle}>
           <div className={styles.frameUpWrapper}     style={frameUpWrapperStyle}>
             <div className={styles.frameUp}     style={frameUpStyle}>
@@ -169,6 +171,11 @@ const Painting = (props: PaintingProps) => {
             }
           </div>
         </div>
+         {displayTitle && (
+            <div className={styles.titleContainer}>
+              {props.painting?.title}
+            </div>
+          )}
       </ImageLoading>
     </>
   )

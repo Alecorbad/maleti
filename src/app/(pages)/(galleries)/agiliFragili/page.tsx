@@ -24,19 +24,18 @@ export default function AgiliFragili() {
       <Wall mode="flex"  width="100%">
       {
         generatePaintings((paint: Painting, key: number) => {
-          return <div key={paint.id} 
-          className={`${GalleriesStyle.paintingFocus}`}>
-        <PaintingComponent 
-          objectFit="contain"
-          height="auto"
-          width="100%"
-          margin="0 1rem 6rem 0"
-          frameWidth="100%"
-          framePadding="1rem"
-          frameColor="rgb(255, 255, 255)"
-          painting={paint} 
-          gridArea={`p${key}`}
-          />
+          return <div key={paint.id} className={`${GalleriesStyle.paintingFocus}`}>
+            <PaintingComponent 
+              objectFit="contain"
+              height="auto"
+              width="100%"
+              margin="0 0 6rem 0"
+              frameWidth="100%"
+              framePadding="1rem"
+              frameColor="rgb(255, 255, 255)"
+              painting={paint} 
+              gridArea={`p${key}`}
+              />
           </div>
         },
 
