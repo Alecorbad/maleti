@@ -84,7 +84,8 @@ export default function Home() {
                 <GalleryFacetComponent 
                 justifyContent={key % 2 == 0 ? "flex-start" : "flex-end"}
                 gallery={gallery} 
-                key={`gal_${gallery.title}`} />
+                key={`gal_${gallery.title}`} 
+                />
             </div>
           ))
       }

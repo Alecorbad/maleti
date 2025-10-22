@@ -67,10 +67,11 @@
 
 @media (max-width: 767px) {
   .homepageBanner{
-    flex: 0 1 20vh;
+    flex: 0 1 30vh;
   }
   .galleryContainer{
-    height: 40vh;
+    height: 70vh;
+    margin: 2rem 0;
   }
   .homepageHeader{
     flex: 0 0 auto;

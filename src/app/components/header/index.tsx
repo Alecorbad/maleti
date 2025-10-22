@@ -29,7 +29,23 @@ const Header = () => {
   
     const ref = useRef<HTMLDivElement>(null);
     const [isSticky, setIsSticky] = useState(false);
-  const [isMenuHovered, setMenuHovered] = useState(false);
+    const [isMenuHovered, setMenuHovered] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if(window.scrollY === 0){
+          setMenuHovered(true);
+        }
+        else{
+          setMenuHovered(false);
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); 
+
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     useEffect(() => {
       const observer = new IntersectionObserver(
@@ -54,7 +70,7 @@ const Header = () => {
       };
     }, []);
 
-  if(isMobile){
+    if(isMobile){
         return <div className={styles.wrapper}>
             <div className={styles.base}></div>
             <div className={styles.mobileBanner}>
@@ -110,8 +126,8 @@ const Header = () => {
             </div>
           </div>
         </div>
-  }
-  else{
+    }
+    else{
 
      const states = {
        none: {
@@ -129,9 +145,9 @@ const Header = () => {
            ease: "easeInOut"
          }
        }
-    };
+      };
 
-    return <motion.div 
+      return <motion.div 
       id="headerDesktopWrap"
       ref={ref}
       variants={states}
@@ -172,11 +188,6 @@ const Header = () => {
     </motion.div>
   }
 };
-
-
-
-
-
 
 
 type AnimatedTextProps = {

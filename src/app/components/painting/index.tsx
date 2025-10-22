@@ -166,7 +166,7 @@ const Painting = (props: PaintingProps) => {
                 width= { props.painting.dimensions ? (props.painting.dimensions.width ?? 500) : 500}
                 alt="Dipinto non disponibile"
                 style={imageStyle}
-              />
+              /> 
               : <></>
             }
           </div>
