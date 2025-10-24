@@ -22,9 +22,11 @@ export function getPaintings(galleryFolderPath: string, jsonParsedGallery?: Gall
               .replace(/-/g, "'");
 
               let title: string | undefined;
+              let description: string | undefined;
               if(jsonParsedGallery){
                 const jsonParsedPainting = getJsonPaintingData(filePath, jsonParsedGallery);
                 title = (jsonParsedPainting && (jsonParsedPainting?.title != titleFromPath)) ? (jsonParsedPainting?.title ?? undefined) : titleFromPath
+                description = (jsonParsedPainting && jsonParsedPainting?.description) ? jsonParsedPainting?.description : undefined;
               }
               else{
                 title =  titleFromPath;
@@ -33,6 +35,7 @@ export function getPaintings(galleryFolderPath: string, jsonParsedGallery?: Gall
               return new Painting({
                 id: uuid(), 
                 title: title, 
+                description: description,
                 author: 'Simona Maleti', 
                 url: filePath,
                 dimensions: {width: dimensions.width, height: dimensions.height}

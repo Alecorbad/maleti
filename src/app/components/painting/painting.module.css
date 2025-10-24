@@ -69,12 +69,25 @@
   box-shadow: 0px 0px 4px 0px #000000;
 }
 
-.titleContainer{
+.textContainer{
   width: 100%;
-  flex: 1 0 2rem;
+  /*flex: 0 0 1.5rem;*/
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: .8rem;
+}
+
+.titleContainer{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: LindenHillMaster;
+}
+
+.descriptionContainer{
+  font-size: .8rem;
+  font-style: italic;
 }
 
 

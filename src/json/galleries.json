@@ -8,8 +8,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "61ae0dbc-a77c-419c-a8ac-ec7eac2d5338",
+				"id": "e0e36273-b8ac-4b1e-a28b-2798d508783f",
 				"title": "Ah, l'amour!",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/ah_lamour.webp",
 				"dimensions": {
@@ -18,8 +19,9 @@
 				}
 			},
 			{
-				"id": "40f96f79-9ed1-4b9f-9de9-8f139a2105cf",
+				"id": "de95ff48-2659-4cc6-a273-36bfd77e77bf",
 				"title": "allegoria della morte",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/allegoria_della_morte.webp",
 				"dimensions": {
@@ -28,8 +30,9 @@
 				}
 			},
 			{
-				"id": "bbf30974-9414-4181-94be-3d946631cfb6",
+				"id": "98a3211d-0162-4e4e-809f-2b0c7606f5ca",
 				"title": "arenata tra i papaveri",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/arenata_tra_i_papaveri.webp",
 				"dimensions": {
@@ -38,8 +41,9 @@
 				}
 			},
 			{
-				"id": "583b5185-432b-45fe-9a2f-6c4c22aa7c0a",
+				"id": "575d0fda-a21b-4517-90db-c728b6f00315",
 				"title": "attesa ai margini del chissa dove",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/attesa_ai_margini_del_chissa_dove.webp",
 				"dimensions": {
@@ -48,8 +52,9 @@
 				}
 			},
 			{
-				"id": "df301a6d-f687-4ec4-b804-6ab4f3cb2acf",
+				"id": "e2001829-6e71-4c12-a994-a2051debe9b7",
 				"title": "chi e senza pietra scagli in aria un peccato",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/chi_e_senza_pietra_scagli_in_aria_un_peccato.webp",
 				"dimensions": {
@@ -58,8 +63,9 @@
 				}
 			},
 			{
-				"id": "ac486d9a-0a79-4151-b9f2-def1322bdbc3",
+				"id": "46ecf55b-ffe1-473c-8315-9529176efcd8",
 				"title": "come in una danza infinita leterno ritorna",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/come_in_una_danza_infinita_leterno_ritorna.webp",
 				"dimensions": {
@@ -68,8 +74,9 @@
 				}
 			},
 			{
-				"id": "e60c8972-b5c2-4249-b4de-70231b642f56",
+				"id": "64f7cc53-2334-40ca-888e-d40ec7607904",
 				"title": "coppia di effimeri",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/coppia_di_effimeri.webp",
 				"dimensions": {
@@ -78,8 +85,9 @@
 				}
 			},
 			{
-				"id": "1c82c66d-4181-4714-b4f0-2b98b023662b",
+				"id": "7687fbbf-15b9-4439-878b-379ecf77e601",
 				"title": "dna limpronta genetica",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/dna_limpronta_genetica.webp",
 				"dimensions": {
@@ -88,8 +96,9 @@
 				}
 			},
 			{
-				"id": "b20b5072-a802-4bb2-bdf0-20341be55a05",
+				"id": "c3e17b14-dae5-4e7a-ae35-3e298c5cf5fc",
 				"title": "e diverso e un pericolo",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/e_diverso_e_un_pericolo.webp",
 				"dimensions": {
@@ -98,8 +107,9 @@
 				}
 			},
 			{
-				"id": "b04aadba-5b46-45e8-9d7b-68835a9e7cb5",
+				"id": "6430ca0f-93bc-49f7-949c-f2019ed95149",
 				"title": "gita sul lago dellinconscio",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/gita_sul_lago_dellinconscio.webp",
 				"dimensions": {
@@ -108,8 +118,9 @@
 				}
 			},
 			{
-				"id": "73d3574c-68f0-402b-89b7-7f04750ec348",
+				"id": "c49a4015-3579-456a-9c27-cd0f21a92baf",
 				"title": "gli effimeri si nutrono dellattimo",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/gli_effimeri_si_nutrono_dellattimo.webp",
 				"dimensions": {
@@ -118,8 +129,9 @@
 				}
 			},
 			{
-				"id": "e5e188c4-9df1-4ffc-a5e9-863c964ba289",
+				"id": "6758b27e-e567-4605-b840-9f4f17da8707",
 				"title": "il cuore dimentica cio che lo spirito innalza",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/il_cuore_dimentica_cio_che_lo_spirito_innalza.webp",
 				"dimensions": {
@@ -128,8 +140,9 @@
 				}
 			},
 			{
-				"id": "1b5f308d-8d0d-4eae-9e50-94ed0ad56618",
+				"id": "960316a9-d258-4219-bd4d-6b607b93a1b8",
 				"title": "il passaggio",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/il_passaggio.webp",
 				"dimensions": {
@@ -138,8 +151,9 @@
 				}
 			},
 			{
-				"id": "ab31b46f-a5f1-497a-acbb-c812a3acb3f0",
+				"id": "2f196ea3-8a19-457c-855f-d358e15d6b9d",
 				"title": "il sentiero delleternita e circolare",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/il_sentiero_delleternita_e_circolare.webp",
 				"dimensions": {
@@ -148,8 +162,9 @@
 				}
 			},
 			{
-				"id": "44b7ed26-4a7a-4d2a-875a-35bdfccea0d4",
+				"id": "fb50501b-b176-49b9-bd0a-75d9bbcf7d6d",
 				"title": "inesorabile",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/inesorabile.webp",
 				"dimensions": {
@@ -158,8 +173,9 @@
 				}
 			},
 			{
-				"id": "499b07c0-9c22-4d9a-9d9a-cdca25fd0a18",
+				"id": "ad289e47-e02c-49e9-9108-f58414c1ea41",
 				"title": "io amo",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/io_amo.webp",
 				"dimensions": {
@@ -168,8 +184,9 @@
 				}
 			},
 			{
-				"id": "f224991e-a098-480b-bb3b-2a31b49164ff",
+				"id": "cf27294c-9e15-4e2a-94c4-2d6b90e4750a",
 				"title": "io cerco dio",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/io_cerco_dio.webp",
 				"dimensions": {
@@ -178,8 +195,9 @@
 				}
 			},
 			{
-				"id": "2fe50f0c-98cc-454e-acc7-c2afca2247ff",
+				"id": "cfad3b59-1aff-4f12-a24f-528c5790ff27",
 				"title": "la fioritura dellessere",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/la_fioritura_dellessere.webp",
 				"dimensions": {
@@ -188,8 +206,9 @@
 				}
 			},
 			{
-				"id": "5de26524-0fe6-4b66-9a5e-5f38a8fcedfc",
+				"id": "6086677c-87be-4679-a2ae-b2ba2eff3b69",
 				"title": "la fretta di esistere",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/la_fretta_di_esistere.webp",
 				"dimensions": {
@@ -198,8 +217,9 @@
 				}
 			},
 			{
-				"id": "4476f591-b409-4690-b149-41b489bba457",
+				"id": "13cea1d7-b21a-402b-bc5e-77045717a532",
 				"title": "la visione nella dualita",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/la_visione_nella_dualita.webp",
 				"dimensions": {
@@ -208,8 +228,9 @@
 				}
 			},
 			{
-				"id": "b1fc889a-056e-409f-acd3-e6c3b7011397",
+				"id": "6f7c434b-0333-4721-925f-30908a289ffc",
 				"title": "lattimo immobile prima dellalba",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/lattimo_immobile_prima_dellalba.webp",
 				"dimensions": {
@@ -218,8 +239,9 @@
 				}
 			},
 			{
-				"id": "e4f62c5c-4d44-4192-9232-a7f6fc7ae5e4",
+				"id": "3a592835-8158-466c-82a0-a1060d285fbc",
 				"title": "lo specchio celeste",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/lo_specchio_celeste.webp",
 				"dimensions": {
@@ -228,8 +250,9 @@
 				}
 			},
 			{
-				"id": "535e9474-7f55-4fd6-a553-dc13a5365770",
+				"id": "4aa4da02-5d20-4006-9b35-54757295563d",
 				"title": "lÉgami'legÀmi",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/lÉgami-legÀmi.webp",
 				"dimensions": {
@@ -238,8 +261,9 @@
 				}
 			},
 			{
-				"id": "033f644b-7994-4a37-9b5c-829476bb0f11",
+				"id": "1a215b2e-b9a0-42b5-828e-389f94aa0d23",
 				"title": "meditazione di un papavero",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/meditazione_di_un_papavero.webp",
 				"dimensions": {
@@ -248,8 +272,9 @@
 				}
 			},
 			{
-				"id": "7d4be4ca-0905-489e-87ae-ab0123b5bd2e",
+				"id": "8dfcbba8-772e-499d-8576-2e092e18c702",
 				"title": "mi stai ascoltando",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/mi_stai_ascoltando.webp",
 				"dimensions": {
@@ -258,8 +283,9 @@
 				}
 			},
 			{
-				"id": "8ff240aa-6a0f-48ea-ba57-e99798b66dc9",
+				"id": "1d1ef7ec-848c-4514-95ab-4c9f1156b0ed",
 				"title": "mon ami",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/mon_ami.webp",
 				"dimensions": {
@@ -268,8 +294,9 @@
 				}
 			},
 			{
-				"id": "1cea252f-ddf6-4a13-963e-97d56fcbbb5c",
+				"id": "9646f589-334b-4ed6-853e-e83f643864fc",
 				"title": "oh mother i can feel the soil falling over my head",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/oh_mother_i_can_feel_the_soil_falling_over_my_head.webp",
 				"dimensions": {
@@ -278,8 +305,9 @@
 				}
 			},
 			{
-				"id": "d29e7ad0-4f5e-4a8b-b8c9-b92830bd7237",
+				"id": "845b781e-fb1a-4e1d-b948-4fd3d7613704",
 				"title": "passaggio a est",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/passaggio_a_est.webp",
 				"dimensions": {
@@ -288,8 +316,9 @@
 				}
 			},
 			{
-				"id": "b1c6ea7d-5002-4da2-b666-117ded98afcf",
+				"id": "0f00fd42-4345-4a5d-866a-445f75e2409e",
 				"title": "qualunque mezzo pur di volare",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/qualunque_mezzo_pur_di_volare.webp",
 				"dimensions": {
@@ -298,8 +327,9 @@
 				}
 			},
 			{
-				"id": "938515ef-6f6c-403f-ae1e-84a8c7359dde",
+				"id": "e43f757b-1aec-4e26-a986-0afca30fc573",
 				"title": "ricordo ancora la sofferenza che provai quando mi tarparono le ali",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/ricordo_ancora_la_sofferenza_che_provai_quando_mi_tarparono_le_ali.webp",
 				"dimensions": {
@@ -308,8 +338,9 @@
 				}
 			},
 			{
-				"id": "e6f20e62-a4c2-41f7-b211-b8d6187610ff",
+				"id": "3c9f4da3-caa7-44cd-87e9-18284b462f63",
 				"title": "risonanza",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/risonanza.webp",
 				"dimensions": {
@@ -318,8 +349,9 @@
 				}
 			},
 			{
-				"id": "62ae8be4-318b-45fb-bae6-48b9ce4baf6f",
+				"id": "8eb1c460-8b94-4637-88fc-339681e59d63",
 				"title": "ti voglio",
+				"description": "descrizione del dipinto",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/ti_voglio.webp",
 				"dimensions": {
@@ -338,8 +370,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "63ff34f8-bf65-4658-917a-83ecb6872778",
+				"id": "241b5dc7-fc98-479b-a6a0-6622f9efe792",
 				"title": "ad maiora",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/ad_maiora.webp",
 				"dimensions": {
@@ -348,8 +381,9 @@
 				}
 			},
 			{
-				"id": "b18fffbe-fa25-4406-8428-b125492d360d",
+				"id": "05f3eadc-958f-4827-b407-c7eaf1c6a77e",
 				"title": "arcano ix",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/arcano_ix.webp",
 				"dimensions": {
@@ -358,8 +392,9 @@
 				}
 			},
 			{
-				"id": "aa15c401-a647-4785-bfd9-5cbcaa2afd0d",
+				"id": "e4b63601-af87-45e0-a6c2-6941f57587db",
 				"title": "chi e  quel essere che mi osserva dallo specchio ",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/chi_e__quel_essere_che_mi_osserva_dallo_specchio_.webp",
 				"dimensions": {
@@ -368,8 +403,9 @@
 				}
 			},
 			{
-				"id": "b65eba24-0ad3-43e5-aa36-b23632416125",
+				"id": "0585720f-6080-4ae0-a5c3-b451eae3c0f3",
 				"title": "dialogo con la luna",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/dialogo_con_la_luna.webp",
 				"dimensions": {
@@ -378,8 +414,9 @@
 				}
 			},
 			{
-				"id": "ac5f1cf7-9a90-4aab-9a65-8e0de2228106",
+				"id": "8f2833dd-c936-42be-bea7-6ba07828aa1c",
 				"title": "il riflesso nell acqua",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/il_riflesso_nell_acqua.webp",
 				"dimensions": {
@@ -388,8 +425,9 @@
 				}
 			},
 			{
-				"id": "3c9d22cb-02d7-4f33-862a-119d7f144507",
+				"id": "a45ae506-f6cf-44a2-a4e1-884e81b10859",
 				"title": "il viaggio",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/il_viaggio.webp",
 				"dimensions": {
@@ -398,8 +436,9 @@
 				}
 			},
 			{
-				"id": "7d6c9158-5ce8-47af-a837-d569a27dd590",
+				"id": "f22e655b-e76b-4813-a436-1b8fd873ae34",
 				"title": "non riuscirai mai a prendermi",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/non_riuscirai_mai_a_prendermi.webp",
 				"dimensions": {
@@ -408,8 +447,9 @@
 				}
 			},
 			{
-				"id": "6b52bf18-3a75-4baa-960a-cb90755d0769",
+				"id": "f6cd1242-0cb6-4322-8500-d39ec383c3bd",
 				"title": "rinuncio ai miei colori per poter volare ancora",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/rinuncio_ai_miei_colori_per_poter_volare_ancora.webp",
 				"dimensions": {
@@ -418,8 +458,9 @@
 				}
 			},
 			{
-				"id": "7de9128c-1f64-4a38-8b7c-cf66882340a1",
+				"id": "27da5f87-b8f1-4e5f-84cd-1c00739e6e67",
 				"title": "seduta sulle ceneri di colei che un tempo credevo d essere",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/seduta_sulle_ceneri_di_colei_che_un_tempo_credevo_d_essere.webp",
 				"dimensions": {
@@ -438,8 +479,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "fb9ff195-e00f-48e0-877e-a9d5c4a98a1d",
+				"id": "648dfe6a-b66e-4fe0-99d5-f4e47cb925e1",
 				"title": "daliarancio",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/daliarancio.webp",
 				"dimensions": {
@@ -448,8 +490,9 @@
 				}
 			},
 			{
-				"id": "5d548d58-010f-4272-a645-7c98efea1f1b",
+				"id": "82c0d6f1-673b-476c-83bc-70f7919403b8",
 				"title": "fior di venere",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/fior_di_venere.webp",
 				"dimensions": {
@@ -458,8 +501,9 @@
 				}
 			},
 			{
-				"id": "29619ada-9989-40c7-b1e5-6e0064ce9372",
+				"id": "4a818bf5-206c-4562-8be5-c9b753cb5881",
 				"title": "gigante rossa",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/gigante_rossa.webp",
 				"dimensions": {
@@ -468,8 +512,9 @@
 				}
 			},
 			{
-				"id": "6f566967-3870-42d0-8b81-f0e52c1d8021",
+				"id": "4e81077c-2d27-4059-a6ab-27ad5dd54165",
 				"title": "il fiore rosso",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/il_fiore_rosso.webp",
 				"dimensions": {
@@ -478,8 +523,9 @@
 				}
 			},
 			{
-				"id": "0d8f3fe3-f20d-454d-90df-be3a393c18a6",
+				"id": "29815417-4e4b-4582-b907-33c88556e6a6",
 				"title": "inglese antica",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/inglese_antica.webp",
 				"dimensions": {
@@ -488,8 +534,9 @@
 				}
 			},
 			{
-				"id": "9d12443f-f47c-4d58-9788-7143e57a863e",
+				"id": "be7059d9-dfb4-4b86-9a1b-be9e841a5fe0",
 				"title": "l ipomea farfalla",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/l_ipomea_farfalla.webp",
 				"dimensions": {
@@ -498,8 +545,9 @@
 				}
 			},
 			{
-				"id": "177eb46d-dc04-4af2-82cb-a4c6d737d194",
+				"id": "23b987ee-7975-4033-a9ae-37e94f4aeba9",
 				"title": "lo sguardo limpido",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/lo_sguardo_limpido.webp",
 				"dimensions": {
@@ -508,8 +556,9 @@
 				}
 			},
 			{
-				"id": "56bbe251-8d76-46c8-8bba-636172134424",
+				"id": "4a90e4e2-789d-4daf-99b7-88daa8820a1c",
 				"title": "lo sguardo verso casa",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/lo_sguardo_verso_casa.webp",
 				"dimensions": {
@@ -518,8 +567,9 @@
 				}
 			},
 			{
-				"id": "35ccd885-a65c-49c2-8cbe-1298f3f93ec4",
+				"id": "49f677a6-c4fa-41d7-8024-8cb8a6d33eb8",
 				"title": "maternita ",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/maternita_.webp",
 				"dimensions": {
@@ -528,8 +578,9 @@
 				}
 			},
 			{
-				"id": "97e913ce-d2a7-4369-9825-0ff09b425194",
+				"id": "435c53a4-5de7-4cb3-818e-51e2b4a493eb",
 				"title": "ovunque e  il centro da cui si scorge tutto",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/ovunque_e__il_centro_da_cui_si_scorge_tutto.webp",
 				"dimensions": {
@@ -538,8 +589,9 @@
 				}
 			},
 			{
-				"id": "a027168d-de74-42c7-93e6-ea63c4f46dc8",
+				"id": "497f15fc-e9b6-4e28-ba3b-9c77174a15c7",
 				"title": "primula vanessa",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/primula_vanessa.webp",
 				"dimensions": {
@@ -548,8 +600,9 @@
 				}
 			},
 			{
-				"id": "f298ba68-6a86-4732-b2e6-355a5460cb5e",
+				"id": "149258fa-eeb3-4f9c-8c2a-6cb15b049a53",
 				"title": "rosa d inverno",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/rosa_d_inverno.webp",
 				"dimensions": {
@@ -558,8 +611,9 @@
 				}
 			},
 			{
-				"id": "d2bf0f8c-70a0-4576-9f23-579ffa9941ac",
+				"id": "75e66e22-511f-41fa-aaba-8d9d7526f00c",
 				"title": "spanish flower ole ",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/spanish_flower_ole_.webp",
 				"dimensions": {
@@ -568,8 +622,9 @@
 				}
 			},
 			{
-				"id": "badefec2-130c-45be-ab08-566e069cb7d7",
+				"id": "0916f4e7-7c87-42aa-870a-e2114c7a04c7",
 				"title": "sssttt... tagete",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/sssttt..._tagete.webp",
 				"dimensions": {
@@ -588,8 +643,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "c4b8067a-7440-4489-b5e2-a05e70b06019",
+				"id": "f02d6191-80ab-49f1-b362-2f44761b7290",
 				"title": "anima rossa",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/anima_rossa.webp",
 				"dimensions": {
@@ -598,8 +654,9 @@
 				}
 			},
 			{
-				"id": "e8bfe22e-7dd3-4074-b5b3-b4f4f350b138",
+				"id": "b59fd20e-c43c-44f0-b9a5-4fa5a3ab84e8",
 				"title": "catarsi",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/catarsi.webp",
 				"dimensions": {
@@ -608,8 +665,9 @@
 				}
 			},
 			{
-				"id": "9df1a29f-b0dd-4d46-af7f-7562368cef17",
+				"id": "ec586125-988a-4f1b-8a16-3d90985a6053",
 				"title": "doppio eterico",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/doppio_eterico.webp",
 				"dimensions": {
@@ -618,8 +676,9 @@
 				}
 			},
 			{
-				"id": "8a8d3d64-663e-46cb-aafe-cbc2517a64cb",
+				"id": "fcf4e00e-95b0-4181-9a05-96888ca1d765",
 				"title": "due fiori in un vaso senz acqua",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/due_fiori_in_un_vaso_senz_acqua.webp",
 				"dimensions": {
@@ -628,8 +687,9 @@
 				}
 			},
 			{
-				"id": "aa984861-508e-42ea-97d5-a544076cc537",
+				"id": "8dc77bf7-0cb6-4e93-91c2-e6292a58d4e0",
 				"title": "ikebana alla luna",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/ikebana_alla_luna.webp",
 				"dimensions": {
@@ -638,8 +698,9 @@
 				}
 			},
 			{
-				"id": "ae5f4669-042d-4cbc-a676-60adeabe86ac",
+				"id": "662ccf79-6dbf-41e6-8c8a-60a5f3046619",
 				"title": "ikebana di rovo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/ikebana_di_rovo.webp",
 				"dimensions": {
@@ -648,8 +709,9 @@
 				}
 			},
 			{
-				"id": "2975bcbb-8bde-4c82-b1ae-ea7552def87d",
+				"id": "315273e2-415e-4071-a2c2-ee818c422248",
 				"title": "il corpol ombra il riflesso ",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/il_corpol_ombra_il_riflesso_.webp",
 				"dimensions": {
@@ -658,8 +720,9 @@
 				}
 			},
 			{
-				"id": "1505303f-0737-423a-9f65-c4b02f72e9bc",
+				"id": "1cdfb4d3-03c2-4c22-b3a6-4f839d5ead9e",
 				"title": "il flauto di bamb sulle labbra dell iinfinito",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/il_flauto_di_bamb_sulle_labbra_dell_iinfinito.webp",
 				"dimensions": {
@@ -668,8 +731,9 @@
 				}
 			},
 			{
-				"id": "595de43d-96bf-4113-9103-3e52a760a868",
+				"id": "da9ffca1-6c73-44fc-ad87-9c967ee73c75",
 				"title": "lettera d addio",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/lettera_d_addio.webp",
 				"dimensions": {
@@ -678,8 +742,9 @@
 				}
 			},
 			{
-				"id": "9075a029-17bd-4c71-8266-afddf54e2214",
+				"id": "715d7077-b3c7-4b3f-8e84-cb13ec06fe66",
 				"title": "nido",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/nido.webp",
 				"dimensions": {
@@ -688,8 +753,9 @@
 				}
 			},
 			{
-				"id": "e8d447e9-ae92-43a6-b312-ccfef1af3620",
+				"id": "6cb66d82-8527-4b9f-beb2-e87accfeef86",
 				"title": "nido di rosa",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/nido_di_rosa.webp",
 				"dimensions": {
@@ -698,8 +764,9 @@
 				}
 			},
 			{
-				"id": "1504fe19-a242-4483-81b3-09cb78044fbe",
+				"id": "f41873e5-63b7-4431-b753-e0e0a0966d60",
 				"title": "nido rifugio dell essere",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/nido_rifugio_dell_essere.webp",
 				"dimensions": {
@@ -708,8 +775,9 @@
 				}
 			},
 			{
-				"id": "dbb17ab8-dde1-4aaa-b79e-bfdc6baab925",
+				"id": "532a7a13-3605-44a4-a600-9a3ba10df5d1",
 				"title": "perch volger le spalle...uniti alla radice",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/perch_volger_le_spalle...uniti_alla_radice.webp",
 				"dimensions": {
@@ -718,8 +786,9 @@
 				}
 			},
 			{
-				"id": "c23fc6d1-76f1-476b-892f-7dfa21ce1db4",
+				"id": "c0c8499e-3c58-48ef-ae3a-18390fc0caa2",
 				"title": "piccola natura viva",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/piccola_natura_viva.webp",
 				"dimensions": {
@@ -728,8 +797,9 @@
 				}
 			},
 			{
-				"id": "1070b3ee-a811-4107-9221-d35dbd6836e3",
+				"id": "241ed83d-a59c-4cd2-afba-6dfe39972cbe",
 				"title": "piccolo ikebana d inverno",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/piccolo_ikebana_d_inverno.webp",
 				"dimensions": {
@@ -738,8 +808,9 @@
 				}
 			},
 			{
-				"id": "d0c69ebf-02e6-43fa-a95a-182601608f48",
+				"id": "75ddac1a-afbf-4287-a27e-ccede9fe8188",
 				"title": "trappola per fiori fragili",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/trappola_per_fiori_fragili.webp",
 				"dimensions": {
@@ -748,8 +819,9 @@
 				}
 			},
 			{
-				"id": "f32b9f79-277a-4380-8285-af58baf278fb",
+				"id": "05894083-e94a-4489-94f6-0525db7c3e83",
 				"title": "tre iris in trappola",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/tre_iris_in_trappola.webp",
 				"dimensions": {
@@ -758,8 +830,9 @@
 				}
 			},
 			{
-				"id": "0f55391a-5271-4939-934f-19d49db424cc",
+				"id": "f89ae1d2-5dd5-443e-af30-81b3c30d6b85",
 				"title": "vaso di fiori blu",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/vaso_di_fiori_blu.webp",
 				"dimensions": {
@@ -778,8 +851,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "ed33b5e0-88d1-4f21-83d4-3c383dd050b0",
+				"id": "243a6316-af8b-46bb-aa4b-cbef7fe5e4e0",
 				"title": " aria,terra e infinito",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/_aria,terra_e_infinito.webp",
 				"dimensions": {
@@ -788,8 +862,9 @@
 				}
 			},
 			{
-				"id": "37f41d38-126e-4a1f-ab0e-451c0045b164",
+				"id": "a4110d65-f964-4d2d-b6d9-41e939359c0d",
 				"title": "alchimia di terra e aria",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/alchimia_di_terra_e_aria.webp",
 				"dimensions": {
@@ -798,8 +873,9 @@
 				}
 			},
 			{
-				"id": "20410ba0-59e9-4a1d-a0df-30ee2a25c0e0",
+				"id": "2b8fd0a1-3340-4cd7-b494-5a793279a47b",
 				"title": "ali foglie  anima",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/ali_foglie__anima.webp",
 				"dimensions": {
@@ -808,8 +884,9 @@
 				}
 			},
 			{
-				"id": "990c4515-1b3c-4d8b-8768-63f8f72f6a52",
+				"id": "2d591068-9c52-4f0f-bd0a-5f4527ef40b3",
 				"title": "anima  aria",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/anima__aria.webp",
 				"dimensions": {
@@ -818,8 +895,9 @@
 				}
 			},
 			{
-				"id": "bca642c2-32b2-482a-a1d2-f39dd8c852b2",
+				"id": "e7622173-4858-4697-87cf-2a5c81fac3f5",
 				"title": "anima fragile 5",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/anima_fragile_5.webp",
 				"dimensions": {
@@ -828,8 +906,9 @@
 				}
 			},
 			{
-				"id": "e3a15b2d-3c37-4407-b7ea-ace7dbe8ef04",
+				"id": "59ecd8e7-b0b7-46d7-954a-b7a0db1f5089",
 				"title": "anima fragile 6",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/anima_fragile_6.webp",
 				"dimensions": {
@@ -838,8 +917,9 @@
 				}
 			},
 			{
-				"id": "7bba9784-9345-46d9-af21-2643d4468151",
+				"id": "9acf489d-06f0-4f58-8d8b-e375624cc139",
 				"title": "cio  che ti lasci dietro",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/cio__che_ti_lasci_dietro.webp",
 				"dimensions": {
@@ -848,8 +928,9 @@
 				}
 			},
 			{
-				"id": "a1f704f4-3ded-455e-8d2e-5f131b28802f",
+				"id": "50c135a2-fc22-491c-83b3-1ed3b848402f",
 				"title": "dalla mortelavita",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/dalla_mortelavita.webp",
 				"dimensions": {
@@ -858,8 +939,9 @@
 				}
 			},
 			{
-				"id": "8378b817-37e0-49e3-bed1-6d926a418305",
+				"id": "797e0c11-013f-4870-ab26-8d4c74a766b1",
 				"title": "fragile1",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/fragile1.webp",
 				"dimensions": {
@@ -868,8 +950,9 @@
 				}
 			},
 			{
-				"id": "e75a7f62-c454-4de8-bf46-a62869a3de7b",
+				"id": "0d2713a5-9f68-4aec-8b42-a91b401457c0",
 				"title": "fragile2",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/fragile2.webp",
 				"dimensions": {
@@ -878,8 +961,9 @@
 				}
 			},
 			{
-				"id": "55061cb9-a0ef-4b64-8b4d-4f2f0c195a97",
+				"id": "62b9b125-15a5-4c48-b922-51a84ce3f41f",
 				"title": "hai i colori del mondo puoi andare ovunque",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/hai_i_colori_del_mondo_puoi_andare_ovunque.webp",
 				"dimensions": {
@@ -888,8 +972,9 @@
 				}
 			},
 			{
-				"id": "cbca2fb0-8c88-420a-8bb7-3291b483dd8c",
+				"id": "727d7bd9-b938-4026-a736-aa576de2df88",
 				"title": "ibrido",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/ibrido.webp",
 				"dimensions": {
@@ -898,8 +983,9 @@
 				}
 			},
 			{
-				"id": "dba06269-6000-4a1c-9422-e354e0066318",
+				"id": "f242367c-10bb-4cb0-a140-ca1dbf829224",
 				"title": "ibrido2",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/ibrido2.webp",
 				"dimensions": {
@@ -908,8 +994,9 @@
 				}
 			},
 			{
-				"id": "7b074e32-8283-44fa-ac0e-35ed6f51dd77",
+				"id": "441a3db4-f028-4665-afa8-3267d30547dc",
 				"title": "il codice delle sembianze",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/il_codice_delle_sembianze.webp",
 				"dimensions": {
@@ -918,8 +1005,9 @@
 				}
 			},
 			{
-				"id": "11e7e3f6-61cd-4497-a7a9-e4ce57b3f5e8",
+				"id": "a84cb531-1ae2-4715-b9aa-2e93d5da506d",
 				"title": "il frutto dello spirito",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/il_frutto_dello_spirito.webp",
 				"dimensions": {
@@ -928,8 +1016,9 @@
 				}
 			},
 			{
-				"id": "9b578bd5-c248-4445-869c-3cff9474e1d3",
+				"id": "e0547320-5594-4a71-97d0-8bc15a55acab",
 				"title": "il trofeo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/il_trofeo.webp",
 				"dimensions": {
@@ -938,8 +1027,9 @@
 				}
 			},
 			{
-				"id": "9821ca04-f898-4c58-883b-a404e2fe1dbb",
+				"id": "fe58acbf-a3d4-43c7-b586-999d2a99b943",
 				"title": "incostanza  dell ego",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/incostanza__dell_ego.webp",
 				"dimensions": {
@@ -948,8 +1038,9 @@
 				}
 			},
 			{
-				"id": "ad766fde-28f5-48f1-bec6-822825b0c6bd",
+				"id": "52818feb-e19e-4ece-a5a3-3b8c0f492951",
 				"title": "la farfalla vince senza combattere",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/la_farfalla_vince_senza_combattere.webp",
 				"dimensions": {
@@ -958,8 +1049,9 @@
 				}
 			},
 			{
-				"id": "c4e626b9-44fa-459d-8873-0d9c1dcd4b41",
+				"id": "519e86b7-7da4-4eeb-8517-40f763207f7f",
 				"title": "la rossa",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/la_rossa.webp",
 				"dimensions": {
@@ -968,8 +1060,9 @@
 				}
 			},
 			{
-				"id": "62060a4f-3961-4c14-8464-87f90fd7816a",
+				"id": "011ab52a-5e7c-4a18-be7b-ccadb713f894",
 				"title": "maschera",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/maschera.webp",
 				"dimensions": {
@@ -978,8 +1071,9 @@
 				}
 			},
 			{
-				"id": "3e231f62-e764-4564-9a08-fa568f1cfac5",
+				"id": "1deb2079-7bcf-4d32-9cfe-fe3cc4906114",
 				"title": "ode alla farfalla a cui da piccola tarpai le ali",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/ode_alla_farfalla_a_cui_da_piccola_tarpai_le_ali.webp",
 				"dimensions": {
@@ -988,8 +1082,9 @@
 				}
 			},
 			{
-				"id": "a5f26db0-3c68-4eee-b1ea-a98b90947490",
+				"id": "a3686239-081e-495a-afc1-20a08324052c",
 				"title": "radici immorali",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/radici_immorali.webp",
 				"dimensions": {
@@ -998,8 +1093,9 @@
 				}
 			},
 			{
-				"id": "b20f8a78-908f-4169-9b8d-28477c9d01a4",
+				"id": "b2c456c4-edf2-4760-be5a-f421f1fb0ccb",
 				"title": "rinascenza2",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/rinascenza2.webp",
 				"dimensions": {
@@ -1008,8 +1104,9 @@
 				}
 			},
 			{
-				"id": "86d15144-c69c-4eba-939c-d43491d9b029",
+				"id": "088dcfd3-f2aa-4d17-bf1c-62a3d4cb44ab",
 				"title": "rinascenza 1",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/rinascenza_1.webp",
 				"dimensions": {
@@ -1018,8 +1115,9 @@
 				}
 			},
 			{
-				"id": "b9939cce-f5e8-40d2-af2a-eb82f2c1d827",
+				"id": "af60ac4a-4801-4caa-b01d-63c38ea2933c",
 				"title": "struttura di un anima",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/struttura_di_un_anima.webp",
 				"dimensions": {
@@ -1028,8 +1126,9 @@
 				}
 			},
 			{
-				"id": "77acd451-c657-40d7-af39-4b6ab1be6df7",
+				"id": "81a630dd-a99a-4510-bcf0-3502932b2b6f",
 				"title": "unione dei due emisferi",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/unione_dei_due_emisferi.webp",
 				"dimensions": {
@@ -1038,8 +1137,9 @@
 				}
 			},
 			{
-				"id": "976b899e-f8da-4303-8580-d0802f777ccd",
+				"id": "4ee1427c-4c19-4803-8fb7-f8fda997c1de",
 				"title": "vecchia e lacera",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/vecchia_e_lacera.webp",
 				"dimensions": {
@@ -1048,8 +1148,9 @@
 				}
 			},
 			{
-				"id": "4c70ff76-bc99-4cf1-b7bb-daa71e044b44",
+				"id": "bf6becfc-648f-4b4c-a586-b32306b9551d",
 				"title": "viaggiatore  aria e terra",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/viaggiatore__aria_e_terra.webp",
 				"dimensions": {
@@ -1068,8 +1169,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "57b69014-817c-4730-8e10-5e5d4c95af79",
+				"id": "1e4c1ba3-5c49-4b57-8281-84b434df56ff",
 				"title": "a",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/a.webp",
 				"dimensions": {
@@ -1078,8 +1180,9 @@
 				}
 			},
 			{
-				"id": "f4a903f0-15db-4862-8e99-cd6e822687bc",
+				"id": "599b26c8-42fc-4273-aaf5-cada254ce3df",
 				"title": "c",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/c.webp",
 				"dimensions": {
@@ -1088,8 +1191,9 @@
 				}
 			},
 			{
-				"id": "09c92fad-4a15-4df0-ab60-2dadd0f0ddeb",
+				"id": "135e8f58-5fef-4920-8a35-466baebeb8b9",
 				"title": "capitolo primo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/capitolo_primo.webp",
 				"dimensions": {
@@ -1098,8 +1202,9 @@
 				}
 			},
 			{
-				"id": "79cd260f-e6cf-4c64-a623-861fc9d85dc0",
+				"id": "714fe056-f62d-43e5-8373-2bffd5e36ccb",
 				"title": "capitolo quarto",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/capitolo_quarto.webp",
 				"dimensions": {
@@ -1108,8 +1213,9 @@
 				}
 			},
 			{
-				"id": "109e8121-d59b-41a6-93db-492309bc7403",
+				"id": "89a30673-3f6c-4e48-ac37-44391e155fd5",
 				"title": "capitolo secondo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/capitolo_secondo.webp",
 				"dimensions": {
@@ -1118,8 +1224,9 @@
 				}
 			},
 			{
-				"id": "19dcc6cd-fbd5-4ba0-a065-20523bbb0a0e",
+				"id": "348379c4-43be-4a71-81e6-62b62239b64f",
 				"title": "capitolo terzo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/capitolo_terzo.webp",
 				"dimensions": {
@@ -1128,8 +1235,9 @@
 				}
 			},
 			{
-				"id": "5ca0a872-b4e6-4884-bbd7-b446050d022a",
+				"id": "255ed2c6-83a2-433b-b36e-6c3d730fc42e",
 				"title": "cerchio virtuoso",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/cerchio_virtuoso.webp",
 				"dimensions": {
@@ -1138,8 +1246,9 @@
 				}
 			},
 			{
-				"id": "0ce17d51-89cb-4233-ab32-a65c0936500e",
+				"id": "439078f9-3ed0-4a3e-9db3-18d38810f66a",
 				"title": "dscn",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/dscn.webp",
 				"dimensions": {
@@ -1148,8 +1257,9 @@
 				}
 			},
 			{
-				"id": "7e44c028-dda1-4315-87a3-c5bfad6802cb",
+				"id": "56d54d52-d8d7-415f-9347-e01a5d8725fa",
 				"title": "genesi nuovo mondo in formazione",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/genesi_nuovo_mondo_in_formazione.webp",
 				"dimensions": {
@@ -1158,8 +1268,9 @@
 				}
 			},
 			{
-				"id": "8309030d-0c59-48c5-82f1-622b5fb0d9d7",
+				"id": "7029460d-0192-4f34-a48a-919f07a45607",
 				"title": "il nono pianeta",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/il_nono_pianeta.webp",
 				"dimensions": {
@@ -1168,8 +1279,9 @@
 				}
 			},
 			{
-				"id": "8dac6a98-0206-4842-aab5-c27c8725c0b4",
+				"id": "8af433c1-e278-41ba-a6e8-d27f01130542",
 				"title": "l ascesa le ultime spine nel fianco della madre",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/l_ascesa_le_ultime_spine_nel_fianco_della_madre.webp",
 				"dimensions": {
@@ -1178,8 +1290,9 @@
 				}
 			},
 			{
-				"id": "6eaa7951-0aeb-44f6-a009-e4e50dc2870e",
+				"id": "cdb88ff8-2e64-4bc3-ad15-817ffe2de836",
 				"title": "l aurora",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/l_aurora.webp",
 				"dimensions": {
@@ -1188,8 +1301,9 @@
 				}
 			},
 			{
-				"id": "c902910c-7cf0-4728-8cfa-464cdf23dc95",
+				"id": "b0c50f17-d2ea-4ff0-8922-6ce14890199f",
 				"title": "l ombra di plutone",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/l_ombra_di_plutone.webp",
 				"dimensions": {
@@ -1198,8 +1312,9 @@
 				}
 			},
 			{
-				"id": "c3d482de-5d52-48d5-b859-cb9627ee260f",
+				"id": "c47505ad-6b99-4813-9f20-855fcca83e64",
 				"title": "piccolo cerchio sacro",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/piccolo_cerchio_sacro.webp",
 				"dimensions": {
@@ -1208,8 +1323,9 @@
 				}
 			},
 			{
-				"id": "6d6d75b1-8a97-4d8c-8276-89fc80c3bb06",
+				"id": "36bb705a-a06c-4063-bdbd-47e582b560e6",
 				"title": "piccolo soffio d impermanenza",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/piccolo_soffio_d_impermanenza.webp",
 				"dimensions": {
@@ -1228,8 +1344,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "dc122bd1-1dc8-467f-8e5b-373bcda081e1",
+				"id": "e53e9495-aaed-4a8f-976d-c2813e161748",
 				"title": "alba di febbraio",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/alba_di_febbraio.webp",
 				"dimensions": {
@@ -1238,8 +1355,9 @@
 				}
 			},
 			{
-				"id": "30fc419d-bc4c-4eac-8c84-e718a5b105b3",
+				"id": "4915a55c-6383-4826-80ea-87cac996300c",
 				"title": "eclissi di luna verde",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/eclissi_di_luna_verde.webp",
 				"dimensions": {
@@ -1248,8 +1366,9 @@
 				}
 			},
 			{
-				"id": "40f805be-5714-4634-a44b-b02387621ef4",
+				"id": "1db09d52-9908-4b72-b092-57b3b09429d3",
 				"title": "fiori in vaso",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/fiori_in_vaso.webp",
 				"dimensions": {
@@ -1258,8 +1377,9 @@
 				}
 			},
 			{
-				"id": "bb4356b5-d9fd-4925-b841-1311acaf37fd",
+				"id": "c94d2eff-2658-416c-b020-428ce59e4bfd",
 				"title": "fiorid april e",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/fiorid_april_e.webp",
 				"dimensions": {
@@ -1268,8 +1388,9 @@
 				}
 			},
 			{
-				"id": "6df4491c-cfab-40f2-8d1d-c844da13c93e",
+				"id": "40862ff2-fcaa-4510-b02f-3ac6d85dbab2",
 				"title": "il crepuscolo di  una nno",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/il_crepuscolo_di__una_nno.webp",
 				"dimensions": {
@@ -1278,8 +1399,9 @@
 				}
 			},
 			{
-				"id": "bfc15eef-f84a-4658-acbe-9fc10e4572e5",
+				"id": "690d5570-5fec-4556-be3d-ba50d7200c13",
 				"title": "ipno ti cionirici",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/ipno_ti_cionirici.webp",
 				"dimensions": {
@@ -1288,8 +1410,9 @@
 				}
 			},
 			{
-				"id": "4e0fe16f-4ae8-42ff-b0a5-e19a87d42b26",
+				"id": "31ad0396-5494-48a4-a4bd-af4b246052ad",
 				"title": "la torreelal una ",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/la_torreelal_una_.webp",
 				"dimensions": {
@@ -1298,8 +1421,9 @@
 				}
 			},
 			{
-				"id": "d1cb2917-aa55-4f63-8603-b4ada1e31da8",
+				"id": "10ac2514-4bae-4d87-a51e-63c668e3d2c9",
 				"title": "letteraperte",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/letteraperte.webp",
 				"dimensions": {
@@ -1308,8 +1432,9 @@
 				}
 			},
 			{
-				"id": "d7103def-66e8-46c3-9ccf-be5cbdadb2ee",
+				"id": "e01555a6-b714-47e1-8d86-f05a4f580eff",
 				"title": "luna agosto",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/luna_agosto.webp",
 				"dimensions": {
@@ -1318,8 +1443,9 @@
 				}
 			},
 			{
-				"id": "cce88ead-35b0-4e82-bf16-ef53a7c74ad6",
+				"id": "ee2bb8d1-e531-44ec-8297-bb018e6c0347",
 				"title": "notturno",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/notturno.webp",
 				"dimensions": {
@@ -1328,8 +1454,9 @@
 				}
 			},
 			{
-				"id": "dea92781-d488-435d-848e-f5821f598456",
+				"id": "bc93a1c7-9375-4554-94d9-87c52ed6497d",
 				"title": "opulenzaes ti va",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/opulenzaes_ti_va.webp",
 				"dimensions": {
@@ -1338,8 +1465,9 @@
 				}
 			},
 			{
-				"id": "d6105faf-dfbb-4287-b814-ec09009b241e",
+				"id": "1f888fe7-a59e-4873-bbf6-19796b495081",
 				"title": "orizzonted  in verno",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/orizzonted__in_verno.webp",
 				"dimensions": {
@@ -1348,8 +1476,9 @@
 				}
 			},
 			{
-				"id": "ecaa6f3f-b4a5-4564-8f6b-a422ac8fea2e",
+				"id": "60365f61-c07b-4e61-8834-617e4af08516",
 				"title": "papaveri in vaso",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/papaveri_in_vaso.webp",
 				"dimensions": {
@@ -1358,8 +1487,9 @@
 				}
 			},
 			{
-				"id": "86b49bec-df2d-401f-ab85-e780a1fe8b2b",
+				"id": "3aa90874-84d7-4d18-a9c5-b6c27b04a823",
 				"title": "ti ho scritto una lettera",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/ti_ho_scritto_una_lettera.webp",
 				"dimensions": {
@@ -1368,8 +1498,9 @@
 				}
 			},
 			{
-				"id": "5d29525b-7425-4631-b603-902d52ab7091",
+				"id": "c4aac71d-fe50-491f-8b1c-a25c22200146",
 				"title": "vaso di fiori",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/vaso_di_fiori.webp",
 				"dimensions": {
@@ -1378,8 +1509,9 @@
 				}
 			},
 			{
-				"id": "c5861936-11c4-4926-9f8d-4e2c0bb94cea",
+				"id": "ce5be72d-efba-4d8f-921b-27fc8700ac67",
 				"title": "vaso di fiorionirici",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/vaso_di_fiorionirici.webp",
 				"dimensions": {
@@ -1398,8 +1530,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "d883431f-6048-48ec-b8ea-6a05e25f37ac",
+				"id": "7e882652-109e-4c50-87b0-6bb98b9a0eb1",
 				"title": "anemoni",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/anemoni.webp",
 				"dimensions": {
@@ -1408,8 +1541,9 @@
 				}
 			},
 			{
-				"id": "6d305c66-8b14-485b-9526-5e027c81b0bd",
+				"id": "47fa29b4-7edd-46d2-9be6-a97e3f7817d5",
 				"title": "cinque effimeri",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/cinque_effimeri.webp",
 				"dimensions": {
@@ -1418,8 +1552,9 @@
 				}
 			},
 			{
-				"id": "2050bbd8-4886-4dce-b516-6b730dbe5029",
+				"id": "cc649f09-a685-4eb7-81fa-aa8e1a299ec1",
 				"title": "continuita ",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/continuita_.webp",
 				"dimensions": {
@@ -1428,8 +1563,9 @@
 				}
 			},
 			{
-				"id": "85635aca-86b2-41f3-a820-bcc7fbd44c93",
+				"id": "45c6704a-c378-4830-a521-5b5e7b9934a1",
 				"title": "fiori d acqua",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/fiori_d_acqua.webp",
 				"dimensions": {
@@ -1438,8 +1574,9 @@
 				}
 			},
 			{
-				"id": "b9901f1c-6c7e-4f8a-ae56-1cf541970745",
+				"id": "03ac0991-de48-4ee7-a0cf-8833a6f9a17d",
 				"title": "in viaggio verso l ade",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/in_viaggio_verso_l_ade.webp",
 				"dimensions": {
@@ -1448,8 +1585,9 @@
 				}
 			},
 			{
-				"id": "0daf577e-7438-4b46-8242-0f641fb57447",
+				"id": "02e9e9c8-2426-40aa-91fc-2fd8de2c708b",
 				"title": "l io e l essere",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/l_io_e_l_essere.webp",
 				"dimensions": {
@@ -1458,8 +1596,9 @@
 				}
 			},
 			{
-				"id": "5dcbd421-3b6c-4a96-bddb-0324a11cae47",
+				"id": "83beaff6-a0f7-498d-b530-0b7a76d526fa",
 				"title": "le pleiadi",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/le_pleiadi.webp",
 				"dimensions": {
@@ -1468,8 +1607,9 @@
 				}
 			},
 			{
-				"id": "0049132e-fbe7-40a7-b32c-5cd4b43c6052",
+				"id": "2acf237c-292d-4b14-91dc-53ef6db97fae",
 				"title": "nel vento",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/nel_vento.webp",
 				"dimensions": {
@@ -1478,8 +1618,9 @@
 				}
 			},
 			{
-				"id": "211403c7-5c28-402e-8d0d-d71d8046161e",
+				"id": "d0d566f1-0451-4388-8a6c-001ceb3fbd93",
 				"title": "piccolo prato impermanente",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/piccolo_prato_impermanente.webp",
 				"dimensions": {
@@ -1488,8 +1629,9 @@
 				}
 			},
 			{
-				"id": "078855cb-3112-4f62-bd11-2b025a509af2",
+				"id": "edd31549-7e95-4a8f-bccb-0c8256d05405",
 				"title": "praticello",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/giardino_impermanenza/praticello.webp",
 				"dimensions": {
@@ -1508,8 +1650,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "5473b536-aa85-47ee-9c8c-a295a85ef0d2",
+				"id": "684c1154-a91c-4d34-a3b7-fca53e1d7429",
 				"title": "a",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/a.webp",
 				"dimensions": {
@@ -1518,8 +1661,9 @@
 				}
 			},
 			{
-				"id": "084354e4-7c38-4f5c-96c9-3cb6c7b15204",
+				"id": "fd37110e-29d9-4cb1-810f-7f0698860e6a",
 				"title": "b",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/b.webp",
 				"dimensions": {
@@ -1528,8 +1672,9 @@
 				}
 			},
 			{
-				"id": "155be138-bd20-4506-8187-0b77c232b696",
+				"id": "3c56afd7-41cb-42a7-a3f4-e7d53aaca4f3",
 				"title": "c",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/c.webp",
 				"dimensions": {
@@ -1538,8 +1683,9 @@
 				}
 			},
 			{
-				"id": "2d319d0f-84b2-47ed-a9fb-4a63cd18a0d5",
+				"id": "f3942dc1-90a2-4764-871d-4f6a3f28be4c",
 				"title": "d",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/d.webp",
 				"dimensions": {
@@ -1548,8 +1694,9 @@
 				}
 			},
 			{
-				"id": "f7d5f069-9651-47b5-b640-e379c36fcd25",
+				"id": "e0f96008-c1af-4249-94c1-013208ca5a38",
 				"title": "e",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/e.webp",
 				"dimensions": {
@@ -1558,8 +1705,9 @@
 				}
 			},
 			{
-				"id": "8439b20a-fa1c-4ffd-8ea1-35db059d6abd",
+				"id": "21972408-9eae-463c-a895-5fbe7eeeb541",
 				"title": "f",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/f.webp",
 				"dimensions": {
@@ -1568,8 +1716,9 @@
 				}
 			},
 			{
-				"id": "4c867940-2730-498b-99e2-f81fb00e6e22",
+				"id": "18ca67ad-68e7-48cb-8a44-5404c7d294bc",
 				"title": "g",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/g.webp",
 				"dimensions": {
@@ -1578,8 +1727,9 @@
 				}
 			},
 			{
-				"id": "7ece6b67-0a10-4671-b659-621511752158",
+				"id": "d2c9865d-20fb-4305-b9b2-6512d87fbb38",
 				"title": "h",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/h.webp",
 				"dimensions": {
@@ -1588,8 +1738,9 @@
 				}
 			},
 			{
-				"id": "696b6af9-d882-471c-9839-2681a0b7e323",
+				"id": "a4fa3fb3-4ecf-49f4-8232-43a379115e7b",
 				"title": "l",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/forme_archetipiche/l.webp",
 				"dimensions": {
@@ -1608,8 +1759,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "afc32d0d-54db-4f05-a6ce-def288478b92",
+				"id": "7975cf37-b70d-40da-a902-0fd4ab657102",
 				"title": "'legami d'anime'",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/-legami_d-anime-.webp",
 				"dimensions": {
@@ -1618,8 +1770,9 @@
 				}
 			},
 			{
-				"id": "425a6e1a-c552-4d72-adf2-8b4d30dd3567",
+				"id": "735071b8-bd80-42da-9bfe-bfb26d016b56",
 				"title": "arido'florido",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/arido-florido.webp",
 				"dimensions": {
@@ -1628,8 +1781,9 @@
 				}
 			},
 			{
-				"id": "9dde31d9-78de-4a3a-9ddd-affbf2f36921",
+				"id": "d8f91e54-bbc0-47d8-8fbd-4cdf2f5f86b5",
 				"title": "corpo celeste",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/corpo_celeste.webp",
 				"dimensions": {
@@ -1638,8 +1792,9 @@
 				}
 			},
 			{
-				"id": "baca5186-7c8c-496a-8c0a-7d4863ee99ec",
+				"id": "c1691654-301f-476a-a72a-4422d09e45ae",
 				"title": "eclisse di sangue",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/eclisse_di_sangue.webp",
 				"dimensions": {
@@ -1648,8 +1803,9 @@
 				}
 			},
 			{
-				"id": "be7503ae-3772-4423-8309-7add68e1504f",
+				"id": "8ea73981-ab8d-4499-8f34-4a3c30537b4b",
 				"title": "eclissi",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/eclissi.webp",
 				"dimensions": {
@@ -1658,8 +1814,9 @@
 				}
 			},
 			{
-				"id": "3e50b3f5-d929-465b-8693-2acb76abee55",
+				"id": "31315491-3d36-4fa3-95ff-92c8749e69ad",
 				"title": "fiore energetico",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/fiore_energetico.webp",
 				"dimensions": {
@@ -1668,8 +1825,9 @@
 				}
 			},
 			{
-				"id": "5fecfe07-3854-4e30-b9e7-cedf1ec21035",
+				"id": "931dba8c-7be2-44b6-ae4b-e5fe7f84f6af",
 				"title": "frattura",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/frattura.webp",
 				"dimensions": {
@@ -1678,8 +1836,9 @@
 				}
 			},
 			{
-				"id": "73c04b68-9508-40e1-aeff-8216842a67c3",
+				"id": "c39d8c48-ac13-45f0-af76-7ad6df722f6e",
 				"title": "fuga dal rosso",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/fuga_dal_rosso.webp",
 				"dimensions": {
@@ -1688,8 +1847,9 @@
 				}
 			},
 			{
-				"id": "2056c86e-2329-4c9f-82f4-b90d889417c3",
+				"id": "c3a9463f-04a0-452e-8f1c-b1e7016b26ea",
 				"title": "golfo interiore",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/golfo_interiore.webp",
 				"dimensions": {
@@ -1698,8 +1858,9 @@
 				}
 			},
 			{
-				"id": "29141c67-9682-4e0d-8ecf-54ea429f1fef",
+				"id": "3a79a9ab-5e6e-40ee-94c0-5dcbf66814e5",
 				"title": "ho sempre le schegge di un sogno nel cuore",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/ho_sempre_le_schegge_di_un_sogno_nel_cuore.webp",
 				"dimensions": {
@@ -1708,8 +1869,9 @@
 				}
 			},
 			{
-				"id": "85bd4f81-6f87-4e5b-afef-12ebed15fd55",
+				"id": "ed4fe5f0-1941-4c0f-8fb6-cf945ca5a3af",
 				"title": "il varco",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/il_varco.webp",
 				"dimensions": {
@@ -1718,8 +1880,9 @@
 				}
 			},
 			{
-				"id": "6be74289-5a62-4c2a-bb7f-749e2dac31d2",
+				"id": "08a57e8c-3383-4cba-9196-abcd08d2d0f9",
 				"title": "il varco 2",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/il_varco_2.webp",
 				"dimensions": {
@@ -1728,8 +1891,9 @@
 				}
 			},
 			{
-				"id": "7016f75e-b94c-4c07-af08-ee89553711b5",
+				"id": "cf5dbad9-ec22-4c82-9989-e6db38ea8901",
 				"title": "inferno con vista sull'azzurro",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/inferno_con_vista_sull-azzurro.webp",
 				"dimensions": {
@@ -1738,8 +1902,9 @@
 				}
 			},
 			{
-				"id": "d21add5f-e849-44f6-9766-a22227a8285c",
+				"id": "ed1fac17-37aa-4b99-986d-d33c4a1c0863",
 				"title": "inscindibili",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/inscindibili.webp",
 				"dimensions": {
@@ -1748,8 +1913,9 @@
 				}
 			},
 			{
-				"id": "172a9ceb-745d-4127-8a4d-4d7469490309",
+				"id": "650f77f7-ed0e-470a-a3ba-d461a6990063",
 				"title": "l'oro e l'abisso",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/l-oro_e_l-abisso.webp",
 				"dimensions": {
@@ -1758,8 +1924,9 @@
 				}
 			},
 			{
-				"id": "f2ee046a-cce1-4ac7-b3a0-1e58909e29c3",
+				"id": "e87b4772-e60f-4bcb-a2fa-6323a9e5fe3f",
 				"title": "l'ultimo tentativo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/l-ultimo_tentativo.webp",
 				"dimensions": {
@@ -1768,8 +1935,9 @@
 				}
 			},
 			{
-				"id": "c16f3f73-d322-4733-b3b5-5e35bed850c9",
+				"id": "ed863add-f400-4576-8451-c48c7e388858",
 				"title": "la bandiera del sole",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/la_bandiera_del_sole.webp",
 				"dimensions": {
@@ -1778,8 +1946,9 @@
 				}
 			},
 			{
-				"id": "19afdbae-5547-487b-bb30-a54089b80c06",
+				"id": "24db547c-2b91-4e6a-a51b-f7e471339a16",
 				"title": "la luce in gabbia",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/la_luce_in_gabbia.webp",
 				"dimensions": {
@@ -1788,8 +1957,9 @@
 				}
 			},
 			{
-				"id": "7bab58bd-9f1c-4df1-9693-611768e92d7b",
+				"id": "dcbad749-dafe-4b4d-aacb-3568abd49a53",
 				"title": "la via maestra",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/la_via_maestra.webp",
 				"dimensions": {
@@ -1798,8 +1968,9 @@
 				}
 			},
 			{
-				"id": "6fc10673-f0ed-4d25-a8ee-7e9575206714",
+				"id": "9b56e88d-561a-44ee-9570-a4327947abd3",
 				"title": "le auree parole",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/le_auree_parole.webp",
 				"dimensions": {
@@ -1808,8 +1979,9 @@
 				}
 			},
 			{
-				"id": "abe7845c-23a2-4310-8f81-0ae78edcf123",
+				"id": "568ce660-c463-49d5-a471-21550b6ba8a3",
 				"title": "le porte dell'universo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/le_porte_dell-universo.webp",
 				"dimensions": {
@@ -1818,8 +1990,9 @@
 				}
 			},
 			{
-				"id": "4eceab8c-13fc-405c-8952-e18ea8a8768f",
+				"id": "6aee9b23-6479-4777-b188-1e922f46ebb6",
 				"title": "legami d'anime2",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/legami_d-anime2.webp",
 				"dimensions": {
@@ -1828,8 +2001,9 @@
 				}
 			},
 			{
-				"id": "86224b11-8074-4c66-9d9c-f2d1d61a44dd",
+				"id": "757fb2d5-d391-4453-8332-cd9d01584618",
 				"title": "legami d'anime3",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/legami_d-anime3.webp",
 				"dimensions": {
@@ -1838,8 +2012,9 @@
 				}
 			},
 			{
-				"id": "36b3c3bd-c93e-4e5f-8cf4-1335983c20c6",
+				"id": "5f143fdd-2b06-4130-abe9-bab9a536c2ac",
 				"title": "limpido'torbido",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/limpido-torbido.webp",
 				"dimensions": {
@@ -1848,8 +2023,9 @@
 				}
 			},
 			{
-				"id": "4c81bbb1-72dc-412e-a0e1-050bbcbfb2e8",
+				"id": "db99d190-3cd8-4417-8b51-e2c8c5fa8950",
 				"title": "nel vivo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/nel_vivo.webp",
 				"dimensions": {
@@ -1858,8 +2034,9 @@
 				}
 			},
 			{
-				"id": "f4218078-9e1c-436a-b35c-a828de704634",
+				"id": "0a2054ed-661c-4dfa-9a43-25c58feaeb11",
 				"title": "oasi",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/oasi.webp",
 				"dimensions": {
@@ -1868,8 +2045,9 @@
 				}
 			},
 			{
-				"id": "c45a2e85-4b86-48ec-9888-8be4dbfafdd1",
+				"id": "dfdb627b-70b6-48cd-9603-222b6ee8d498",
 				"title": "parole mai dette",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/parole_mai_dette.webp",
 				"dimensions": {
@@ -1878,8 +2056,9 @@
 				}
 			},
 			{
-				"id": "391bea93-103f-4ed0-a552-4fb2eb3568eb",
+				"id": "c7262c3b-ab61-4ac7-a395-3887402727c4",
 				"title": "punti di sutura",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/punti_di_sutura.webp",
 				"dimensions": {
@@ -1888,8 +2067,9 @@
 				}
 			},
 			{
-				"id": "a5a94f3a-8f0b-4ffc-965f-1c339c8de8f3",
+				"id": "94db015b-5a0b-4e66-8d95-806303bcd972",
 				"title": "scheggia",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/scheggia.webp",
 				"dimensions": {
@@ -1898,8 +2078,9 @@
 				}
 			},
 			{
-				"id": "501e205b-40f9-42d7-b012-675db6a8b6fb",
+				"id": "77c99a0c-49fc-472a-abc6-7be7adff42bb",
 				"title": "sole nero",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/sole_nero.webp",
 				"dimensions": {
@@ -1908,8 +2089,9 @@
 				}
 			},
 			{
-				"id": "55d312d8-ee80-44d5-b786-cc4516af4d42",
+				"id": "2a5f2697-a663-47af-89f9-4aff010b875a",
 				"title": "sotto la crosta lo sguardo limpido",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/sotto_la_crosta_lo_sguardo_limpido.webp",
 				"dimensions": {
@@ -1918,8 +2100,9 @@
 				}
 			},
 			{
-				"id": "88a77f6c-9556-4dc2-912f-39e2ddcda71e",
+				"id": "74973473-32da-475d-a74f-05ed3304bd60",
 				"title": "strati d'anima",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/strati_d-anima.webp",
 				"dimensions": {
@@ -1928,8 +2111,9 @@
 				}
 			},
 			{
-				"id": "c61b1935-6e6d-4380-a9fc-82742288f1d4",
+				"id": "78c4f235-daef-4434-91cf-6572ed93e161",
 				"title": "sutura",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/sutura.webp",
 				"dimensions": {
@@ -1938,8 +2122,9 @@
 				}
 			},
 			{
-				"id": "d30f948a-2867-43ab-8690-8a493de362ae",
+				"id": "947adfe4-f649-488f-b50e-afcb534b2da6",
 				"title": "tempesta",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/tempesta.webp",
 				"dimensions": {
@@ -1948,8 +2133,9 @@
 				}
 			},
 			{
-				"id": "90bee10f-7fc5-422f-93f3-90e9a5ebd3b4",
+				"id": "e4929df3-53df-4998-bed3-996e9b54a90e",
 				"title": "torre preziosa",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/torre_preziosa.webp",
 				"dimensions": {
@@ -1958,8 +2144,9 @@
 				}
 			},
 			{
-				"id": "4ce5bd01-f527-4f2d-b78a-18b61b68c4eb",
+				"id": "81bcf608-0b7d-43d7-b357-a2ff9e783845",
 				"title": "una scheggia di luce nel buio",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/una_scheggia_di_luce_nel_buio.webp",
 				"dimensions": {
@@ -1968,8 +2155,9 @@
 				}
 			},
 			{
-				"id": "4e0d3c81-cd97-4fb3-9b52-cd090422f4c5",
+				"id": "76a268a3-3467-495f-9003-91e6d86c0479",
 				"title": "veliero",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/veliero.webp",
 				"dimensions": {
@@ -1988,8 +2176,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "58444804-97cc-45ac-b7b2-66ad530b8325",
+				"id": "df1cd02c-6c98-422e-a1a9-6c84b72215e7",
 				"title": "cinque monaci per reggere una canna da pesca",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/cinque_monaci_per_reggere_una_canna_da_pesca.webp",
 				"dimensions": {
@@ -1998,8 +2187,9 @@
 				}
 			},
 			{
-				"id": "beeb6311-79ee-4238-9d0e-eb0cc493cc7e",
+				"id": "e35c0f17-f3e1-450a-b541-a7be3ddf1773",
 				"title": "d innanzi il nulla",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/d_innanzi_il_nulla.webp",
 				"dimensions": {
@@ -2008,8 +2198,9 @@
 				}
 			},
 			{
-				"id": "6fa79b3b-6211-49cb-b953-dedaf4a82ee5",
+				"id": "3221c407-0097-4628-a1ee-9ce85697d280",
 				"title": "i cinque stadi evolutivi",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/i_cinque_stadi_evolutivi.webp",
 				"dimensions": {
@@ -2018,8 +2209,9 @@
 				}
 			},
 			{
-				"id": "877519d0-de96-407f-bf3e-b461fb0127e3",
+				"id": "9f877e90-a7c9-4cbe-ab83-3b6cd9507545",
 				"title": "i due custodi",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/i_due_custodi.webp",
 				"dimensions": {
@@ -2028,8 +2220,9 @@
 				}
 			},
 			{
-				"id": "4a3acd05-12dc-4b62-abc1-a5408212ec55",
+				"id": "a7eb15a5-33eb-414d-a01f-cc920f36fbdf",
 				"title": "io, il totem",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/io,_il_totem.webp",
 				"dimensions": {
@@ -2038,8 +2231,9 @@
 				}
 			},
 			{
-				"id": "77695d1c-5b3d-49ab-8274-c2a5b67a6992",
+				"id": "f5793cea-7c16-40a6-a529-6a591e5afc8f",
 				"title": "l abbraccio",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/l_abbraccio.webp",
 				"dimensions": {
@@ -2048,8 +2242,9 @@
 				}
 			},
 			{
-				"id": "5d62fa8e-c634-485f-b433-f0c0240bb757",
+				"id": "fc9b286c-1b3b-4c2c-ac72-866394a735d2",
 				"title": "la porta di hong kong",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/la_porta_di_hong_kong.webp",
 				"dimensions": {
@@ -2058,8 +2253,9 @@
 				}
 			},
 			{
-				"id": "0503561f-7d62-42c4-a1e3-3b1371a2a93c",
+				"id": "5b8483a6-0f07-46e1-8088-0fd36a1fe0f8",
 				"title": "ormeggiato al cielo",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/ormeggiato_al_cielo.webp",
 				"dimensions": {
@@ -2068,8 +2264,9 @@
 				}
 			},
 			{
-				"id": "78e10f11-081e-4376-a7e4-c825ec92ce49",
+				"id": "52a8baab-292f-4557-b2e7-2b80a646677a",
 				"title": "slego l ego",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/slego_l_ego.webp",
 				"dimensions": {
@@ -2078,8 +2275,9 @@
 				}
 			},
 			{
-				"id": "7a0bef42-932e-4d5e-aa52-792cf1b521bc",
+				"id": "ae4e1e7f-b1ab-4a0a-85f5-81e5524329d0",
 				"title": "tre ma non tre",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/tre_ma_non_tre.webp",
 				"dimensions": {
@@ -2088,8 +2286,9 @@
 				}
 			},
 			{
-				"id": "f8afa8b5-6e3a-4737-9a48-0ed4d582b44a",
+				"id": "9c7c2a9c-ac08-4e0a-a248-aef61b82541a",
 				"title": "un lungo viaggio",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/un_lungo_viaggio.webp",
 				"dimensions": {
@@ -2108,8 +2307,9 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "7c23256c-9ba4-4673-becb-3adbf48f04e6",
+				"id": "d824a02c-0959-49ae-b2fb-bf8232c5cbb7",
 				"title": "dscn0263",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0263.webp",
 				"dimensions": {
@@ -2118,8 +2318,9 @@
 				}
 			},
 			{
-				"id": "28aaa593-d1ab-4efa-9f77-c1e77d772ef5",
+				"id": "e5d75511-8f79-4886-911d-6234cee9391c",
 				"title": "dscn0269",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0269.webp",
 				"dimensions": {
@@ -2128,8 +2329,9 @@
 				}
 			},
 			{
-				"id": "458b24dd-9daa-4115-b928-711708d376f1",
+				"id": "fe777237-a3ef-4869-9b05-846d627c92b9",
 				"title": "dscn0270",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0270.webp",
 				"dimensions": {
@@ -2138,8 +2340,9 @@
 				}
 			},
 			{
-				"id": "80db92b0-2a50-41bc-aaee-090f1d307f03",
+				"id": "4f04293e-5d71-4e88-8a3b-26b226b746f4",
 				"title": "dscn0273",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0273.webp",
 				"dimensions": {
@@ -2148,8 +2351,9 @@
 				}
 			},
 			{
-				"id": "3bef2a28-b894-40fe-8509-3802a19d1b89",
+				"id": "c84d867e-2712-4272-a5ad-046761fee1f5",
 				"title": "dscn0275",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0275.webp",
 				"dimensions": {
@@ -2158,8 +2362,9 @@
 				}
 			},
 			{
-				"id": "007cdc35-54a7-4ebd-9811-7663632a42db",
+				"id": "e73e73df-f117-4b21-8f2a-ed09afd44328",
 				"title": "dscn0277",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0277.webp",
 				"dimensions": {
@@ -2168,8 +2373,9 @@
 				}
 			},
 			{
-				"id": "a21e4b32-2f66-46f5-a669-f03eb965d802",
+				"id": "6fff91d1-ee22-44c0-86d8-eda36f2043d0",
 				"title": "dscn0279",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0279.webp",
 				"dimensions": {
@@ -2178,8 +2384,9 @@
 				}
 			},
 			{
-				"id": "3b903992-7850-4fa5-a2a4-03a7e1bafba3",
+				"id": "14d0be8c-f951-4333-b4cf-523efe59673e",
 				"title": "dscn0281",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0281.webp",
 				"dimensions": {
@@ -2188,8 +2395,9 @@
 				}
 			},
 			{
-				"id": "6456a9db-6c13-43fe-929c-31b9ae3b3aee",
+				"id": "5697cf7b-b112-4697-b115-084c8b6ee33a",
 				"title": "dscn0283",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0283.webp",
 				"dimensions": {
@@ -2198,8 +2406,9 @@
 				}
 			},
 			{
-				"id": "88a990e2-429f-410a-83b6-da8eb8e0ee92",
+				"id": "072e0598-ac01-4e5c-b4b6-e1833e6c50d4",
 				"title": "dscn0285",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0285.webp",
 				"dimensions": {
@@ -2208,8 +2417,9 @@
 				}
 			},
 			{
-				"id": "449a8538-7ead-4a7c-9200-698878c97c8d",
+				"id": "65c45677-541b-4809-ae44-fde6ca8056df",
 				"title": "dscn0287",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0287.webp",
 				"dimensions": {
@@ -2218,8 +2428,9 @@
 				}
 			},
 			{
-				"id": "fbccb21c-333c-42ee-976a-dee245d26f2f",
+				"id": "f6af5d21-731f-455d-b3a0-d64fc87e1741",
 				"title": "dscn0290",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0290.webp",
 				"dimensions": {
@@ -2228,8 +2439,9 @@
 				}
 			},
 			{
-				"id": "bceb5ccc-bf2b-4639-84e1-21c11d8ae25d",
+				"id": "f306cb97-912e-4372-8111-06d05b7ad3cd",
 				"title": "dscn0293 copia",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0293_copia.webp",
 				"dimensions": {
@@ -2238,8 +2450,9 @@
 				}
 			},
 			{
-				"id": "38e4e386-e657-46b3-8a68-d0b20737b7b5",
+				"id": "56d2b590-725d-4624-be0f-26f7925e8a74",
 				"title": "dscn0294",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0294.webp",
 				"dimensions": {
@@ -2248,8 +2461,9 @@
 				}
 			},
 			{
-				"id": "7a8c3153-9a6a-462c-9ed0-64ec5d544054",
+				"id": "6399bdfb-1571-4b83-ace0-34991cbfacf5",
 				"title": "dscn0296",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0296.webp",
 				"dimensions": {
@@ -2258,8 +2472,9 @@
 				}
 			},
 			{
-				"id": "f7fc6861-5a51-4f51-834e-a15d472fe971",
+				"id": "535b80e4-bef6-4e5f-9434-96d49ec4ef30",
 				"title": "dscn0299",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0299.webp",
 				"dimensions": {
@@ -2268,8 +2483,9 @@
 				}
 			},
 			{
-				"id": "b76fe862-63b7-4101-b5fa-00993a218ff1",
+				"id": "72a3efdf-991d-459f-89e2-4e269eace8e5",
 				"title": "dscn0302",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0302.webp",
 				"dimensions": {
@@ -2278,8 +2494,9 @@
 				}
 			},
 			{
-				"id": "e8d29960-41df-45ea-9662-4d1b4bcd185e",
+				"id": "20d77786-215e-45c6-bae2-070454d391c0",
 				"title": "dscn0304",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0304.webp",
 				"dimensions": {
@@ -2288,8 +2505,9 @@
 				}
 			},
 			{
-				"id": "07a8a36d-74bb-4903-b0ba-1817503e0c8e",
+				"id": "3020b769-7ddf-475f-a5b3-3dc21e3f8a64",
 				"title": "dscn0310",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0310.webp",
 				"dimensions": {
@@ -2298,8 +2516,9 @@
 				}
 			},
 			{
-				"id": "9abb8a8d-88d5-428f-aad0-71ee8a9bb0af",
+				"id": "b256b6b8-0c95-4785-8f8c-9f318df013a0",
 				"title": "dscn0312",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0312.webp",
 				"dimensions": {
@@ -2308,8 +2527,9 @@
 				}
 			},
 			{
-				"id": "455eab9c-d7ce-43f9-ba12-da3a269f90b0",
+				"id": "67d9aaee-52e9-40bc-990d-eff9f1816ec9",
 				"title": "dscn0314",
+				"description": null,
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0314.webp",
 				"dimensions": {

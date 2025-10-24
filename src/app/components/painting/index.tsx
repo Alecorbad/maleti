@@ -23,7 +23,7 @@ interface PaintingProps{
   position?: ('absolute' | 'relative' | 'fixed');
   gridArea?: string;
   displayFrame?: boolean; 
-  displayTitle?: boolean; 
+  displayText?: boolean; 
 
   frame?: boolean;
   frameTickness?: string;
@@ -38,7 +38,7 @@ const Painting = (props: PaintingProps) => {
   const stdFrameBackground: string = "rgb(150, 111, 51)";
   const [isImageLoaded, setImageLoaded] = useState(false);
   const displayFrame: boolean | undefined = (props.displayFrame || false);
-  const displayTitle: boolean | undefined = (props.displayTitle || true);
+  const displayText: boolean | undefined = (props.displayText || true);
   const framePadding: string | undefined = props.framePadding ?? "1rem";
 
   const handleImageLoad = () => {
@@ -59,27 +59,8 @@ const Painting = (props: PaintingProps) => {
         justifyContent: "center",
         alignItems: "center",
         opacity: 0,
-        WebkitBoxShadow: (displayFrame) ? "0px 0px 3px 1px rgba(0,0,0,0.40)" : "none",
-        boxShadow: (displayFrame) ? "0px 0px 3px 1px rgba(0,0,0,0.40)" : "none"
       };
 
-  const imageStyle: React.CSSProperties = {
-        width: "auto",
-        height: "fit-content",
-        objectFit: (props.objectFit ? props.objectFit : "contain")
-      };
-
-   const frameContainerStyle: React.CSSProperties = {
-          height: (props.frameHeight ?? (displayTitle ? "90%" : "100%")),
-          width: (props.frameWidth ?? "fit-content"),
-          padding: (displayFrame == true && props.frameTickness) ? props.frameTickness : "0",
-   }
-
-   const imageContainerStyle: React.CSSProperties = {
-    padding: (displayFrame == true && framePadding) ? framePadding : "0",
-    background: (displayFrame == true ) ? "rgba(var(--oldPaper), 1)" : "none"
-   }
- 
 
   const frameUpWrapperStyle: React.CSSProperties = {
     width: "100%", 
@@ -127,6 +108,32 @@ const Painting = (props: PaintingProps) => {
     clipPath: clipFramePart(FrameParts.Left, props.frameTickness ?? stdFrameTickness),
     display: displayFrame == true ?  "block" : "none",
   }
+
+
+   const frameContainerStyle: React.CSSProperties = {
+          height: (props.frameHeight ?? (displayText ? "auto" : "100%")),
+          maxHeight: (props.frameHeight ?? (displayText ? "90%" : "100%")),
+          width: (props.frameWidth ?? "fit-content"),
+          padding: (displayFrame == true && props.frameTickness) ? props.frameTickness : "0",
+   }
+
+   const imageContainerStyle: React.CSSProperties = {
+    padding: (displayFrame == true && framePadding) ? framePadding : "0",
+    background: (displayFrame == true ) ? "rgba(var(--oldPaper), 1)" : "none",
+        WebkitBoxShadow: displayFrame ? "0px 2px 8px 3px rgba(0,0,0,0.70)" : "none",
+        boxShadow: displayFrame ? "0px 2px 8px 3px rgba(0,0,0,0.70)" : "none"
+   }
+
+
+  const imageStyle: React.CSSProperties = {
+        width: "auto",
+        height: "fit-content",
+        objectFit: (props.objectFit ? props.objectFit : "contain"),
+        WebkitBoxShadow: !displayFrame ? "0px 2px 8px 3px rgba(0,0,0,0.70)" : "none",
+        boxShadow: !displayFrame ? "0px 2px 8px 3px rgba(0,0,0,0.70)" : "none"
+  };
+ 
+
   
 
 
@@ -171,9 +178,14 @@ const Painting = (props: PaintingProps) => {
             }
           </div>
         </div>
-         {displayTitle && (
-            <div className={styles.titleContainer}>
-              {props.painting?.title}
+         {displayText && (
+            <div className={styles.textContainer}>
+              <div className={styles.titleContainer}>
+                {props.painting?.title}
+              </div>
+              <div className={styles.descriptionContainer}>
+                {props.painting?.description}
+              </div>
             </div>
           )}
       </ImageLoading>
