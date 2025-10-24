@@ -20,6 +20,7 @@
   --rednew: 153, 0, 0;
   --skyblue: 131 188 214;
   --grey: 196 196 196;
+  --grey1: 80 80 80;
   --darkgrey: 30, 30, 30;
   --black: 23, 23 ,23;
   --blacker: 10, 10 ,10;
@@ -27,15 +28,18 @@
   /* Sfondi, ... */
   --colorB1: var(--lightgrey);
   --colorB2: var(--grey);
+  --colorB3: var(--white);
+  --colorB4: var(--darkgrey);
 
   /* Colori deri testi, bordi, ... */
   --colorT1: var(--black);
   --colorT2: var(--darkgrey);
+  --colorT3: var(--white);
 
   /* Dimensioni testo */
   --body-text: clamp(12px, 10px + .5vw, 18px);
   --h0-fs: clamp(calc(var(--body-text) * 3.5),  15vw, calc(var(--body-text) * 8)); 
-  --h1-fs: clamp(calc(var(--body-text) * 2),    6vw,  calc(var(--body-text) * 4)); 
+  --h1-fs: clamp(calc(var(--body-text) * 2.5),    6vw,  calc(var(--body-text) * 4)); 
   --h2-fs: clamp(calc(var(--body-text) * 1.5),    8vw,  calc(var(--body-text) * 1.84)); 
   --h3-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.78)); 
   --h4-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.76)); 
@@ -49,10 +53,12 @@
   /* Sfondi, ... */
     --colorB1: var(--blacker);
     --colorB2: var(--black);
+    --colorB3: var(--darkgrey);
 
   /* Colori deri testi, bordi, ... */
     --colorT1: var(--lightgrey);
     --colorT2: var(--grey);
+    --colorT3: var (--black)
   }
 }
 

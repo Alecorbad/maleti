@@ -159,7 +159,7 @@ const Header = () => {
         <div className={styles.headerContainer}>
           <motion.div className={styles.header}
             style={{
-              background: isSticky ? "rgba(255, 255, 255, 0.7)" : "transparent",
+              background: isSticky ? "rgba(var(--colorB3), 0.7)" : "transparent",
             }}
             onHoverStart={() => setMenuHovered(true)}
             onHoverEnd={() => setMenuHovered(false)}

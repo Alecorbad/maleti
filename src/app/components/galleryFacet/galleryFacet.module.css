@@ -6,6 +6,7 @@
   position: relative;
   top: 0;
   overflow: hidden;
+  isolation: isolate; 
   /* touch-action: "pan-y"; */
 }
   .GalleryWrapper{
@@ -25,23 +26,29 @@
     text-align: center;
     container-type: size;
     resize: horizontal;
-    z-index: 3;
+    z-index: 2;
     min-height: 50%;
     overflow-wrap: anywhere;
     width: 100%;
+    mix-blend-mode: difference; 
   }
 
   .GalleryName a{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
+    /* border: 1px solid black;*/
+    padding: 0.5rem 0.2rem;
+    margin: .5rem;
+    background: rgba(var(--colorB4), 0.7);
   }
 
   .GalleryName h1{
     width: 100%;
-    color: rgba(var(--colorB1), 1);
-    text-shadow: 1px 1px 12px rgba(0,0,0,1);
+    color: rgba(var(--colorT3), 1);
+    text-shadow: none;
     letter-spacing: .6rem;
+    mix-blend-mode: difference; 
   }
   .ImagesContainer{
     display: flex;
@@ -51,12 +58,18 @@
 
 .ImagesContainer img{
   object-fit: contain;
-  margin: 0 1rem;
+  margin: 0 .5rem;
   height: 100%;
   width: auto;
   will-change: transform;
 }
 
+
+@media (max-width: 767px) {
+  .ImagesContainer img{
+    object-fit: cover;
+  }
+}
 /*.GalleryContainer img:first-of-type {
 }
 
