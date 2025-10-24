@@ -4,6 +4,11 @@ import * as path from 'path';
 import * as fs from 'fs';
 
 
+ const galleriesMapPath = path.join(process.cwd(), "src", "json", "galleries.json");
+ const jsonData = fs.readFileSync(galleriesMapPath, "utf8");
+ const jsonParsedGalleries = JSON.parse(jsonData) as Gallery[];
+
+
 export enum GalleryFolderName{
   IncontriDeserto = 'incontri_nel_deserto',
   Frammenti = 'frammenti',
@@ -54,16 +59,18 @@ export enum GalleryPage{
 
  function galleryFactory(galleriesPath: string, title: string, galleryFolder: GalleryFolderName, galleryPage: GalleryPage): Gallery{
      const folderPath = `${galleriesPath}${galleryFolder}`
-     const paintings: Painting [] =  getPaintings(folderPath) ?? [];
+     const parsedJsonGallery: Gallery | undefined = jsonParsedGalleries.find(g => g.id == galleryFolder);
+     const paintings: Painting [] =  getPaintings(folderPath, parsedJsonGallery) ?? [];
      const gallery = new Gallery({
        id: galleryFolder,
-       paintings: paintings,
        title: title, 
+       paintings: paintings,
        folderName: galleryFolder,
        folderPath: folderPath,
        pageName: galleryPage,
        description: "Galleria", 
      });
+     gallery.paintings 
      return gallery;
 }
 
