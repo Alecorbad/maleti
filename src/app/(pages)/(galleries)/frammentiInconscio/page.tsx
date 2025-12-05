@@ -25,7 +25,8 @@ export default function FrammentiInconscio() {
         generatePaintings((paint: Painting, key: number) => {
           return <div key={paint.id} 
           className={`${GalleriesStyle.paintingFocus}`}>
-          <PaintingComponent 
+          <PaintingComponent
+							displayText={true} 
           key={paint.id} 
           objectFit="contain"
           height="auto"
@@ -52,7 +53,8 @@ export default function FrammentiInconscio() {
         generatePaintings((paint: Painting, key: number) => {
           return <div key={paint.id} 
           className={`${GalleriesStyle.paintingFocus}`}>
-          <PaintingComponent 
+          <PaintingComponent
+					displayText={true} 
           key={paint.id} 
           objectFit="contain"
           height="95vh"

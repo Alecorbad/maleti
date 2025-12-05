@@ -1,94 +1,102 @@
-"use client"
+"use client";
 
-
-import { useState,  useEffect } from 'react';
-import React from 'react';
+import { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import Image from 'next/image'
+import Image from "next/image";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import GalleryFacetComponent from './components/galleryFacet';
-import StylesHomePage from './homepage.module.css';
-import { Gallery } from '@/app/types/galleries';
-import { useGalleryContext } from "@/app/providers/gallery.provider"
-import VerticalScrollbar from "./components/verticalScrollBar"; 
-// import MusicPlayer from "./components/musicPlayer"; 
+import GalleryFacetComponent from "./components/galleryFacet";
+import StylesHomePage from "./homepage.module.css";
+import { Gallery, JustifyContent } from "@/app/types/galleries";
+import { useGalleryContext } from "@/app/providers/gallery.provider";
+// import VerticalScrollbar from "./components/verticalScrollBar";
+// import MusicPlayer from "./components/musicPlayer";
 
-
-  function animateBanner(){
-    return <motion.div className={StylesHomePage.titleContainer}
-    animate= {{
-      height: ["20rem", "3rem"],
-    }}
-    transition={{
-      times: [1],
-      duration: 1,
-      ease: "easeInOut", 
-    }}
+function animateBanner() {
+  return (
+    <motion.div
+      className={StylesHomePage.titleContainer}
+      animate={{
+        height: ["20rem", "3rem"],
+      }}
+      transition={{
+        times: [1],
+        duration: 1,
+        ease: "easeInOut",
+      }}
     >
-      <h1 className={StylesHomePage.title1}>
-        Simona Maleti
-      </h1>
+      <h1 className={StylesHomePage.title1}>Simona Maleti</h1>
     </motion.div>
-  }
-
+  );
+}
 
 export default function Home() {
-  const galleriesContext = useGalleryContext()
-  const galleries = galleriesContext.galleries
-  const bannerGallery: Gallery = galleries.filter((g) => g.pageName == "floras")[0]
+  const galleriesContext = useGalleryContext();
+  const galleries = galleriesContext.galleries;
+  const bannerGallery: Gallery | undefined = galleries.find(
+    (g) => g.pageName === "floras",
+  );
   const [hasBannerAnimated, setHasBannerAnimated] = useState<boolean>(false);
 
   useEffect(() => {
-     const hasBannerAnimated = sessionStorage.getItem('hasBannerAnimated');
-     if(hasBannerAnimated){
-        setHasBannerAnimated(true);
-     }
-     else{
+    const hasBannerAnimated = sessionStorage.getItem("hasBannerAnimated");
+    if (hasBannerAnimated) {
+      setHasBannerAnimated(true);
+    } else {
       sessionStorage.setItem("hasBannerAnimated", "yes");
-     }
+    }
   }, []);
 
-
   // <MusicPlayer />
+  // <VerticalScrollbar />
   return (
     <>
-      <VerticalScrollbar />
       <div className={`${StylesHomePage.homepageBanner}`}>
-        {
-            bannerGallery ? bannerGallery.paintings.slice(0, 5).map((paint, key) => {
-              return <Image className={StylesHomePage.bannerImage} height={500} width={300} key={key} src={paint.url ?? ""} alt=""/>
-            }) : <></>
-        }
+        {bannerGallery?.paintings
+          .slice(0, 5)
+          .map((paint) => (
+            <Image
+              className={StylesHomePage.bannerImage}
+              height={500}
+              width={300}
+              key={paint.id ?? `banner-${paint.title}-${Math.random()}`}
+              src={paint.url ?? ""}
+              alt={
+                paint.title
+                  ? `Banner: ${paint.title} - ${paint.description ?? ""}`
+                  : "Immagine galleria"
+              }
+            />
+          )) || <div>Nessuna galleria disponibile</div>}
         <div className={StylesHomePage.titleWrapper}>
           {!hasBannerAnimated ? (
-            animateBanner() 
-          ) : ( 
+            animateBanner()
+          ) : (
             <div className={StylesHomePage.titleContainer}>
-              <h1 className={StylesHomePage.title1}>
-                Simona Maleti
-              </h1>
+              <h1 className={StylesHomePage.title1}>Simona Maleti</h1>
             </div>
-              ) 
-
-          }
+          )}
         </div>
       </div>
 
       <Header />
 
       <div className={`${StylesHomePage.homepageContainer} pageContainer`}>
-      {
-          galleries.map((gallery, key) => (
-            <div className={`${StylesHomePage.galleryContainer}`} key={`galCont_${gallery.title}`}>
-                <GalleryFacetComponent 
-                justifyContent={key % 2 == 0 ? "flex-start" : "flex-end"}
-                gallery={gallery} 
-                key={`gal_${gallery.title}`} 
-                />
-            </div>
-          ))
-      }
+        {galleries.map((gallery, key) => (
+          <div
+            className={`${StylesHomePage.galleryContainer}`}
+            key={`galCont_${gallery.title}`}
+          >
+            <GalleryFacetComponent
+              justifyContent={
+                (key % 2 === 0 ? "flex-start" : "flex-end") as JustifyContent
+              }
+              gallery={gallery}
+              key={`gal_${gallery.title}`}
+            />
+          </div>
+        ))}
       </div>
       <div className={`${StylesHomePage.homepageFooter} footerContainer`}>
         <Footer />
@@ -96,4 +104,3 @@ export default function Home() {
     </>
   );
 }
-

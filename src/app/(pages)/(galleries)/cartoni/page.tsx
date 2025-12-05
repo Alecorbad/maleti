@@ -27,7 +27,8 @@ export default function Cartoni() {
         generatePaintings((paint: Painting, key: number) => {
           return <div key={paint.id} 
           className={`${GalleriesStyle.paintingFocus}`}>
-        <PaintingComponent 
+        <PaintingComponent
+							displayText={true} 
           objectFit="contain"
           height="auto"
           width="100%"
@@ -53,7 +54,8 @@ export default function Cartoni() {
         generatePaintings((paint: Painting, key: number) => {
           return <div key={paint.id} 
           className={`${GalleriesStyle.paintingFocus}`}>
-        <PaintingComponent 
+        <PaintingComponent
+					displayText={true} 
           objectFit="contain"
           height="95vh"
           width="auto"

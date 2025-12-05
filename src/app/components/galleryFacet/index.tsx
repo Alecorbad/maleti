@@ -1,6 +1,6 @@
 "use client";
 import galleryFacetStyles from "./galleryFacet.module.css"
-import { Gallery, Painting} from '@/app/types/galleries';
+import { Gallery, Painting, JustifyContent} from '@/app/types/galleries';
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion,  useDragControls } from "framer-motion";
@@ -10,7 +10,7 @@ import MediaQuery from '@/app/hooks/useMediaQuery';
 
 interface GalleryProps {
   gallery: Gallery;
-  justifyContent?: string;
+  justifyContent?: JustifyContent;
   xRange?: {start: string, end: string};
 }
 
@@ -19,7 +19,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
    const dragControls = useDragControls();
 
    const isMobile = MediaQuery(768);
-   const justifyContent = (props.justifyContent ? props.justifyContent : "flex-start");
+   const justifyContent: JustifyContent = props.justifyContent ?? "flex-start";
 
   const transAB = {
     x: ['20%', '100%'],
@@ -51,10 +51,11 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
       break;
   }
 
+  const randomPaintings: Painting[] = takeRandomPaintings(props.gallery, 10);
 
   // Gestire l'animazione
   const animation = (isMobile) ? {} : selectedTransaction;
-  const costraint = (10 * 300 / 2);
+  const costraint = (randomPaintings.reduce((acc, item) => acc + (item.dimensions?.width ?? 500), 0) / 2);
 
   
   return (
@@ -78,31 +79,25 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
                 animate={animation}
                 style={{justifyContent: isMobile ? "center" : justifyContent}}>
               {
-                 takeRandomPaintings(props.gallery, 10).map(
+                 randomPaintings.map(
                     (paint) => {
-                      return <Image
-                        key={paint.id}
-                        src={paint.url ?? ''}
-                        width={500}
-                        height={500}
-                        alt="Picture of the author"
-                      >
-                      
-
-                      </Image>
-                      // return <PaintingComponent 
-                            // key={paint.id} 
-                            // objectFit="contain"
-                            // height="100%"
-                            // width="30rem"
-                            // margin="1rem"
-                            // frameWidth="fit-content"
-                            // frameHeight="fit-content"
-                            // framePadding=".3rem"
-                            // frameColor="rgb(255, 255, 255)"
-                            // painting={paint} 
-                            // gridArea={`p${paint.id}`}
-                        // />
+                      return <Image 
+                              key={paint.id ?? `paint-${Math.random()}`}
+                              src={paint.url ?? ""}
+                              height= { paint.dimensions ? (paint.dimensions.height ?? 500) : 500}
+                              width= { paint.dimensions ? (paint.dimensions.width ?? 500) : 500}
+                              alt={paint.title ? `Dipinto: ${paint.title}` : "Dipinto non disponibile"}
+                            /> 
+                       //return <PaintingComponent 
+                             //key={paint.id} 
+                             //painting={paint} 
+                             //objectFit="contain"
+                             //height="100%"
+                             //width="auto"
+                             //margin=".5rem"
+                             //displayText={false}
+                             ///>
+                      //
                   })
               }
               </motion.div>

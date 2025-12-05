@@ -1,13 +1,19 @@
-
 export class Painting {
   id: string | null = null;
   title: string | null = null;
   description: string | null = null;
   author: string | null = null;
   url: string | null = null;
-  dimensions: { width: number, height: number} | null = null;
+  dimensions: { width: number; height: number } | null = null;
 
-  constructor(data: {id?: string, title?: string, description?: string, author?: string, url?: string, dimensions?: { width: number, height: number}}){
+  constructor(data: {
+    id?: string;
+    title?: string;
+    description?: string;
+    author?: string;
+    url?: string;
+    dimensions?: { width: number; height: number };
+  }) {
     this.id = data.id ?? null;
     this.title = data.title ?? null;
     this.description = data.description ?? null;
@@ -17,10 +23,15 @@ export class Painting {
   }
 }
 
+export type JustifyContent =
+  | "flex-start"
+  | "flex-end"
+  | "center"
+  | "space-between"
+  | "space-around"
+  | "space-evenly";
 
-
-
-export class Gallery{
+export class Gallery {
   id: string | null = null;
   folderName: string | null = null;
   folderPath: string | null = null;
@@ -29,7 +40,15 @@ export class Gallery{
   description: string | null = null;
   paintings: Painting[] = [];
 
-  constructor(data: {id?: string, folderName?: string, paintings?: Painting[], pageName?: string, title?: string, description?: string, folderPath?: string}){
+  constructor(data: {
+    id?: string;
+    folderName?: string;
+    paintings?: Painting[];
+    pageName?: string;
+    title?: string;
+    description?: string;
+    folderPath?: string;
+  }) {
     this.id = data.id ?? null;
     this.paintings = data.paintings ?? [];
     this.folderName = data.folderName ?? null;
@@ -37,5 +56,5 @@ export class Gallery{
     this.title = data.title ?? null;
     this.description = data.description ?? null;
     this.folderPath = data.folderPath ?? null;
-   }
+  }
 }

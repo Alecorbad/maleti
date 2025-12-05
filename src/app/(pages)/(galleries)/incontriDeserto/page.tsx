@@ -32,7 +32,8 @@ export default function IncontriDeserto() {
         generatePaintings((paint: Painting, key: number) => {
           return <div key={paint.id} 
           className={`${GalleriesStyle.paintingFocus}`}>
-          <PaintingComponent 
+          <PaintingComponent
+					displayText={true} 
           objectFit="contain"
           height="auto"
           width="100%"
@@ -58,7 +59,8 @@ export default function IncontriDeserto() {
         generatePaintings((paint: Painting, key: number) => {
           return <div key={paint.id} 
           className={`${GalleriesStyle.paintingFocus}`}>
-          <PaintingComponent 
+          <PaintingComponent
+					displayText={true} 
           key={paint.id} 
           objectFit="contain"
           height="95vh"

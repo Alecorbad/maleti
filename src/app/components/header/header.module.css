@@ -1,5 +1,4 @@
-
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -9,25 +8,24 @@
   z-index: 5;
   height: 15vh;
   width: 100%;
-  top: -1px;                       /* ➜ the trick */
+  top: -1px; /* ➜ the trick */
   padding: 0em;
 }
 
-.base{
+.base {
   height: inherit;
   padding-top: inherit;
 }
 
-
-.headerContainer{
-  position: absolute;  
+.headerContainer {
+  position: absolute;
   top: 0;
   z-index: 5;
   width: 100%;
   height: inherit;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,49 +33,48 @@
   padding: 1rem;
 }
 
-.hoverMenuContainer{
+.hoverMenuContainer {
   display: flex;
   justify-content: start;
   align-items: center;
   margin: 0 4rem;
 }
 
-.hoverMenu{
+.hoverMenu {
   font-size: 1.3rem;
   padding: 0 2rem 1rem 2rem;
   border-radius: 0 0 30px 30px;
-  background: rgba(var(--colorB3), .7);
+  background: rgba(var(--colorB3), 0.7);
 }
 
+.optionList {
+  position: absolute;
+}
 
-.linkList{
+.linkList {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-
-.linkList >  a{
+.option {
   display: flex;
   justify-content: center;
   border-radius: 6px;
-  padding: .5rem 1.4rem;
-  margin:  0 .8rem;
-  letter-spacing: .2rem;
+  padding: 0.5rem 1.4rem;
+  margin: 0 0.8rem;
+  letter-spacing: 0.2rem;
   flex: 0 1 20vw;
   font-size: 5vh;
 }
 
-
-
 /* HEADER MOBILE */
 
-
-.mobileBanner{
+.mobileBanner {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  padding: .3rem 0 0 0;
+  align-items: center;
+  padding: 0.3rem 0 0 0;
   height: inherit;
   position: absolute;
   top: 0;
@@ -85,81 +82,78 @@
 
 .mobileBanner .left,
 .mobileBanner .center,
-.mobileBanner .right{
+.mobileBanner .right {
   display: flex;
   position: relative;
 }
 
-.mobileBanner .left{
+.mobileBanner .left {
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.mobile-banner .center{
+.mobile-banner .center {
   justify-content: center;
   align-items: flex-start;
 }
-.mobile-banner .right{
+.mobile-banner .right {
   justify-content: flex-end;
   align-items: flex-start;
   margin-right: 1rem;
 }
 
-.menuButton{
+.menuButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: .3rem;
+  margin: 0.3rem;
   background: rgba(var(--colorB1), 1);
   border: 1px solid rgba(var(--colorT1), 1);
   border-radius: 1.5rem;
-  padding: .3rem;
+  padding: 0.3rem;
   height: 2.5rem;
   width: 2.5rem;
 }
 
-.menuButton .bar{
- width: 80%; 
- height: .3rem;
- background: rgba(var(--colorT1), 1);;
- margin: .1rem 0;
- border-radius: .5rem;
+.menuButton .bar {
+  width: 80%;
+  height: 0.3rem;
+  background: rgba(var(--colorT1), 1);
+  margin: 0.1rem 0;
+  border-radius: 0.5rem;
 }
 
-.mobileLink{
-    width: "100%";
-    height: "4rem";
-    background: rgba(var(--colorB1), 1);
-    margin: .5rem 0;
-    padding: .3rem;
-    border-radius: 0 7px 7px 0;
-    border: 1px 1px 1px 1px;
-    border-color: black;
-    border-style: solid;
-    font-size: 3vh;
-    letter-spacing: .2rem;
+.mobileLink {
+  width: "100%";
+  height: "4rem";
+  background: rgba(var(--colorB1), 1);
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+  border-radius: 0 7px 7px 0;
+  border: 1px 1px 1px 1px;
+  border-color: black;
+  border-style: solid;
+  font-size: 3vh;
+  letter-spacing: 0.2rem;
 }
 
-.menu{
+.menu {
   position: absolute;
   z-index: -1;
   min-height: 60vh;
   color: rgba(var(--colorT1), 1);
   opacity: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-.letter{
+.letter {
   /*minimo, massimo, preferito */
-  container-name: sidebar
+  container-name: sidebar;
 }
-
 
 @media (max-width: 767px) {
-  .wrapper{
+  .wrapper {
     height: 3rem;
   }
 }
-
-
