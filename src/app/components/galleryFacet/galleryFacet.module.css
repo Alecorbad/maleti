@@ -1,72 +1,69 @@
-
-
 /*  Gallery */
-.GalleryContainer{
+.GalleryContainer {
   height: 100%;
   position: relative;
   top: 0;
   overflow: hidden;
-  isolation: isolate; 
+  isolation: isolate;
   /* touch-action: "pan-y"; */
 }
-  .GalleryWrapper{
-    position: relative;
-    height: 100%;
-  }
+.GalleryWrapper {
+  position: relative;
+  height: 100%;
+}
 
-.GalleryName{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    container-type: size;
-    resize: horizontal;
-    z-index: 2;
-    min-height: 50%;
-    overflow-wrap: anywhere;
-    width: 100%;
-    mix-blend-mode: difference; 
-  }
+.GalleryName {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  container-type: size;
+  resize: horizontal;
+  z-index: 2;
+  min-height: 50%;
+  overflow-wrap: anywhere;
+  width: 100%;
+  mix-blend-mode: difference;
+}
 
-  .GalleryName a{
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-    /* border: 1px solid black;*/
-    padding: 0.5rem 0.2rem;
-    margin: .5rem;
-    background: rgba(var(--colorB4), 0.7);
-  }
+.GalleryName a {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black;*/
+  padding: 0.5rem 0.2rem;
+  margin: 0.5rem;
+  background: rgba(var(--colorB4), 0.7);
+}
 
-  .GalleryName h1{
-    width: 100%;
-    color: rgba(var(--colorT3), 1);
-    text-shadow: none;
-    letter-spacing: .6rem;
-    mix-blend-mode: difference; 
-  }
-  .ImagesContainer{
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
+.GalleryName h1 {
+  width: 100%;
+  color: rgba(var(--colorT3), 1);
+  text-shadow: none;
+  letter-spacing: 0.6rem;
+  mix-blend-mode: difference;
+}
+.ImagesContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 
-.ImagesContainer img{
+.ImagesContainer img {
   object-fit: contain;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   height: 100%;
   width: auto;
   will-change: transform;
 }
 
-
 @media (max-width: 767px) {
-  .ImagesContainer img{
+  .ImagesContainer img {
     object-fit: cover;
   }
 }
@@ -75,5 +72,3 @@
 
 .GalleryContainer img:last-of-type {
 }*/
-
-
