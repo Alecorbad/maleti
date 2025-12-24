@@ -8,10 +8,10 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import GalleryFacetComponent from "./components/galleryFacet";
 import StylesHomePage from "./homepage.module.css";
-import { Gallery, JustifyContent } from "@/app/types/galleries";
+import { Gallery } from "@/app/types/galleries";
 import { useGalleryContext } from "@/app/providers/gallery.provider";
-// import VerticalScrollbar from "./components/verticalScrollBar";
-// import MusicPlayer from "./components/musicPlayer";
+import VerticalScrollbar from "./components/verticalScrollBar"; // <-- Importa qui
+// import MusicPlayer from "./components/musicPlayer"; // <-- Importa qui
 
 function animateBanner() {
   return (
@@ -34,9 +34,9 @@ function animateBanner() {
 export default function Home() {
   const galleriesContext = useGalleryContext();
   const galleries = galleriesContext.galleries;
-  const bannerGallery: Gallery | undefined = galleries.find(
-    (g) => g.pageName === "floras",
-  );
+  const bannerGallery: Gallery = galleries.filter(
+    (g) => g.pageName == "floras",
+  )[0];
   const [hasBannerAnimated, setHasBannerAnimated] = useState<boolean>(false);
 
   useEffect(() => {
@@ -49,26 +49,26 @@ export default function Home() {
   }, []);
 
   // <MusicPlayer />
-  // <VerticalScrollbar />
   return (
     <>
+      <VerticalScrollbar />
       <div className={`${StylesHomePage.homepageBanner}`}>
-        {bannerGallery?.paintings
-          .slice(0, 5)
-          .map((paint) => (
-            <Image
-              className={StylesHomePage.bannerImage}
-              height={500}
-              width={300}
-              key={paint.id ?? `banner-${paint.title}-${Math.random()}`}
-              src={paint.url ?? ""}
-              alt={
-                paint.title
-                  ? `Banner: ${paint.title} - ${paint.description ?? ""}`
-                  : "Immagine galleria"
-              }
-            />
-          )) || <div>Nessuna galleria disponibile</div>}
+        {bannerGallery ? (
+          bannerGallery.paintings.slice(0, 5).map((paint, key) => {
+            return (
+              <Image
+                className={StylesHomePage.bannerImage}
+                height={500}
+                width={300}
+                key={key}
+                src={paint.url ?? ""}
+                alt=""
+              />
+            );
+          })
+        ) : (
+          <></>
+        )}
         <div className={StylesHomePage.titleWrapper}>
           {!hasBannerAnimated ? (
             animateBanner()
@@ -89,9 +89,7 @@ export default function Home() {
             key={`galCont_${gallery.title}`}
           >
             <GalleryFacetComponent
-              justifyContent={
-                (key % 2 === 0 ? "flex-start" : "flex-end") as JustifyContent
-              }
+              justifyContent={key % 2 == 0 ? "flex-start" : "flex-end"}
               gallery={gallery}
               key={`gal_${gallery.title}`}
             />
