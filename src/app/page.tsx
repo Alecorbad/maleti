@@ -10,7 +10,7 @@ import GalleryFacetComponent from "./components/galleryFacet";
 import StylesHomePage from "./homepage.module.css";
 import { Gallery } from "@/app/types/galleries";
 import { useGalleryContext } from "@/app/providers/gallery.provider";
-import VerticalScrollbar from "./components/verticalScrollBar"; // <-- Importa qui
+// import VerticalScrollbar from "./components/verticalScrollBar"; // <-- Importa qui
 // import MusicPlayer from "./components/musicPlayer"; // <-- Importa qui
 
 function animateBanner() {
@@ -49,17 +49,19 @@ export default function Home() {
   }, []);
 
   // <MusicPlayer />
+  // <VerticalScrollbar />
   return (
     <>
-      <VerticalScrollbar />
       <div className={`${StylesHomePage.homepageBanner}`}>
         {bannerGallery ? (
           bannerGallery.paintings.slice(0, 5).map((paint, key) => {
             return (
               <Image
+                priority
+                fetchPriority="high"
                 className={StylesHomePage.bannerImage}
-                height={500}
-                width={300}
+                height={paint.dimensions?.height ?? 500}
+                width={paint.dimensions?.width ?? 500}
                 key={key}
                 src={paint.url ?? ""}
                 alt=""

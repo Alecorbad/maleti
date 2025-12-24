@@ -3,8 +3,12 @@ import galleryFacetStyles from "./galleryFacet.module.css";
 import { Gallery, Painting, JustifyContent } from "@/app/types/galleries";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
-import { motion, useDragControls, useMotionValue } from "framer-motion";
+import {
+  motion,
+  useDragControls,
+  useMotionValue,
+  animate,
+} from "framer-motion";
 import MediaQuery from "@/app/hooks/useMediaQuery";
 
 interface GalleryProps {
@@ -95,7 +99,6 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
               return (
                 <Image
                   priority
-                  fetchPriority="high"
                   key={paint.id ?? `paint-${Math.random()}`}
                   src={paint.url ?? ""}
                   height={
