@@ -38,6 +38,9 @@ export default function Home() {
     (g) => g.pageName == "floras",
   )[0];
   const [hasBannerAnimated, setHasBannerAnimated] = useState<boolean>(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const hasBannerAnimated = sessionStorage.getItem("hasBannerAnimated");

@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import MediaQuery from "@/app/hooks/useMediaQuery";
@@ -34,14 +34,9 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuHovered, setMenuHovered] = useState(false);
 
+  // Controllo la posizione dello scroll
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setMenuHovered(true);
-      } else {
-        setMenuHovered(false);
-      }
-    };
+    const handleScroll = () => setMenuHovered(window.scrollY === 0);
 
     window.addEventListener("scroll", handleScroll);
     handleScroll();
@@ -49,7 +44,22 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  //Controllo se l'header è in posizione "sticky"
   useEffect(() => {
+    const checkSticky = () => {
+      if (!ref.current) return;
+      const rect = ref.current.getBoundingClientRect();
+      // Se il top dell'header è sopra lo scroll corrente, è sticky
+      setIsSticky(rect.top < 0);
+    };
+
+    const handlePageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) {
+        checkSticky();
+      }
+    };
+
+    checkSticky(); // controlla subito al mount
     const observer = new IntersectionObserver(
       //Callback
       ([entry]) => {
@@ -138,7 +148,7 @@ const Header = () => {
         y: "0",
         transition: {
           duration: 0.4,
-          ease: "easeInOut",
+          ease: easeInOut,
         },
       },
       up: {
@@ -146,7 +156,7 @@ const Header = () => {
         transition: {
           delay: 0.3,
           duration: 0.5,
-          ease: "easeInOut",
+          ease: easeInOut,
         },
       },
     };

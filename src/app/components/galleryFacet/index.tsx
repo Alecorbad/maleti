@@ -3,7 +3,6 @@ import galleryFacetStyles from "./galleryFacet.module.css";
 import { Gallery, Painting, JustifyContent } from "@/app/types/galleries";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import { motion, useDragControls, useMotionValue } from "framer-motion";
 import MediaQuery from "@/app/hooks/useMediaQuery";
 
@@ -22,7 +21,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   const transAB = {
     x: ["20%", "100%"],
     transition: {
-      duration: 100,
+      duration: isMobile ? 50 : 100,
       ease: "linear",
       repeat: Infinity,
       repeatType: "alternate",
@@ -32,7 +31,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   const transBA = {
     x: ["-20%", "-100%"],
     transition: {
-      duration: 100,
+      duration: isMobile ? 50 : 100,
       ease: "linear",
       repeat: Infinity,
       repeatType: "alternate",
@@ -54,12 +53,11 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   const x = useMotionValue(0);
 
   // Gestire l'animazione
-  const animation = selectedTransaction;
   const costraint =
     randomPaintings.reduce(
       (acc, item) => acc + (item.dimensions?.width ?? 500),
       0,
-    ) / 2;
+    ) / 7;
 
   return (
     <>
@@ -85,7 +83,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
             dragControls={dragControls}
             dragListener={false}
             className={`${galleryFacetStyles.ImagesContainer}`}
-            animate={animation}
+            animate={selectedTransaction}
             style={{
               justifyContent: isMobile ? "center" : justifyContent,
               touchAction: "pan-y",
