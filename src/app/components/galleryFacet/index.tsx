@@ -3,7 +3,13 @@ import galleryFacetStyles from "./galleryFacet.module.css";
 import { Gallery, Painting, JustifyContent } from "@/app/types/galleries";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useDragControls, useMotionValue } from "framer-motion";
+import Head from "next/head";
+import {
+  motion,
+  useDragControls,
+  TargetAndTransition,
+  useMotionValue,
+} from "framer-motion";
 import MediaQuery from "@/app/hooks/useMediaQuery";
 
 interface GalleryProps {
@@ -18,23 +24,23 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   const isMobile = MediaQuery(768);
   const justifyContent: JustifyContent = props.justifyContent ?? "flex-start";
 
-  const transAB = {
+  const transAB: TargetAndTransition = {
     x: ["20%", "100%"],
     transition: {
       duration: isMobile ? 50 : 100,
       ease: "linear",
       repeat: Infinity,
-      repeatType: "alternate",
+      repeatType: "loop",
     },
   };
 
-  const transBA = {
+  const transBA: TargetAndTransition = {
     x: ["-20%", "-100%"],
     transition: {
       duration: isMobile ? 50 : 100,
       ease: "linear",
       repeat: Infinity,
-      repeatType: "alternate",
+      repeatType: "loop",
     },
   };
 
@@ -57,7 +63,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
     randomPaintings.reduce(
       (acc, item) => acc + (item.dimensions?.width ?? 500),
       0,
-    ) / 7;
+    ) / 2;
 
   return (
     <>
