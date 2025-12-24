@@ -210,6 +210,8 @@ const Painting = (props: PaintingProps) => {
           <div className={styles.imageContainer} style={imageContainerStyle}>
             {props.painting ? (
               <Image
+                priority
+                fetchPriority="high"
                 onLoad={handleImageLoad}
                 onError={handleImageError}
                 className={styles.image}
