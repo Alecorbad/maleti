@@ -1,3 +1,7 @@
-.paintingFocus{
-   scroll-snap-align: center; 
+.galleryTitle {
+  margin: 0 0 0 2rem;
+}
+
+.paintingFocus {
+  scroll-snap-align: center;
 }
