@@ -3,7 +3,7 @@ import galleryFacetStyles from "./galleryFacet.module.css";
 import { Gallery, Painting, JustifyContent } from "@/app/types/galleries";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
+
 import {
   motion,
   useDragControls,
@@ -56,15 +56,6 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
 
   const randomPaintings: Painting[] = takeRandomPaintings(props.gallery, 10);
 
-  const x = useMotionValue(0);
-
-  // Gestire l'animazione
-  const costraint =
-    randomPaintings.reduce(
-      (acc, item) => acc + (item.dimensions?.width ?? 500),
-      0,
-    ) / 2;
-
   return (
     <>
       <div className={`${galleryFacetStyles.GalleryContainer}`}>
@@ -81,13 +72,6 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
         </div>
         <div className={`${galleryFacetStyles.GalleryWrapper}`}>
           <motion.div
-            drag={isMobile ? "x" : false}
-            dragConstraints={{
-              left: -costraint,
-              right: costraint,
-            }}
-            dragControls={dragControls}
-            dragListener={false}
             className={`${galleryFacetStyles.ImagesContainer}`}
             animate={selectedTransaction}
             style={{
@@ -115,16 +99,6 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
                   }
                 />
               );
-              //return <PaintingComponent
-              //key={paint.id}
-              //painting={paint}
-              //objectFit="contain"
-              //height="100%"
-              //width="auto"
-              //margin=".5rem"
-              //displayText={false}
-              ///>
-              //
             })}
           </motion.div>
         </div>
@@ -132,16 +106,6 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
     </>
   );
 };
-
-//  <motion.div className={`${galleryFacetStyles.defaultGalleryName}`}
-//          initial={{ opacity: 0 }}
-//          whileInView={{ opacity: 1, 'backdrop-filter': 'blur(.7px)' }}
-//          transition={{ duration: 0.7 }}
-//          >
-//            <Link href={`/${gallery.pageName}`}>
-//              <h2> {gallery.title} </h2>
-//            </Link>
-//        </motion.div>
 
 function takeRandomPaintings(
   gallery: Gallery,
@@ -162,10 +126,5 @@ function takeRandomPaintings(
   }
   return result;
 }
-
-// function generateRandomNumber(min: number, max: number, jump: number = 10){
-//    const ran = Math.random() * (max - min) + min;
-//   return Math.round(ran / jump) * jump;
-// }
 
 export default GalleryFacet;

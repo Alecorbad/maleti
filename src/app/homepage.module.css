@@ -14,6 +14,7 @@
   width: 20%;
   object-fit: cover;
 }
+
 .titleWrapper {
   position: absolute;
   width: 100%;
@@ -83,10 +84,12 @@
   .homepageBanner {
     flex: 0 1 30vh;
   }
+
   .galleryContainer {
     height: 70vh;
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
   }
+
   .homepageHeader {
     flex: 0 0 auto;
   }

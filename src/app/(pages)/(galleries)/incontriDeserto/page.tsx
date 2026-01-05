@@ -66,7 +66,6 @@ export default function IncontriDeserto() {
                     objectFit="contain"
                     height="95vh"
                     width="auto"
-                    margin="5rem 1rem 5rem 1rem"
                     frameWidth="100%"
                     framePadding="1rem"
                     frameColor="rgb(255, 255, 255)"

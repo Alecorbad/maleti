@@ -18,61 +18,60 @@ export default function TorriPreziose() {
 
   //import MediaQuery from '@/app/hooks/useMediaQuery';
   const isMobile = MediaQuery(768);
-  if(isMobile){
+  if (isMobile) {
     return <>
-    <Wall mode="flex"  width="100%">
-    {
-      generatePaintings((paint: Painting, key: number) => {
+      <Wall mode="flex" width="100%">
+        {
+          generatePaintings((paint: Painting, key: number) => {
 
-          return <div key={paint.id} 
-          className={`${GalleriesStyle.paintingFocus}`}>
-        <PaintingComponent
-				displayText={true} 
-        objectFit="contain"
-        height="auto"
-        width="100%"
-        margin="3rem 0 3rem 0"
-        frameWidth="100%"
-        framePadding="1rem"
-        frameColor="rgb(255, 255, 255)"
-        painting={paint} 
-        gridArea={`p${key}`}
-        />
-        </div>
-      },
+            return <div key={paint.id}
+              className={`${GalleriesStyle.paintingFocus}`}>
+              <PaintingComponent
+                displayText={true}
+                objectFit="contain"
+                height="auto"
+                width="100%"
+                margin="3rem 0 3rem 0"
+                frameWidth="100%"
+                framePadding="1rem"
+                frameColor="rgb(255, 255, 255)"
+                painting={paint}
+                gridArea={`p${key}`}
+              />
+            </div>
+          },
 
-      gallery ? gallery?.paintings : [],
-                       )
-    }
-    </Wall>
+            gallery ? gallery?.paintings : [],
+          )
+        }
+      </Wall>
     </>;
-  }else{
+  } else {
     return <>
-    <Wall mode="flex"  width="100%">
-    {
-      generatePaintings((paint: Painting, key: number) => {
+      <Wall mode="flex" width="100%">
+        {
+          generatePaintings((paint: Painting, key: number) => {
 
-          return <div key={paint.id} 
-          className={`${GalleriesStyle.paintingFocus}`}>
-        <PaintingComponent
-				displayText={true} 
-        objectFit="contain"
-        height="95vh"
-        width="auto"
-        margin="5rem 1rem 5rem 1rem"
-        frameWidth="100%"
-        framePadding="1rem"
-        frameColor="rgb(255, 255, 255)"
-        painting={paint} 
-        gridArea={`p${key}`}
-        />
-        </div>
-      },
+            return <div key={paint.id}
+              className={`${GalleriesStyle.paintingFocus}`}>
+              <PaintingComponent
+                displayText={true}
+                objectFit="contain"
+                height="95vh"
+                width="auto"
+                frameWidth="100%"
+                framePadding="1rem"
+                frameColor="rgb(255, 255, 255)"
+                painting={paint}
+                gridArea={`p${key}`}
+              />
+            </div>
+          },
 
-      gallery ? gallery?.paintings : [],
-                       )
-    }
-    </Wall>
+            gallery ? gallery?.paintings : [],
+          )
+        }
+      </Wall>
     </>;
   }
 }
