@@ -8,7 +8,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "78e18b7d-fdb3-468f-9036-76578a0f29cb",
+				"id": "494af24d-4550-400b-a13d-82a4502785f2",
 				"title": "Ah, l'amour!",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -19,7 +19,7 @@
 				}
 			},
 			{
-				"id": "bf7f24f0-c490-4312-b369-095201f9d434",
+				"id": "98d3e279-a2e3-4836-aab9-baf9e1037ec5",
 				"title": "allegoria della morte",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -30,7 +30,7 @@
 				}
 			},
 			{
-				"id": "1a6e5556-e568-4384-8d55-063279b98037",
+				"id": "6680c45a-db90-4f99-a07b-b578da9c9ca2",
 				"title": "arenata tra i papaveri",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -41,7 +41,7 @@
 				}
 			},
 			{
-				"id": "c23c9275-a8ce-4435-bb22-b4c236a55bd5",
+				"id": "9a9395ca-05ca-47a9-8d1d-b2dc115f29e0",
 				"title": "attesa ai margini del chissà dove",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -52,7 +52,7 @@
 				}
 			},
 			{
-				"id": "9ac65f3e-9252-468c-b1d8-a680646b3e6e",
+				"id": "29d1fe63-77dd-4d72-9ad9-4de40ea8c7fa",
 				"title": "chi è senza pietra scagli in aria un peccato",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -63,7 +63,7 @@
 				}
 			},
 			{
-				"id": "c35e9fff-a738-4d14-9594-1d5db438a900",
+				"id": "0816c892-da9a-414b-b505-804b3daada36",
 				"title": "come in una danza infinita l'eterno ritorna",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -74,7 +74,7 @@
 				}
 			},
 			{
-				"id": "aa962dc5-3c3c-4c49-a9f8-bde2e941ad5f",
+				"id": "5cdefc87-1ba0-4d41-94a5-90758750eab4",
 				"title": "coppia di effimeri",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -85,8 +85,8 @@
 				}
 			},
 			{
-				"id": "8e4b2878-da9f-4de9-a2b0-ebcbd73b64c2",
-				"title": "dna l'impronta genetica",
+				"id": "981f5126-247f-4ed9-882e-882009250aea",
+				"title": "dna (l'impronta genetica)",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/dna_limpronta_genetica.webp",
@@ -96,8 +96,8 @@
 				}
 			},
 			{
-				"id": "4ece114f-30c0-469c-9951-bbac2eebc60c",
-				"title": "è diverso è un pericolo",
+				"id": "cbcf81dd-54d9-4b85-9209-b139cd53fd82",
+				"title": "è diverso, è un pericolo!",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/e_diverso_e_un_pericolo.webp",
@@ -107,7 +107,7 @@
 				}
 			},
 			{
-				"id": "5de22efa-336d-4aa3-a49f-5b3a753abbe2",
+				"id": "aacb5f0e-8d43-4c7e-a7fe-44fa0796e8ea",
 				"title": "gita sul lago dell'inconscio",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -118,7 +118,7 @@
 				}
 			},
 			{
-				"id": "47be3468-45fb-450c-bffa-5c8a39b2d5c5",
+				"id": "b5c2ab1c-980e-4638-b78f-68564e302ffa",
 				"title": "gli effimeri si nutrono dell'attimo",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -129,7 +129,7 @@
 				}
 			},
 			{
-				"id": "05e041c0-6063-4039-b788-72029eaeb477",
+				"id": "6d955bc0-eedd-4caa-9c56-56c57fbc22ba",
 				"title": "il cuore dimentica ciò che lo spirito innalza",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -140,7 +140,7 @@
 				}
 			},
 			{
-				"id": "e829fce1-513f-4221-a76d-b8d3e1cb4f94",
+				"id": "10071ec1-5653-4e92-993f-538b939edc31",
 				"title": "il passaggio",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -151,7 +151,7 @@
 				}
 			},
 			{
-				"id": "2e83f39a-1502-4fa5-b1b7-66200d42e69f",
+				"id": "ad003e31-1b26-4acf-832e-abe9a2caa08e",
 				"title": "il sentiero dell'eternità è circolare",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -162,7 +162,7 @@
 				}
 			},
 			{
-				"id": "b4b8916f-4deb-454f-afa7-b992d314c882",
+				"id": "a90d044d-8241-461a-b50e-49ec28f0f353",
 				"title": "inesorabile",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -173,8 +173,8 @@
 				}
 			},
 			{
-				"id": "f105d0b7-6ca8-4d59-813a-2d2e4e76d410",
-				"title": "io amo",
+				"id": "442fc8cb-da5b-4f68-9cc0-98c0fbb554ac",
+				"title": "io amo!",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/io_amo.webp",
@@ -184,8 +184,8 @@
 				}
 			},
 			{
-				"id": "02baaf90-73df-43f8-9615-6edcdfadaef8",
-				"title": "io cerco dio",
+				"id": "61663a82-e349-40c4-9414-1700446893c6",
+				"title": "io cerco D'Io",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/io_cerco_dio.webp",
@@ -195,7 +195,7 @@
 				}
 			},
 			{
-				"id": "a5b91018-6e52-4df2-a37a-682c04fc6042",
+				"id": "1aae7773-7c5e-4809-a17b-cdd2b5a67d73",
 				"title": "la fioritura dell'essere",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -206,7 +206,7 @@
 				}
 			},
 			{
-				"id": "bc922b91-a449-4d7a-86bd-318640c38cdf",
+				"id": "5a7198eb-bc51-492b-9aa6-7b964aaae7cf",
 				"title": "la fretta di esistere",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -217,7 +217,7 @@
 				}
 			},
 			{
-				"id": "c32ac161-88c4-4349-b932-61ff6c3e6416",
+				"id": "4525dfc7-886a-41ba-822c-7fecdb3364f7",
 				"title": "la visione nella dualità",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -228,7 +228,7 @@
 				}
 			},
 			{
-				"id": "59dd5989-6ef6-417d-811b-f7bddcd92fbd",
+				"id": "abe49d40-8038-434b-b161-81629f548daa",
 				"title": "l'attimo immobile prima dell'alba",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -239,7 +239,7 @@
 				}
 			},
 			{
-				"id": "60ec59df-2110-4651-84ae-d82991746425",
+				"id": "07691bbb-8327-4083-b11d-7c2bb07aa509",
 				"title": "lo specchio celeste",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -250,8 +250,8 @@
 				}
 			},
 			{
-				"id": "44d1c5e7-0992-4756-94c8-0c3851ca4b19",
-				"title": "légami, legàmi",
+				"id": "e5628edb-7c2c-4cb9-9302-355f378a8beb",
+				"title": "légami/legàmi",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/lÉgami-legÀmi.webp",
@@ -261,7 +261,7 @@
 				}
 			},
 			{
-				"id": "a5ebc5d6-eaf6-41b4-9b35-8e82d3c0365b",
+				"id": "20d80716-b8d4-4af3-84e4-9566242075b9",
 				"title": "meditazione di un papavero",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -272,8 +272,8 @@
 				}
 			},
 			{
-				"id": "adedcca7-c78b-4bc2-8fc4-f78c91404e8f",
-				"title": "mi stai ascoltando",
+				"id": "a25c1f8c-6e37-45a6-af11-41b719029a42",
+				"title": "mi stai ascoltando?",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/mi_stai_ascoltando.webp",
@@ -283,7 +283,7 @@
 				}
 			},
 			{
-				"id": "1119017e-a289-4e52-8eb5-7c7f5c37673d",
+				"id": "8901b131-08c8-456d-a8cd-297ee90b3ce5",
 				"title": "mon amì",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -294,8 +294,8 @@
 				}
 			},
 			{
-				"id": "4fdf6384-2db2-4361-9cdd-4f3625df178c",
-				"title": "oh mother i can feel the soil falling over my head",
+				"id": "5355996d-bd36-4045-bba0-d2e831026160",
+				"title": "oh mother, i can feel the soil falling over my head...",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/oh_mother_i_can_feel_the_soil_falling_over_my_head.webp",
@@ -305,7 +305,7 @@
 				}
 			},
 			{
-				"id": "4168967f-c346-4c18-96ca-d7a706099c48",
+				"id": "3421cf1d-7c9e-4f89-9954-0e54d1eaddb8",
 				"title": "passaggio a est",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -316,7 +316,7 @@
 				}
 			},
 			{
-				"id": "97dbe1ca-dc12-4615-8160-32e45583a363",
+				"id": "02270d4e-103c-42a5-9caf-85586c211517",
 				"title": "qualunque mezzo pur di volare",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -327,7 +327,7 @@
 				}
 			},
 			{
-				"id": "75908fd4-11d0-4d49-99db-f57516cd661a",
+				"id": "11fc4472-2c53-44a4-9ea7-24094ebb3a86",
 				"title": "ricordo ancora la sofferenza che provai quando mi tarparono le ali",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -338,7 +338,7 @@
 				}
 			},
 			{
-				"id": "ea691550-881b-438d-bc42-6727a89f0a2d",
+				"id": "7e365a64-7ee5-40d9-acf2-746e83dd4b27",
 				"title": "risonanza",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
@@ -349,8 +349,8 @@
 				}
 			},
 			{
-				"id": "de4137a6-9f6e-4cad-9020-93f15dfc7752",
-				"title": "ti voglio",
+				"id": "d1070afd-392b-413c-a124-d1a842a7c411",
+				"title": "ti voglio!",
 				"description": "China, grafite e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/incontri_nel_deserto/ti_voglio.webp",
@@ -370,8 +370,8 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "ae133bc8-117f-4dbd-96b3-6f0648b7777c",
-				"title": "ad maiora",
+				"id": "94e631e1-ce57-45a3-aa5b-dd24436e8dab",
+				"title": "ad maiora!",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/ad_maiora.webp",
@@ -381,7 +381,7 @@
 				}
 			},
 			{
-				"id": "c6c46498-8dc9-4e20-9522-8622807d84b3",
+				"id": "980af0dd-320d-4375-a227-d3e4629270bb",
 				"title": "arcano ix",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
@@ -392,8 +392,8 @@
 				}
 			},
 			{
-				"id": "2032beda-6b2a-4ee2-82fa-53db5678899b",
-				"title": "chi è  quel essere che mi osserva dallo specchio ",
+				"id": "14663d88-f8d8-4d2a-bc25-4b1a490633ba",
+				"title": "chi è quell'essere che mi osserva dallo specchio?",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti/chi_e__quel_essere_che_mi_osserva_dallo_specchio_.webp",
@@ -403,7 +403,7 @@
 				}
 			},
 			{
-				"id": "684e06ad-4428-46d0-8864-c87ece03628a",
+				"id": "7ffda3c0-361c-4095-b5c7-6f728de265c8",
 				"title": "dialogo con la luna",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
@@ -414,7 +414,7 @@
 				}
 			},
 			{
-				"id": "19389ca2-6069-4e2e-a7a4-1fe07273ade2",
+				"id": "d55a22b6-3b6d-4ee6-b702-7d062264ca65",
 				"title": "il riflesso nell'acqua",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
@@ -425,7 +425,7 @@
 				}
 			},
 			{
-				"id": "89bfdcc9-4918-4444-80aa-d11b735e6d06",
+				"id": "4d8d8cbd-2ea4-4c38-82cc-bf881509ae64",
 				"title": "il viaggio",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
@@ -436,7 +436,7 @@
 				}
 			},
 			{
-				"id": "dc2ff125-5910-4b2d-b5db-2b2ee6b2a6fc",
+				"id": "cfd5bed2-35a0-433a-868a-8711fa61add2",
 				"title": "non riuscirai mai a prendermi",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
@@ -447,7 +447,7 @@
 				}
 			},
 			{
-				"id": "89381048-b153-4b63-b98e-814605103029",
+				"id": "6ed5b006-7172-417e-9bee-77547e6cafd9",
 				"title": "rinuncio ai miei colori per poter volare ancora",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
@@ -458,7 +458,7 @@
 				}
 			},
 			{
-				"id": "2b32bf54-378a-4710-a0b1-9754f0204593",
+				"id": "83dce032-e06f-4fa8-8dc8-ff99b49429a9",
 				"title": "seduta sulle ceneri di colei che un tempo credevo d essere",
 				"description": "China, grafite e aquerello su carta strappata",
 				"author": "Simona Maleti",
@@ -479,7 +479,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "b6c47ad2-94be-4301-b521-bfe1d6fe9933",
+				"id": "27b76572-ddc0-4d82-929c-13237860488b",
 				"title": "daliarancio",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -490,7 +490,7 @@
 				}
 			},
 			{
-				"id": "2e0b276d-4422-46bb-bf46-51a6e69216fd",
+				"id": "41adf786-a378-4a4d-9ca6-33143c20703c",
 				"title": "fior di venere",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -501,7 +501,7 @@
 				}
 			},
 			{
-				"id": "5c84f87b-a367-4c87-ae31-6483ad4f838e",
+				"id": "420efd25-e186-4822-b8d5-bd09c0787df4",
 				"title": "gigante rossa",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -512,7 +512,7 @@
 				}
 			},
 			{
-				"id": "bd2ca2e7-f0cd-4849-90c7-15b28cc8b6a1",
+				"id": "86769499-d5c4-4ffa-bea0-948e85b3f907",
 				"title": "il fiore rosso",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -523,7 +523,7 @@
 				}
 			},
 			{
-				"id": "c6c0f7a6-107a-49fe-ad08-51d20681789b",
+				"id": "3bd4ac8e-4255-4dfa-a379-ad18b1deed7d",
 				"title": "inglese antica",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -534,7 +534,7 @@
 				}
 			},
 			{
-				"id": "5467c7b9-2ecc-468a-a778-6ee6eb04a094",
+				"id": "ada0aa03-75ad-4383-bd7b-987d037dd173",
 				"title": "l'ipomea farfalla",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -545,7 +545,7 @@
 				}
 			},
 			{
-				"id": "cbdf8991-7d2a-4c06-a5ff-2ca8120009db",
+				"id": "6dfb3dac-773c-43d0-8965-41fb13f4e417",
 				"title": "lo sguardo limpido",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -556,7 +556,7 @@
 				}
 			},
 			{
-				"id": "10a8bb85-8782-4353-be14-2f54b15d4fd2",
+				"id": "f3ee9c5a-ed5e-4585-a200-0269f4dfbbc6",
 				"title": "lo sguardo verso casa",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -567,7 +567,7 @@
 				}
 			},
 			{
-				"id": "c6800d82-38dd-45cd-aab3-f56174b7650f",
+				"id": "dadc8c0d-1e0a-494c-a432-fade9ad40f1f",
 				"title": "maternità",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -578,7 +578,7 @@
 				}
 			},
 			{
-				"id": "c40504a6-dc58-4794-9e01-ad05a230709c",
+				"id": "dd91f226-e606-4879-bf0e-183c04a9ee14",
 				"title": "ovunque e  il centro da cui si scorge tutto",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -589,7 +589,7 @@
 				}
 			},
 			{
-				"id": "55614fa5-4450-4cbc-8497-c099aa75a5b8",
+				"id": "fb661611-cf1c-4310-b574-ff64d1d6353b",
 				"title": "primula vanessa",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -600,7 +600,7 @@
 				}
 			},
 			{
-				"id": "bbaa03c0-4237-400f-aebf-af4e36b24133",
+				"id": "e170818b-9be3-4c63-8258-bcab80fd48b1",
 				"title": "rosa d'inverno",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
@@ -611,8 +611,8 @@
 				}
 			},
 			{
-				"id": "498fd101-f8e9-45e9-a8cd-61e46f76ed97",
-				"title": "spanish flower ole ",
+				"id": "93ead98f-5efa-4410-a040-614931007e28",
+				"title": "spanish flower (olè!) ",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/spanish_flower_ole_.webp",
@@ -622,8 +622,8 @@
 				}
 			},
 			{
-				"id": "63ce576d-5abc-4baa-99d4-ef0c59de0735",
-				"title": "sssttt... tagete",
+				"id": "35b9d29d-4a8d-42cd-b5bf-2b808cdd3605",
+				"title": "sssttt... tagete!",
 				"description": "Acrilico su tavola",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/floras/sssttt..._tagete.webp",
@@ -643,7 +643,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "19133a45-583c-4cf3-957c-e4a5aef6198a",
+				"id": "6ee9de28-1250-4fb9-918d-2ca3880effcc",
 				"title": "anima rossa",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -654,7 +654,7 @@
 				}
 			},
 			{
-				"id": "de875b5e-35e1-485a-a6b9-2ec34028fa3c",
+				"id": "172417d1-c9bd-4b72-a35a-66ae24c0742d",
 				"title": "catarsi",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -665,7 +665,7 @@
 				}
 			},
 			{
-				"id": "43ef1a29-dcbb-48ff-ac2f-60bcf2b80e64",
+				"id": "6b5de820-5056-4b12-8c6e-06b9c2a3f87f",
 				"title": "doppio eterico",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -676,7 +676,7 @@
 				}
 			},
 			{
-				"id": "f0d950bd-13dc-4a14-a569-45b1f7317c65",
+				"id": "496731dd-aed8-4a52-95f7-fd99f9b6da68",
 				"title": "due fiori in un vaso senz'acqua",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -687,7 +687,7 @@
 				}
 			},
 			{
-				"id": "d69c824a-a20f-4de5-80ee-0868a7477e90",
+				"id": "b5cfa4df-d163-427d-b833-0168fa038d1c",
 				"title": "ikebana alla luna",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -698,7 +698,7 @@
 				}
 			},
 			{
-				"id": "2c70dd9a-35fe-43ff-9bc9-09ccb719eeec",
+				"id": "f9142056-e0f3-46c8-a635-6f70078d5130",
 				"title": "ikebana di rovo",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -709,7 +709,7 @@
 				}
 			},
 			{
-				"id": "e064321d-a9c3-43d1-b6b6-65e5709d3d8d",
+				"id": "3d3059c1-1bae-4659-a78b-bff51d72ea1b",
 				"title": "il corpo, l'ombra,  il riflesso ",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -720,8 +720,8 @@
 				}
 			},
 			{
-				"id": "4b9b225a-64d3-4614-89d0-22a1067be577",
-				"title": "il flauto di bamboo sulle labbra dell'infinito",
+				"id": "9fbe1ff6-b070-4469-9c1d-a1dea2619273",
+				"title": "il flauto di bambù sulle labbra dell'infinito",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/ikebana/il_flauto_di_bamb_sulle_labbra_dell_iinfinito.webp",
@@ -731,7 +731,7 @@
 				}
 			},
 			{
-				"id": "75669b8b-749b-4c99-b286-7232a2f98ca5",
+				"id": "196d874b-76c1-4a9d-9e51-0ba45f8996dd",
 				"title": "lettera d'addio",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -742,7 +742,7 @@
 				}
 			},
 			{
-				"id": "41d53314-5c40-4b84-912e-b4e5bca74306",
+				"id": "e2b9acef-c013-4b41-adff-82db751a5dd5",
 				"title": "nido",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -753,7 +753,7 @@
 				}
 			},
 			{
-				"id": "bd8d1657-0fa7-4693-9ad7-d0eb876414e8",
+				"id": "b1351c40-0fa5-421f-8cc3-c641795de4af",
 				"title": "nido di rosa",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -764,7 +764,7 @@
 				}
 			},
 			{
-				"id": "1840fcc1-10e9-4fec-bab9-b772ff6ce591",
+				"id": "667f2a79-c4ac-48d8-9f65-0a49606a8c03",
 				"title": "nido rifugio dell'essere",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -775,7 +775,7 @@
 				}
 			},
 			{
-				"id": "c7a27545-041c-40ff-9d53-4116212a7e8f",
+				"id": "dd2fdce7-e3c1-46c9-8848-8d790d0b4658",
 				"title": "perchè volger le spalle...uniti alla radice",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -786,7 +786,7 @@
 				}
 			},
 			{
-				"id": "56f733e6-5ce0-427c-9e4f-9a596bb52550",
+				"id": "0f230674-5761-4849-a99b-93b5215ced25",
 				"title": "piccola natura viva",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -797,7 +797,7 @@
 				}
 			},
 			{
-				"id": "e90c3418-402b-412c-9cc0-59f472f4c5a7",
+				"id": "ae2e2b0f-b10b-4926-8f2c-f72bcb22d42b",
 				"title": "piccolo ikebana d'inverno",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -808,7 +808,7 @@
 				}
 			},
 			{
-				"id": "e2e612fb-dc04-476a-b1ad-a7c100eb5617",
+				"id": "0222d75b-4ac9-4b87-817d-4df1794e1bd7",
 				"title": "trappola per fiori fragili",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -819,7 +819,7 @@
 				}
 			},
 			{
-				"id": "8e2ef4a6-03c8-4a6f-9382-0171326bc6af",
+				"id": "e651a026-ac26-44cd-afde-b8e7ea4f3e47",
 				"title": "tre iris in trappola",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -830,7 +830,7 @@
 				}
 			},
 			{
-				"id": "f97f8731-8135-40a7-b589-18c4ae9a0d2b",
+				"id": "459ea31a-36bd-4b85-b129-86b352f9ead6",
 				"title": "vaso di fiori blu",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -851,7 +851,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "e7b9f155-c345-485e-8ed9-1b666865a7e6",
+				"id": "43e6a37b-d766-43ee-81d0-92e7819e78a2",
 				"title": " aria,terra e infinito",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -862,7 +862,7 @@
 				}
 			},
 			{
-				"id": "35ce4b09-1c86-418e-9afa-667c6f399e63",
+				"id": "3d8c6c56-5d76-4673-9126-6d563d40e423",
 				"title": "alchimia di terra e aria",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -873,8 +873,8 @@
 				}
 			},
 			{
-				"id": "50b7966a-e2cb-4725-b0a7-f9c096be2c8e",
-				"title": "ali,foglie, anima",
+				"id": "71642a1d-a27f-4533-9dfb-86755364b916",
+				"title": "ali, foglie, anima",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/ali_foglie__anima.webp",
@@ -884,7 +884,7 @@
 				}
 			},
 			{
-				"id": "58745fb1-6109-45cd-b04a-08fe4467139f",
+				"id": "2fedbe5d-aa0c-4ff7-9f81-edd268bb871e",
 				"title": "anima aria",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -895,8 +895,8 @@
 				}
 			},
 			{
-				"id": "f171247d-71fe-4146-b54c-9b3467f50610",
-				"title": "anima fragile 5",
+				"id": "eb907f1b-447d-40de-9308-8510ca06243c",
+				"title": "anima fragile",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/anima_fragile_5.webp",
@@ -906,8 +906,8 @@
 				}
 			},
 			{
-				"id": "fc00cedc-d4b9-4ba3-b244-58acbff375b9",
-				"title": "anima fragile 6",
+				"id": "bc9cdccc-7072-4d69-9f81-142f6e683d7d",
+				"title": "anima fragile",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/anima_fragile_6.webp",
@@ -917,7 +917,7 @@
 				}
 			},
 			{
-				"id": "c65ebb3a-fc92-4e27-8457-ee026273d4e4",
+				"id": "ac3b95dd-ab38-421b-acb5-d7caf02c7e7d",
 				"title": "ciò che ti lasci dietro",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -928,7 +928,7 @@
 				}
 			},
 			{
-				"id": "a7ab363d-82d8-429a-8100-951d7f79a215",
+				"id": "9d3136df-0587-4c01-ba11-d2f55a69e82b",
 				"title": "dalla morte, la vita",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -939,8 +939,8 @@
 				}
 			},
 			{
-				"id": "aefd11d6-1fd9-4c20-80d2-96279b23533e",
-				"title": "fragile1",
+				"id": "383953a8-0372-44d9-8684-6d1f5fd11c8b",
+				"title": "fragile",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/fragile1.webp",
@@ -950,8 +950,8 @@
 				}
 			},
 			{
-				"id": "f01e6c11-3238-4ef1-94ca-6382be15464c",
-				"title": "fragile2",
+				"id": "9c819ba4-212f-4a17-8460-a8a8cda6d941",
+				"title": "fragile",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/fragile2.webp",
@@ -961,7 +961,7 @@
 				}
 			},
 			{
-				"id": "8357022e-b378-423c-938a-1c95e8b3e15f",
+				"id": "d575359a-8f35-4808-8de8-7ea49818b74f",
 				"title": "hai i colori del mondo puoi andare ovunque",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -972,7 +972,7 @@
 				}
 			},
 			{
-				"id": "5431b825-88b0-4b8a-bb6a-b72cafa8140e",
+				"id": "e05421f1-035a-40cc-a5ac-7dfc892184a7",
 				"title": "ibrido",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -983,8 +983,8 @@
 				}
 			},
 			{
-				"id": "0af6ac3b-39cf-4a64-968c-971180920700",
-				"title": "ibrido2",
+				"id": "62e629c7-7139-4029-b9f1-fbf5e6630993",
+				"title": "ibrido",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/ibrido2.webp",
@@ -994,7 +994,7 @@
 				}
 			},
 			{
-				"id": "c138740d-2bcd-4abe-9865-02dbbb654edb",
+				"id": "736003a3-688f-4020-92c5-8bfa333635a7",
 				"title": "il codice delle sembianze",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1005,7 +1005,7 @@
 				}
 			},
 			{
-				"id": "ad11709d-41cc-4b03-8cd7-90b47e31950d",
+				"id": "adeb8186-9f71-408e-ba58-4ebff6aab1c5",
 				"title": "il frutto dello spirito",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1016,7 +1016,7 @@
 				}
 			},
 			{
-				"id": "57d684d6-d455-4cb5-9ef0-a0692cb1fba3",
+				"id": "e27205f9-cbf6-4ba7-9ecd-f924d06ee471",
 				"title": "il trofeo",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1027,7 +1027,7 @@
 				}
 			},
 			{
-				"id": "60b54455-6219-49d5-963d-15a394eb901a",
+				"id": "3899fe57-b7a0-4d41-b12a-e4f8b476a741",
 				"title": "incostanza dell'ego",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1038,7 +1038,7 @@
 				}
 			},
 			{
-				"id": "07e22a6e-c14d-41b0-af49-e132abacda7a",
+				"id": "ee95d1cc-60a7-4e67-8a84-9037fcbe69ad",
 				"title": "la farfalla vince senza combattere",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1049,7 +1049,7 @@
 				}
 			},
 			{
-				"id": "7003fc2d-81f2-4412-80c4-57ba6b902590",
+				"id": "b930f877-6782-4d80-9c97-c6e305ae32ae",
 				"title": "la rossa",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1060,7 +1060,7 @@
 				}
 			},
 			{
-				"id": "edf62448-fcf4-475d-bea9-f3bbf09e6b5f",
+				"id": "8465c5d1-3c7a-4dec-809e-21fcef6855f4",
 				"title": "maschera",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1071,7 +1071,7 @@
 				}
 			},
 			{
-				"id": "bb14edc9-8fe8-4560-a4b8-34e7902b6bc3",
+				"id": "57a88b2f-ff70-4209-afdc-953c1e6ddb86",
 				"title": "ode alla farfalla a cui da piccola tarpai le ali",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1082,7 +1082,7 @@
 				}
 			},
 			{
-				"id": "698abe87-4ced-445a-9b6c-931850eb5245",
+				"id": "2b67fb41-0dbf-43ec-ac88-a1eebc5b8446",
 				"title": "radici immorali",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1093,8 +1093,8 @@
 				}
 			},
 			{
-				"id": "6773f116-897d-4886-ab80-b40027a32357",
-				"title": "rinascenza 2",
+				"id": "b37188fd-e5f4-4b5f-8b1d-3b6359525281",
+				"title": "rinascenza",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/rinascenza2.webp",
@@ -1104,8 +1104,8 @@
 				}
 			},
 			{
-				"id": "25225aed-d7ca-4689-af1e-a7c5b5d1aed9",
-				"title": "rinascenza 1",
+				"id": "2d28f915-8305-44e1-8292-ed1f922e2843",
+				"title": "rinascenza",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/agili_fragili/rinascenza_1.webp",
@@ -1115,7 +1115,7 @@
 				}
 			},
 			{
-				"id": "28171ab4-f649-4e6c-b7c7-1f03ffa6cc60",
+				"id": "7552cfaf-6d57-422d-8bd1-1144f65b9b59",
 				"title": "struttura di un anima",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1126,7 +1126,7 @@
 				}
 			},
 			{
-				"id": "eb53863b-4a08-48c6-8c78-586b833299f9",
+				"id": "821888b4-b7f4-47dc-b539-d1e2723f3e73",
 				"title": "unione dei due emisferi",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1137,7 +1137,7 @@
 				}
 			},
 			{
-				"id": "cecda805-0dea-4128-8d4a-017286fa7a19",
+				"id": "e7b700c5-37ab-41cc-9fe7-ea81ddd39e79",
 				"title": "vecchia e lacera",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1148,7 +1148,7 @@
 				}
 			},
 			{
-				"id": "b8d361e8-cd11-4a1f-a6b2-e3f34b6bd39c",
+				"id": "a5d8d5e0-d02a-4507-bf07-d2a69f4cb8d5",
 				"title": "viaggiatore aria e terra",
 				"description": "Tecnica mista su carta e legno",
 				"author": "Simona Maleti",
@@ -1169,29 +1169,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "1bf2a865-bc83-4816-8c05-1c1240c54119",
-				"title": "a",
-				"description": "Tecnica mista su legno con pietre preziose",
-				"author": "Simona Maleti",
-				"url": "/maleti/static/galleries/lettere_nuovo_mondo/a.webp",
-				"dimensions": {
-					"width": 1200,
-					"height": 1216
-				}
-			},
-			{
-				"id": "b448b925-0f56-4d1e-bd6a-943a44385baf",
-				"title": "c",
-				"description": "Tecnica mista su legno con pietre preziose",
-				"author": "Simona Maleti",
-				"url": "/maleti/static/galleries/lettere_nuovo_mondo/c.webp",
-				"dimensions": {
-					"width": 1200,
-					"height": 1198
-				}
-			},
-			{
-				"id": "c68afa8d-a1ef-42b9-8b7a-b872280dd84a",
+				"id": "c206c779-f2b3-4c42-bc67-0dbab34ee0db",
 				"title": "capitolo primo",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1202,18 +1180,7 @@
 				}
 			},
 			{
-				"id": "6ea0e8e4-aee3-499e-bc26-173e99fa8bb3",
-				"title": "capitolo quarto",
-				"description": "Tecnica mista su legno con pietre preziose",
-				"author": "Simona Maleti",
-				"url": "/maleti/static/galleries/lettere_nuovo_mondo/capitolo_quarto.webp",
-				"dimensions": {
-					"width": 1200,
-					"height": 1204
-				}
-			},
-			{
-				"id": "1331f632-cbaf-491c-8413-5baa6a20fa42",
+				"id": "17eda37c-1e72-45c6-9da1-a8c51f670e7c",
 				"title": "capitolo secondo",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1224,7 +1191,7 @@
 				}
 			},
 			{
-				"id": "5c31ecfd-18e3-4030-9ab1-fa8e6c87fa08",
+				"id": "03785243-cb5d-450e-b79b-8f37bebc95f6",
 				"title": "capitolo terzo",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1235,7 +1202,18 @@
 				}
 			},
 			{
-				"id": "79fc51e0-c87a-4d9a-b56d-19ca10f9f333",
+				"id": "a4237227-86d3-4dff-b5ab-0c8f7af3b2f2",
+				"title": "capitolo quarto",
+				"description": "Tecnica mista su legno con pietre preziose",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/lettere_nuovo_mondo/capitolo_quarto.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1204
+				}
+			},
+			{
+				"id": "67d5a314-bd4a-4bc3-b6ff-d302a89fdb30",
 				"title": "cerchio virtuoso",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1246,7 +1224,7 @@
 				}
 			},
 			{
-				"id": "418f909a-bd57-47f2-9195-0eda970ff58a",
+				"id": "5ea6d457-6937-4ed2-935b-3acc8ac5a5f5",
 				"title": "genesi nuovo mondo in formazione",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1257,7 +1235,7 @@
 				}
 			},
 			{
-				"id": "d873d106-b6a4-4425-82e6-ac4aacee7c3b",
+				"id": "61d440fc-8e55-4f61-97a7-e5df8ed3b1b0",
 				"title": "il nono pianeta",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1268,8 +1246,8 @@
 				}
 			},
 			{
-				"id": "0fb03fc7-5aee-4c10-9ae7-a498117b5b48",
-				"title": "l'ascesa le ultime spine nel fianco della madre",
+				"id": "2a708638-1c9e-4de6-9a74-bd75b307221f",
+				"title": "l'ascesa (le ultime spine nel fianco della madre)",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/lettere_nuovo_mondo/l_ascesa_le_ultime_spine_nel_fianco_della_madre.webp",
@@ -1279,7 +1257,7 @@
 				}
 			},
 			{
-				"id": "4a29e67f-612f-4cc8-8480-5cd9ccce3a4e",
+				"id": "548174f7-8b7e-4932-a098-a80ac39b19d7",
 				"title": "l'aurora",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1290,7 +1268,7 @@
 				}
 			},
 			{
-				"id": "e9959a9f-0994-44d7-88f9-c9b73590f5c2",
+				"id": "9dc20c4f-acb9-4fcf-870f-518b3a990e0c",
 				"title": "l'ombra di plutone",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1301,7 +1279,7 @@
 				}
 			},
 			{
-				"id": "dc04f418-6aa1-4e14-a11a-72b48bfbb6c4",
+				"id": "108b8b47-3106-45e2-8902-4b57cb75b8e0",
 				"title": "piccolo cerchio sacro",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1312,7 +1290,7 @@
 				}
 			},
 			{
-				"id": "6521bb23-bea2-474f-92a8-82574b1d70ea",
+				"id": "b6bd3456-66ce-4f74-afd3-1af097a793c4",
 				"title": "piccolo soffio d'impermanenza",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1320,6 +1298,28 @@
 				"dimensions": {
 					"width": 1200,
 					"height": 1199
+				}
+			},
+			{
+				"id": "0fe80964-5874-451b-9c1e-b3a5e8d5aa1e",
+				"title": null,
+				"description": "Tecnica mista su legno con pietre preziose",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/lettere_nuovo_mondo/a.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1216
+				}
+			},
+			{
+				"id": "b10bf7a9-7854-471c-83dc-8dc3bd08773f",
+				"title": null,
+				"description": "Tecnica mista su legno con pietre preziose",
+				"author": "Simona Maleti",
+				"url": "/maleti/static/galleries/lettere_nuovo_mondo/c.webp",
+				"dimensions": {
+					"width": 1200,
+					"height": 1198
 				}
 			}
 		]
@@ -1333,7 +1333,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "e39e9e15-2f4f-4eb0-bc78-100cfd645d22",
+				"id": "f0b9d95c-82d0-46f0-a3b7-d101c4c6d49e",
 				"title": "alba di febbraio",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1344,7 +1344,7 @@
 				}
 			},
 			{
-				"id": "433877bc-99fe-46a1-9978-e238c8d51fdf",
+				"id": "74beec72-7c12-4570-9c29-108c664a03b5",
 				"title": "eclissi di luna verde",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1355,7 +1355,7 @@
 				}
 			},
 			{
-				"id": "59a77978-48e9-4398-9f54-358358cfd4e1",
+				"id": "65db368a-170e-4eb0-8e2a-9d171426bac9",
 				"title": "fiori in vaso",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1366,7 +1366,7 @@
 				}
 			},
 			{
-				"id": "42cc5990-58c9-4b83-9782-d5ae9dbf0ad1",
+				"id": "00d6c95d-825d-4984-9d80-3ff15bd90c34",
 				"title": "fiori d'aprile",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1377,7 +1377,7 @@
 				}
 			},
 			{
-				"id": "0df15112-f0d1-4be8-8d26-6a67c7fdab94",
+				"id": "344f241d-665f-450b-bce1-656202178f90",
 				"title": "il crepuscolo di un anno",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1388,7 +1388,7 @@
 				}
 			},
 			{
-				"id": "3a2bef4c-f297-4e4c-95d1-93aadd8d8b92",
+				"id": "67ad6666-41a6-4cae-9bce-0c91aa8030f0",
 				"title": "ipnotici onirici",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1399,7 +1399,7 @@
 				}
 			},
 			{
-				"id": "81e8e8ad-9281-460c-b48a-0cbf091a66dc",
+				"id": "91137355-0938-4baa-ba6e-3966656530b1",
 				"title": "la torre e la luna ",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1410,8 +1410,8 @@
 				}
 			},
 			{
-				"id": "fbe72179-500c-4c77-834b-d8159ff921f2",
-				"title": "lettere aperte",
+				"id": "b0b99ea3-b444-4f3d-91e5-9f1771aacde9",
+				"title": "lettera per te",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/cartoni/letteraperte.webp",
@@ -1421,7 +1421,7 @@
 				}
 			},
 			{
-				"id": "25e7d4f6-47c3-4488-b930-593f5c861ac7",
+				"id": "c0ba74e6-8ab6-4288-b2b4-743efa76cd22",
 				"title": "luna d'agosto",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1432,7 +1432,7 @@
 				}
 			},
 			{
-				"id": "d8d88935-6697-417a-9db4-ba505f5075b5",
+				"id": "7a7c013a-3441-4c00-9734-d8e76d4f2e5d",
 				"title": "notturno",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1443,7 +1443,7 @@
 				}
 			},
 			{
-				"id": "03e69571-573f-4602-893e-0814c4fbd33d",
+				"id": "3b7fb5fd-0496-4e99-afdd-bd8e443e0223",
 				"title": "opulenza estiva",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1454,7 +1454,7 @@
 				}
 			},
 			{
-				"id": "705bb4df-e217-4253-ac2c-986eea572160",
+				"id": "37d70890-e5b3-4b9a-854e-ebb27d1892d3",
 				"title": "orizzonte d'inverno",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1465,7 +1465,7 @@
 				}
 			},
 			{
-				"id": "4e3bb91d-2b86-470e-9939-a4a96786b719",
+				"id": "93864d39-39b6-4aa8-aa88-a310e05060d5",
 				"title": "papaveri in vaso",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1476,7 +1476,7 @@
 				}
 			},
 			{
-				"id": "02436592-d6d2-410d-8f88-40c180280c25",
+				"id": "814e91f3-3dc5-4fc9-a7af-ea5bedd50df4",
 				"title": "ti ho scritto una lettera",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1487,7 +1487,7 @@
 				}
 			},
 			{
-				"id": "52d49c41-9108-4fac-9d2a-e89f1fd24c56",
+				"id": "4adefbd7-a537-4e87-8c38-aa9d246b1fd8",
 				"title": "vaso di fiori",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1498,7 +1498,7 @@
 				}
 			},
 			{
-				"id": "f155e6d5-248b-421f-a982-6ded6ccdb793",
+				"id": "99d81b3e-7705-4886-a6de-17b6bd1e8663",
 				"title": "vaso di fiori onirici",
 				"description": "Tecnica mista su tavola",
 				"author": "Simona Maleti",
@@ -1519,7 +1519,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "1c95be04-8c54-496d-85a9-0976beb475db",
+				"id": "819a7aba-d760-4745-a790-0c8f2971c66a",
 				"title": "anemoni",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1530,7 +1530,7 @@
 				}
 			},
 			{
-				"id": "3a869455-267c-4e74-a4a8-6228a9c7f1f7",
+				"id": "c71f2345-e836-4a87-91b2-a2dc34b83eef",
 				"title": "cinque effimeri",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1541,7 +1541,7 @@
 				}
 			},
 			{
-				"id": "3cd73dfe-ef78-4cbc-a24b-2d8d373ff203",
+				"id": "970d399a-792d-4516-8fe1-fbbcd28b9875",
 				"title": "continuità",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1552,7 +1552,7 @@
 				}
 			},
 			{
-				"id": "c0880909-70ab-4317-b719-6fde3d6928b4",
+				"id": "513e08db-bb89-430e-beaf-8373d37d8d4f",
 				"title": "fiori d'acqua",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1563,7 +1563,7 @@
 				}
 			},
 			{
-				"id": "b55d3f66-24ca-40bd-b9c0-58c5da927187",
+				"id": "4cedd7fb-a705-4a9d-ad02-b95084f00e63",
 				"title": "in viaggio verso l'ade",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1574,7 +1574,7 @@
 				}
 			},
 			{
-				"id": "27a7331c-ccb4-406f-85fc-1d6c58a86dac",
+				"id": "8771c1ab-b17f-4dfc-8397-8878de9d80b9",
 				"title": "l'io e l'essere",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1585,7 +1585,7 @@
 				}
 			},
 			{
-				"id": "d8f0b38b-126f-4571-b0ac-5cb80d59608c",
+				"id": "980b1daf-be0c-4214-9081-165e098fecae",
 				"title": "le pleiadi",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1596,7 +1596,7 @@
 				}
 			},
 			{
-				"id": "982eb1a2-a2af-433a-a184-242e77092c56",
+				"id": "b0151e68-ea4b-440e-80d7-f624ab129f58",
 				"title": "nel vento",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1607,7 +1607,7 @@
 				}
 			},
 			{
-				"id": "7355c66f-08e2-4f76-a7bb-88a4cdc45ad1",
+				"id": "81c029fa-5917-451f-bdf9-b432a5a02d4b",
 				"title": "piccolo prato impermanente",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1618,7 +1618,7 @@
 				}
 			},
 			{
-				"id": "6b63f5eb-456e-4e42-831a-b82fd35c3285",
+				"id": "e2bff47c-beee-4c3f-8982-cce99414cb0d",
 				"title": "praticello",
 				"description": "China, aquerello, grafite su carta",
 				"author": "Simona Maleti",
@@ -1639,7 +1639,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "ede8d82e-06cf-4e04-b8a0-8613b75cd813",
+				"id": "32426e64-3498-43d2-8a50-8c197b10de48",
 				"title": "a",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1650,7 +1650,7 @@
 				}
 			},
 			{
-				"id": "6b3749d2-fbb6-4dfa-a54b-3bc0ca5c4cc3",
+				"id": "2626b005-010f-478c-b9e6-4782f2461c8e",
 				"title": "b",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1661,7 +1661,7 @@
 				}
 			},
 			{
-				"id": "1c8b3ce4-8641-4f90-9571-9065c7add2f9",
+				"id": "63b6b486-5833-43a1-934e-a5145399130c",
 				"title": "c",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1672,7 +1672,7 @@
 				}
 			},
 			{
-				"id": "8f53147f-3fa9-4933-b813-393e5e4897ee",
+				"id": "eb80cc2d-e6b2-4a8c-aa7e-90c3b991af00",
 				"title": "d",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1683,7 +1683,7 @@
 				}
 			},
 			{
-				"id": "121d6fe4-b080-4ba3-bc1d-3fbfce5618bc",
+				"id": "0dc1e893-d960-4776-9552-2efb1ba6e5ff",
 				"title": "e",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1694,7 +1694,7 @@
 				}
 			},
 			{
-				"id": "70d63333-9d45-4a88-aaf5-61efe55145f0",
+				"id": "4a24c1c6-433a-4a0d-ad8c-9bb7279e9163",
 				"title": "f",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1705,7 +1705,7 @@
 				}
 			},
 			{
-				"id": "1997bb5d-8b3c-4881-a069-2ac13dd449b0",
+				"id": "e1d92a6b-b644-4f24-837d-5eeb8bebe7d4",
 				"title": "g",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1716,7 +1716,7 @@
 				}
 			},
 			{
-				"id": "3f729318-3c08-47ab-bd15-3289fc88eb19",
+				"id": "9f90395a-efb9-4e50-840b-6beeaa371b2c",
 				"title": "h",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1727,7 +1727,7 @@
 				}
 			},
 			{
-				"id": "c5da2fa9-26d3-4a66-a442-7a3a25bc89b1",
+				"id": "3b00f1bc-eb03-4ec7-98e0-b4deb911eac7",
 				"title": "l",
 				"description": "Tecnica mista su legno con pietre preziose",
 				"author": "Simona Maleti",
@@ -1748,7 +1748,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "4b5aad3c-bcc9-47f8-bc5d-98a446abf2b7",
+				"id": "94a38534-d2bd-4252-8cbd-1b9bf7f6c525",
 				"title": "legami d'anime",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1759,7 +1759,7 @@
 				}
 			},
 			{
-				"id": "6b6dfe91-83ca-429f-b8b0-309212c32328",
+				"id": "75440236-de5a-42d0-8561-fe21cfbac5b9",
 				"title": "arido florido",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1770,7 +1770,7 @@
 				}
 			},
 			{
-				"id": "0c0fbd89-322f-4716-b5c2-6fd65be6fcf2",
+				"id": "beba56e0-71d7-4494-b889-54437dba72fd",
 				"title": "corpo celeste",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1781,7 +1781,7 @@
 				}
 			},
 			{
-				"id": "3e5d0664-2d33-4b01-84a5-9561a1579470",
+				"id": "23ac3c9e-db5a-4ec0-8e71-f14e9c0eaa78",
 				"title": "eclisse di sangue",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1792,7 +1792,7 @@
 				}
 			},
 			{
-				"id": "cd4e10bf-bea3-44fe-aa17-7258e7d08e90",
+				"id": "64985ca9-b30d-4c4b-93c8-938f1315a2f4",
 				"title": "eclissi",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1803,7 +1803,7 @@
 				}
 			},
 			{
-				"id": "52d4fba0-0544-4041-8882-8671cb9fbc34",
+				"id": "3d0a9770-9e41-4928-af68-00754f42133c",
 				"title": "fiore energetico",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1814,7 +1814,7 @@
 				}
 			},
 			{
-				"id": "9430d995-02b5-4462-9f25-ca2ec42ef8f7",
+				"id": "d1ed6190-539b-4338-97cb-1d25ec86deeb",
 				"title": "frattura",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1825,7 +1825,7 @@
 				}
 			},
 			{
-				"id": "3faca20a-8d9a-4c9a-949e-552c16f967cd",
+				"id": "43a5834c-bd9f-4159-8f6c-b98957c402b1",
 				"title": "fuga dal rosso",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1836,7 +1836,7 @@
 				}
 			},
 			{
-				"id": "90ccf149-ef5b-4a29-b754-89485c6c103c",
+				"id": "b09872dc-abd1-4f75-96a7-c6bfd485ba20",
 				"title": "golfo interiore",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1847,7 +1847,7 @@
 				}
 			},
 			{
-				"id": "c27594be-4822-4d69-b1fc-6a804e0b1686",
+				"id": "2e3dc47b-d87b-4d89-8233-ef37547dd9d6",
 				"title": "ho sempre le schegge di un sogno nel cuore",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1858,7 +1858,7 @@
 				}
 			},
 			{
-				"id": "a7e654b2-a7b2-4b72-ad9d-13585503772e",
+				"id": "e1b16372-e183-472a-8b5d-1e50957411b4",
 				"title": "il varco",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1869,8 +1869,8 @@
 				}
 			},
 			{
-				"id": "a9bf9e35-3845-4fb1-8e50-925b2a5f15d9",
-				"title": "il varco 2",
+				"id": "b9d51ac6-2188-4c53-bd94-caea0002a3f5",
+				"title": "il varco",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/il_varco_2.webp",
@@ -1880,7 +1880,7 @@
 				}
 			},
 			{
-				"id": "c06dd7c7-cd2e-4044-a7fb-392463a402bf",
+				"id": "e82d1441-8647-437d-9200-6e4a56db260e",
 				"title": "inferno con vista sull'azzurro",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1891,7 +1891,7 @@
 				}
 			},
 			{
-				"id": "9338f983-66d7-4622-84fb-9fe668a2d1a2",
+				"id": "9ce682a9-8882-4b76-a7be-6ea480e29661",
 				"title": "inscindibili",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1902,7 +1902,7 @@
 				}
 			},
 			{
-				"id": "a55e5183-f0f9-496f-8f13-5f9fadb8e899",
+				"id": "91824647-6966-4db4-be2c-1f3956452069",
 				"title": "l'oro e l'abisso",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1913,7 +1913,7 @@
 				}
 			},
 			{
-				"id": "05da975d-e918-4e6b-a20c-99cc138325c4",
+				"id": "ffba4dc1-ac62-4293-8ced-542b6ca53fa0",
 				"title": "l'ultimo tentativo",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1924,7 +1924,7 @@
 				}
 			},
 			{
-				"id": "5b1768e1-eeb2-4296-8a2e-a70dd14191fa",
+				"id": "e790fca6-5bd1-46b8-b645-25ff6e858b4b",
 				"title": "la bandiera del sole",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1935,7 +1935,7 @@
 				}
 			},
 			{
-				"id": "c34c00c8-6f21-4426-8f5f-b54fb650b2c6",
+				"id": "5628165c-9419-4cf3-9c0f-39d7a03e8b7a",
 				"title": "la luce in gabbia",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1946,7 +1946,7 @@
 				}
 			},
 			{
-				"id": "8dc6160e-3600-49c4-80c6-bc4b775e6aaf",
+				"id": "6bbe8b0c-a614-4788-b224-0d312b3bf500",
 				"title": "la via maestra",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1957,7 +1957,7 @@
 				}
 			},
 			{
-				"id": "32702155-a7d5-451d-932b-60a902f95075",
+				"id": "19e05a6a-c425-4741-a057-aac031ca2597",
 				"title": "le auree parole",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1968,7 +1968,7 @@
 				}
 			},
 			{
-				"id": "d847a688-7662-4f2f-a2c4-9267753be3fe",
+				"id": "d39b8c1d-3605-4207-9953-9c8ce6a46418",
 				"title": "le porte dell'universo",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -1979,8 +1979,8 @@
 				}
 			},
 			{
-				"id": "6728c07e-16dd-4d7b-a3e6-eeae4e04efb8",
-				"title": "legami d'anime 2",
+				"id": "462674db-7373-4864-b0ae-e8556ae8defb",
+				"title": "legàmi d'anime",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/legami_d-anime2.webp",
@@ -1990,8 +1990,8 @@
 				}
 			},
 			{
-				"id": "ada7e969-b272-4dd4-a1e4-9aede8e40ef7",
-				"title": "legami d'anime 3",
+				"id": "0d7feee4-9185-440a-a7e9-f8ec74bb8287",
+				"title": "legàmi d'anime",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/legami_d-anime3.webp",
@@ -2001,7 +2001,7 @@
 				}
 			},
 			{
-				"id": "33c3bb88-6498-4eaf-9537-4fbfcaf7cca0",
+				"id": "d702e31a-3d7e-4916-99d2-41fc0a37ca31",
 				"title": "limpido torbido",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2012,7 +2012,7 @@
 				}
 			},
 			{
-				"id": "c5619c91-aa7d-4982-a80c-d75beddbec6f",
+				"id": "1ca2ce15-6e47-4440-b7f2-3c7242b45758",
 				"title": "nel vivo",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2023,7 +2023,7 @@
 				}
 			},
 			{
-				"id": "a69eb98d-3c20-4c18-b72e-1886287eddb1",
+				"id": "71d1e161-f6b7-4160-b981-664260e0cd50",
 				"title": "oasi",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2034,7 +2034,7 @@
 				}
 			},
 			{
-				"id": "bece506e-4cdc-4d63-918f-6c4bf4e037e5",
+				"id": "f5c3eaa8-9eb5-4c28-b076-fe84e30dea3d",
 				"title": "parole mai dette",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2045,7 +2045,7 @@
 				}
 			},
 			{
-				"id": "3796b960-e256-45a0-a83b-97b9701bae99",
+				"id": "22c1473f-6124-4ffe-acc8-1af0b55f8679",
 				"title": "punti di sutura",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2056,7 +2056,7 @@
 				}
 			},
 			{
-				"id": "0f5d77fd-fbbf-4d9f-83f4-ebd9d14a4670",
+				"id": "712c0c6c-d40b-4107-81f8-2ac836c1eb25",
 				"title": "scheggia",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2067,7 +2067,7 @@
 				}
 			},
 			{
-				"id": "c810a2a4-d8ee-4393-9fe7-9b923b9fb255",
+				"id": "170388cb-0a7f-48fa-b6f8-c6c82c6a26d3",
 				"title": "sole nero",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2078,8 +2078,8 @@
 				}
 			},
 			{
-				"id": "54c3c563-a080-43c6-aaa0-babdd8ba1da9",
-				"title": "sotto la crosta lo sguardo limpido",
+				"id": "ff52e29a-4ad2-4237-88b2-d4bff6dc977c",
+				"title": "sotto la crosta, lo sguardo limpido",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/croste/sotto_la_crosta_lo_sguardo_limpido.webp",
@@ -2089,7 +2089,7 @@
 				}
 			},
 			{
-				"id": "31027c88-e092-401c-8e6d-171f7d4bf9e8",
+				"id": "9c2bd70d-b076-4644-92a8-644b9ee6f55b",
 				"title": "strati d'anima",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2100,7 +2100,7 @@
 				}
 			},
 			{
-				"id": "3e172c83-94d0-4386-81c2-56f8a47b6837",
+				"id": "ca1271e0-e6c9-4319-b061-1b067d795105",
 				"title": "sutura",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2111,7 +2111,7 @@
 				}
 			},
 			{
-				"id": "5ef2432e-9bd1-4efc-8884-2a4257ca6844",
+				"id": "83c98065-8d46-485a-8e48-4b99c4e0568c",
 				"title": "tempesta",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2122,7 +2122,7 @@
 				}
 			},
 			{
-				"id": "7fad9c19-5ce8-441d-825c-c06deee4e41d",
+				"id": "dc40fa48-a54c-4420-afa4-84de4de90bd9",
 				"title": "torre preziosa",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2133,7 +2133,7 @@
 				}
 			},
 			{
-				"id": "1b2e3a17-9ca9-435d-9410-6cc58015daf3",
+				"id": "eae209c7-e393-4023-99f9-c69bd018112e",
 				"title": "una scheggia di luce nel buio",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2144,7 +2144,7 @@
 				}
 			},
 			{
-				"id": "80605ea5-2914-49f2-b21f-50d054ac6f34",
+				"id": "c112d36c-02f4-4cf5-8bb4-ddaa6f9e6878",
 				"title": "veliero",
 				"description": "Tecnica mista su legno",
 				"author": "Simona Maleti",
@@ -2165,7 +2165,7 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "c3d77388-dcb8-40c1-8840-d923d3336983",
+				"id": "7e1566f0-8385-400e-b8b7-544e9b80b10e",
 				"title": "cinque monaci per reggere una canna da pesca",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2176,8 +2176,8 @@
 				}
 			},
 			{
-				"id": "f51f9bda-dc10-4a2a-ae42-f1a44b5ba50f",
-				"title": "d'innanzi il nulla",
+				"id": "dcbba209-30ed-4891-a4af-6773ae33564b",
+				"title": "d'innanzi, il nulla",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/frammenti_inconscio/d_innanzi_il_nulla.webp",
@@ -2187,7 +2187,7 @@
 				}
 			},
 			{
-				"id": "57b69a91-ef62-4252-8190-d47a9f73e3ae",
+				"id": "13fd64c0-e891-4c32-be96-a30dc8f3513a",
 				"title": "i cinque stadi evolutivi",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2198,7 +2198,7 @@
 				}
 			},
 			{
-				"id": "f41a5eb3-27a7-416d-aa73-f0e6be109820",
+				"id": "1e7d4bf9-4412-451f-a193-848ff64f375d",
 				"title": "i due custodi",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2209,7 +2209,7 @@
 				}
 			},
 			{
-				"id": "78b8882f-b41b-46ea-b906-98b90c22af1d",
+				"id": "e30450bb-ccd7-4fe2-813f-3a43b7a8d64c",
 				"title": "io, il totem",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2220,7 +2220,7 @@
 				}
 			},
 			{
-				"id": "62e3a791-b10c-4a5d-9502-1ff08524b827",
+				"id": "ba201b88-0b9b-4b47-b947-e3649edbb65e",
 				"title": "l'abbraccio",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2231,7 +2231,7 @@
 				}
 			},
 			{
-				"id": "e8bf169d-7446-4e89-838d-593d6fa30292",
+				"id": "98b8dacc-ffa0-4131-ba1b-8391fefda247",
 				"title": "la porta di hong kong",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2242,7 +2242,7 @@
 				}
 			},
 			{
-				"id": "4b5e5b8c-4361-426f-8595-63210810ade3",
+				"id": "f347effc-2d88-440c-81af-c0f542385bc4",
 				"title": "ormeggiato al cielo",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2253,7 +2253,7 @@
 				}
 			},
 			{
-				"id": "e14880cc-186f-4063-aed0-636c860d51b7",
+				"id": "54dd6b64-7d52-47f9-8991-d56a1152225a",
 				"title": "slego l'ego",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2264,7 +2264,7 @@
 				}
 			},
 			{
-				"id": "457697fc-22fc-4b0d-aaf3-f2dcb7d5a1e7",
+				"id": "3a152300-5494-43c0-819f-36e91785f4d9",
 				"title": "tre ma non tre",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2275,7 +2275,7 @@
 				}
 			},
 			{
-				"id": "fecffac2-3686-4e6a-b461-f5beaab3c16d",
+				"id": "0cfa7622-1523-46ee-932c-23a8716f934e",
 				"title": "un lungo viaggio",
 				"description": "China e aquerello su carta",
 				"author": "Simona Maleti",
@@ -2296,8 +2296,8 @@
 		"description": "Galleria",
 		"paintings": [
 			{
-				"id": "1d219dd0-ca3e-46eb-8bef-fd2918bef2f2",
-				"title": "dscn0263",
+				"id": "20dfa3c1-3926-46c0-b7e8-ce549392564e",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0263.webp",
@@ -2307,8 +2307,8 @@
 				}
 			},
 			{
-				"id": "1db0cf8d-3e2b-41db-b97d-6ccd0147ba37",
-				"title": "dscn0269",
+				"id": "ee2038c3-51fe-4e49-b9c8-a68fb61a6bff",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0269.webp",
@@ -2318,8 +2318,8 @@
 				}
 			},
 			{
-				"id": "40a90d4f-2683-4fb1-982d-e08370f3caf9",
-				"title": "dscn0270",
+				"id": "05ff15af-9fcb-4484-99b2-f3ee58604c53",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0270.webp",
@@ -2329,8 +2329,8 @@
 				}
 			},
 			{
-				"id": "36a18d39-5974-4cd7-b835-bc899a2b5510",
-				"title": "dscn0273",
+				"id": "02e4130b-177b-47d8-8442-7ef0573859d2",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0273.webp",
@@ -2340,8 +2340,8 @@
 				}
 			},
 			{
-				"id": "7d015ab3-b18c-4547-9fea-cd4c401aa1de",
-				"title": "dscn0275",
+				"id": "54e7f405-3380-4785-aaff-f1402a863086",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0275.webp",
@@ -2351,8 +2351,8 @@
 				}
 			},
 			{
-				"id": "d40da1d0-befa-45f7-be87-142ae6129b1b",
-				"title": "dscn0277",
+				"id": "7b45ff58-7377-49c3-ad95-84853f397994",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0277.webp",
@@ -2362,8 +2362,8 @@
 				}
 			},
 			{
-				"id": "4226b455-2e5f-4f1c-b00c-8b5b864b5ef5",
-				"title": "dscn0279",
+				"id": "326f4012-8717-4778-8a3d-1ae0574bcb90",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0279.webp",
@@ -2373,8 +2373,8 @@
 				}
 			},
 			{
-				"id": "cb80c0e2-6364-40f4-8f6d-6e9130783f44",
-				"title": "dscn0281",
+				"id": "94452c8d-e3c2-4d92-b26e-030c81f6fe8f",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0281.webp",
@@ -2384,8 +2384,8 @@
 				}
 			},
 			{
-				"id": "3da082f8-e38a-4e59-a7e4-87ce854f7ab1",
-				"title": "dscn0283",
+				"id": "824c840d-5965-4c47-a88b-fed170ddb0c4",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0283.webp",
@@ -2395,8 +2395,8 @@
 				}
 			},
 			{
-				"id": "f8294f2a-6338-431f-9c4e-7563167a78c1",
-				"title": "dscn0285",
+				"id": "1bd3d9d0-01e5-4788-85d9-438037369ffb",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0285.webp",
@@ -2406,8 +2406,8 @@
 				}
 			},
 			{
-				"id": "aa46754e-c155-4429-b78c-d6ef11bbad42",
-				"title": "dscn0287",
+				"id": "058f8d6a-0d5d-4104-918c-45250aeaebea",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0287.webp",
@@ -2417,8 +2417,8 @@
 				}
 			},
 			{
-				"id": "c5bb942a-d4f6-4481-bcbe-4a72acadc833",
-				"title": "dscn0290",
+				"id": "e8589482-7540-4c92-ac14-a8b7b58f026d",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0290.webp",
@@ -2428,8 +2428,8 @@
 				}
 			},
 			{
-				"id": "e8beb91c-ef3c-4891-8db9-7245b0bba5a8",
-				"title": "dscn0293",
+				"id": "760bb83f-c81e-4352-8726-e27de7c90026",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0293_copia.webp",
@@ -2439,8 +2439,8 @@
 				}
 			},
 			{
-				"id": "0d9f8690-927b-4c14-9000-d5b17e570881",
-				"title": "dscn0294",
+				"id": "0c99c363-cc68-4dad-94c9-e49ceddb8f86",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0294.webp",
@@ -2450,8 +2450,8 @@
 				}
 			},
 			{
-				"id": "8c3fda04-6325-4dbf-b0cb-15c75832f6e3",
-				"title": "dscn0296",
+				"id": "311c6e34-b026-4ef9-8c06-5d9b34eb136f",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0296.webp",
@@ -2461,8 +2461,8 @@
 				}
 			},
 			{
-				"id": "f5734182-5c9f-4ffa-8281-31fdedb32c73",
-				"title": "dscn0299",
+				"id": "28a055ff-bec7-4c68-bfa1-97e01d7f22f1",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0299.webp",
@@ -2472,8 +2472,8 @@
 				}
 			},
 			{
-				"id": "d5210bfe-4244-42dc-803f-d35a10ca5ed4",
-				"title": "dscn0302",
+				"id": "7f99cd0c-8977-431b-adcd-ded963737197",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0302.webp",
@@ -2483,8 +2483,8 @@
 				}
 			},
 			{
-				"id": "cec83bbf-7ed6-46d5-a7e7-541e3b481c75",
-				"title": "dscn0304",
+				"id": "937bd2d2-8f17-4a65-b19c-5070398ce0e1",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0304.webp",
@@ -2494,8 +2494,8 @@
 				}
 			},
 			{
-				"id": "d3e68312-11cb-4646-8c06-be7ed38fc4bd",
-				"title": "dscn0310",
+				"id": "90d2518a-a76b-4f87-9b03-8af42e4c1d70",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0310.webp",
@@ -2505,8 +2505,8 @@
 				}
 			},
 			{
-				"id": "c9b1795f-a35a-41b7-8264-db935f232cb2",
-				"title": "dscn0312",
+				"id": "291b89cd-587e-4aa0-a9df-f6e2ef7afe95",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0312.webp",
@@ -2516,8 +2516,8 @@
 				}
 			},
 			{
-				"id": "b76c7a1e-55c8-43b3-83f9-a5538f71e778",
-				"title": "dscn0314",
+				"id": "be1c5973-40bd-4b70-b520-64f424821725",
+				"title": null,
 				"description": "Porfido e pietre preziose",
 				"author": "Simona Maleti",
 				"url": "/maleti/static/galleries/torri_preziose/dscn0314.webp",

@@ -12,7 +12,9 @@ export function getPaintings(
 ): Painting[] {
   const list = fs.readdirSync(galleryFolderPath);
 
-  const paintings = list.map((file) => {
+  const paintingsFromJson = jsonParsedGallery?.paintings ?? [];
+
+  const paintingsFromFolder = list.map((file) => {
     // path file
     let filePath = path.join(galleryFolderPath, file);
     filePath = path.relative(process.cwd(), filePath);
@@ -31,28 +33,8 @@ export function getPaintings(
       .name.replace(/_/g, " ")
       .replace(/-/g, "'");
 
-    let title: string | undefined;
+    let title: string | undefined = titleFromPath;
     let description: string | undefined;
-
-    // sincronizza con JSON se fornito
-    if (jsonParsedGallery) {
-      const jsonParsedPainting = getJsonPaintingData(
-        filePath,
-        jsonParsedGallery,
-      );
-
-      title =
-        jsonParsedPainting && jsonParsedPainting?.title != titleFromPath
-          ? (jsonParsedPainting?.title ?? undefined)
-          : titleFromPath;
-
-      description =
-        jsonParsedPainting && jsonParsedPainting?.description
-          ? jsonParsedPainting?.description
-          : undefined;
-    } else {
-      title = titleFromPath;
-    }
 
     return new Painting({
       id: uuid(),
@@ -64,7 +46,40 @@ export function getPaintings(
     });
   });
 
-  return paintings;
+  const paintingsMerge = paintingsFromJson
+    .map((paintingJson) => {
+      const paintingFolder = paintingsFromFolder.find(
+        (p) => p.url == paintingJson.url,
+      );
+      if (paintingFolder) {
+        let painting = paintingFolder;
+        painting.title =
+          paintingJson?.title != paintingFolder.title
+            ? paintingJson.title
+            : paintingFolder.title;
+
+        painting.description = paintingJson.description
+          ? paintingJson.description
+          : "";
+
+        return painting;
+      }
+    })
+    .filter((p): p is Painting => p !== null);
+
+  const paintingsNew = paintingsFromFolder
+    .filter((paintingFolder) => {
+      if (
+        !paintingsFromJson.find(
+          (paintingJson) => paintingJson.url == paintingFolder.url,
+        )
+      ) {
+        return paintingFolder;
+      }
+    })
+    .filter((p): p is Painting => p !== null);
+
+  return [...paintingsMerge, ...paintingsNew];
 }
 
 // --- Helper: cerca un dipinto nel JSON per URL

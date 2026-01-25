@@ -14,10 +14,11 @@
 
 .GalleryName {
   position: absolute;
+  z-index: 2;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,27 +28,35 @@
   z-index: 2;
   min-height: 50%;
   overflow-wrap: anywhere;
-  width: 100%;
+  /* width: 100%; 8*/
   mix-blend-mode: difference;
 }
 
 .GalleryName a {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: center;
   /* border: 1px solid black;*/
   padding: 0.5rem 0.2rem;
-  margin: 0.5rem;
-  background: rgba(var(--colorB4), 0.7);
+  /* background: rgba(var(--colorB4), 0.7); */
 }
 
 .GalleryName h1 {
-  width: 100%;
   color: rgba(var(--colorT3), 1);
+  transition: background 0.3s ease;
   text-shadow: none;
   letter-spacing: 0.6rem;
-  mix-blend-mode: difference;
+  padding: 0.5rem;
 }
+
+.GalleryName a:hover {
+}
+
+.GalleryName h1:hover {
+  color: black;
+  background: rgba(206, 253, 255, 1);
+}
+
 .ImagesContainer {
   display: flex;
   align-items: center;

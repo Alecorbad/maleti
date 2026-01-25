@@ -2,6 +2,14 @@
   margin: 0 0 0 2rem;
 }
 
-.paintingFocus {
+.wall {
+  scroll-behavior: smooth;
+}
+
+.wall > .paintingFocus {
   scroll-snap-align: center;
+}
+
+.wall > .paintingFocus:first-child {
+  scroll-snap-stop: always;
 }

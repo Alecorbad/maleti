@@ -47,7 +47,7 @@ export default function Frammenti() {
     </>;
   } else {
     return <>
-      <Wall mode="flex" width="100%">
+      <Wall mode="flex" width="100%" className={`${GalleriesStyle.wall}`}>
         {
           generatePaintings((paint: Painting, key: number) => {
             return <div key={paint.id}

@@ -31,8 +31,8 @@ interface PaintingProps {
   frameWidth?: string;
   frameHeight?: string;
   frameColor?:
-  | { up?: string; right?: string; bot?: string; left?: string }
-  | string;
+    | { up?: string; right?: string; bot?: string; left?: string }
+    | string;
 }
 
 const Painting = (props: PaintingProps) => {
@@ -51,7 +51,7 @@ const Painting = (props: PaintingProps) => {
     setImageLoaded(true);
   };
 
-  const handleImageError = () => { };
+  const handleImageError = () => {};
 
   const containerStyle: React.CSSProperties = {
     width: props.width ?? "auto",

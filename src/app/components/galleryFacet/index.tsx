@@ -27,7 +27,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   const transAB: TargetAndTransition = {
     x: ["20%", "100%"],
     transition: {
-      duration: isMobile ? 50 : 100,
+      duration: isMobile ? 10 : 100,
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -37,7 +37,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   const transBA: TargetAndTransition = {
     x: ["-20%", "-100%"],
     transition: {
-      duration: isMobile ? 50 : 100,
+      duration: isMobile ? 10 : 100,
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -63,7 +63,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
           <Link href={`/${props.gallery.pageName}`}>
             <h1
               onPointerDown={(event) => dragControls.start(event)}
-              style={{ touchAction: "none" }}
+              style={{ touchAction: "none", fontWeight: "bold" }}
             >
               {" "}
               {props.gallery.title}{" "}

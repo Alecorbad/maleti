@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "./providers";
+import ScrollManager from "./utils/scroll-manager";
 
 export const metadata: Metadata = {
   title: "Simona Maleti",
@@ -15,9 +16,11 @@ export default function RootLayout({
 }>) {
 
 
+
   return (
     <html lang="it">
       <body>
+        <ScrollManager />
         <Providers>
           {children}
         </Providers>

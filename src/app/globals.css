@@ -1,11 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('reset.css');
+@import url("reset.css");
 
- @font-face {
+@font-face {
   font-family: LindenHillMaster;
-  src: url(/maleti/static/fonts/linden-hill-master/LindenHill-webfont.woff) format('woff');
+  src: url(/maleti/static/fonts/linden-hill-master/LindenHill-webfont.woff)
+    format("woff");
   font-display: swap;
   font-weight: normal;
   font-style: normal;
@@ -22,8 +23,8 @@
   --grey: 196 196 196;
   --grey1: 80 80 80;
   --darkgrey: 30, 30, 30;
-  --black: 23, 23 ,23;
-  --blacker: 10, 10 ,10;
+  --black: 23, 23, 23;
+  --blacker: 10, 10, 10;
 
   /* Sfondi, ... */
   --colorB1: var(--lightgrey);
@@ -37,37 +38,53 @@
   --colorT3: var(--white);
 
   /* Dimensioni testo */
-  --body-text: clamp(12px, 10px + .5vw, 18px);
-  --h0-fs: clamp(calc(var(--body-text) * 3.5),  15vw, calc(var(--body-text) * 8)); 
-  --h1-fs: clamp(calc(var(--body-text) * 2.5),    6vw,  calc(var(--body-text) * 4)); 
-  --h2-fs: clamp(calc(var(--body-text) * 1.5),    8vw,  calc(var(--body-text) * 1.84)); 
-  --h3-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.78)); 
-  --h4-fs: clamp(calc(var(--body-text) * 1),    8vw,  calc(var(--body-text) * 1.76)); 
+  --body-text: clamp(12px, 10px + 0.5vw, 18px);
+  --h0-fs: clamp(
+    calc(var(--body-text) * 3.5),
+    15vw,
+    calc(var(--body-text) * 8)
+  );
+  --h1-fs: clamp(calc(var(--body-text) * 3.5), 6vw, calc(var(--body-text) * 4));
+  --h2-fs: clamp(
+    calc(var(--body-text) * 1.5),
+    8vw,
+    calc(var(--body-text) * 1.84)
+  );
+  --h3-fs: clamp(
+    calc(var(--body-text) * 1),
+    8vw,
+    calc(var(--body-text) * 1.78)
+  );
+  --h4-fs: clamp(
+    calc(var(--body-text) * 1),
+    8vw,
+    calc(var(--body-text) * 1.76)
+  );
 }
-
-
-
 
 @media (prefers-color-scheme: dark) {
   :root {
-  /* Sfondi, ... */
+    /* Sfondi, ... */
     --colorB1: var(--blacker);
     --colorB2: var(--black);
     --colorB3: var(--darkgrey);
 
-  /* Colori deri testi, bordi, ... */
+    /* Colori deri testi, bordi, ... */
     --colorT1: var(--lightgrey);
     --colorT2: var(--grey);
-    --colorT3: var (--black)
+    --colorT3: var (--black);
   }
 }
 
-html{
-  scroll-snap-type: y proximity; 
-  scroll-behavior: smooth;
+html {
+  scroll-snap-type: y proximity;
+  /* data-scroll-behavior: smooth; */
+  scroll-padding-top: 1px; /* ← Crea punto snap virtuale all'inizio */
+  overscroll-behavior-y: contain;
 }
 
-body, .transition {
+body,
+.transition {
   overflow-x: hidden;
   background: rgba(var(--colorB1), 1);
   color: rgba(var(--colorT1), 1);
@@ -78,35 +95,34 @@ body, .transition {
   min-height: 100vh;
 
   font-size: var(--body-text);
+
+  overflow-anchor: none;
 }
 
-h1{
- font-size: var(--h1-fs);
- font-family: LindenHillMaster;
+h1 {
+  font-size: var(--h1-fs);
+  font-family: LindenHillMaster;
 }
 
-h2{
- font-size: var(--h2-fs);
- font-family: LindenHillMaster;
+h2 {
+  font-size: var(--h2-fs);
+  font-family: LindenHillMaster;
 }
 
-
-.headerContainer{
-
+.headerContainer {
 }
 
-.pageContainer{
-  flex: 1; 
+.pageContainer {
+  flex: 1;
 }
 
-.footerContainer{
+.footerContainer {
   width: 100%;
   scroll-snap-align: end;
 }
 
-
-.unmovable{
-  user-drag: none; 
+.unmovable {
+  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -114,12 +130,8 @@ h2{
   -ms-user-select: none;
 }
 
-
 @media (max-width: 767px) {
-  html{
+  html {
     scroll-snap-type: none;
   }
 }
-
-
-

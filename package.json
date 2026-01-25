@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "tsx ./scripts/open-browser.ts --url=http://192.168.178.174:3000",
+    "predev": "tsx ./scripts/open-browser.ts",
     "genGalleriesJson": "tsx ./scripts/generateGalleries.ts",
     "prebuild": "npm run genGalleriesJson",
-    "dev": "npm run predev && next dev -H 192.168.178.174 -p 3000 ",
+    "dev": "npm run predev && next dev  -p 3000 ",
     "build": "npm run prebuild && next build",
     "start": "next start",
     "lint": "next lint"
@@ -34,6 +34,6 @@
     "typescript": "^5.7.3"
   },
   "debug": {
-    "url": "http://192.168.178.174:3000"
+    "url": "localhost"
   }
 }

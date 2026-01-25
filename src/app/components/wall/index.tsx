@@ -8,11 +8,12 @@ import React from 'react'
 type Mode = ("relative" | "grid" | "flex" | "horizScroll");
 
 
-interface WallProps{
+interface WallProps {
   children: React.ReactNode,
   paintingsWidth?: string,
   paintingsHeight?: string,
   mode?: Mode,
+  className?: string,
 
   width?: string,
   height?: string,
@@ -25,16 +26,16 @@ interface WallProps{
   scrollAlign?: string,
   scrollStop?: string,
   gridTemplateAreas?: string,
-  gridColsTemplate?:  string,
-  gridRowsTemplate?:  string,  
+  gridColsTemplate?: string,
+  gridRowsTemplate?: string,
   gridAutoRows?: string,
   gridAutoCols?: string,
   gridGap?: string,
 
 
   gridMobileTemplateAreas?: string,
-  gridMobileColsTemplate?:  string,
-  gridMobileRowsTemplate?:  string,  
+  gridMobileColsTemplate?: string,
+  gridMobileRowsTemplate?: string,
 }
 
 const Wall = (props: WallProps) => {
@@ -48,79 +49,83 @@ const Wall = (props: WallProps) => {
   // const x = useTransform(scrollYProgress, [0, 1], ["-100%", "100%"]);
 
   const dynamicStyles: React.CSSProperties = {
-        width: (props.width ?? '100%'),
-        height: (props.height ?? 'auto'),
-        padding: (props.padding ?? '1rem'),
-        margin: (props.margin ?? '0'),
-        scrollSnapAlign: (props.scrollAlign ?? 'none'),
-        alignItems: (props.itemsAlign ?? 'center'),
-        justifyItems: (props.itemsJustify ?? 'center'),
-        justifyContent: (props.contentJustify ?? 'center')
-      };
+    width: (props.width ?? '100%'),
+    height: (props.height ?? 'auto'),
+    padding: (props.padding ?? '1rem'),
+    margin: (props.margin ?? '0'),
+    scrollSnapAlign: (props.scrollAlign ?? 'none'),
+    alignItems: (props.itemsAlign ?? 'center'),
+    justifyItems: (props.itemsJustify ?? 'flex-start'),
+    justifyContent: (props.contentJustify ?? 'flex-start'),
+  };
 
-    if(props.mode == "grid"){
-      dynamicStyles.display = "grid";
-      dynamicStyles.gridTemplateAreas = props.gridTemplateAreas;
-      
-      dynamicStyles.gridGap = props.gridGap;
-      dynamicStyles.gridAutoRows = props.gridAutoRows ?? "1fr";
-      dynamicStyles.gridAutoColumns = props.gridAutoCols ?? "1fr";
+  if (props.mode == "grid") {
+    dynamicStyles.display = "grid";
+    dynamicStyles.gridTemplateAreas = props.gridTemplateAreas;
+
+    dynamicStyles.gridGap = props.gridGap;
+    dynamicStyles.gridAutoRows = props.gridAutoRows ?? "1fr";
+    dynamicStyles.gridAutoColumns = props.gridAutoCols ?? "1fr";
 
 
-      if(isMobile && props.gridMobileColsTemplate){
-        dynamicStyles.gridTemplateColumns = props.gridMobileColsTemplate;
+    if (isMobile && props.gridMobileColsTemplate) {
+      dynamicStyles.gridTemplateColumns = props.gridMobileColsTemplate;
+    }
+    else {
+      dynamicStyles.gridTemplateColumns = props.gridColsTemplate;
+      if (props.gridColsTemplate) {
+        dynamicStyles.width = "auto"
       }
-      else{
-        dynamicStyles.gridTemplateColumns = props.gridColsTemplate;
-        if(props.gridColsTemplate){
-          dynamicStyles.width = "auto"
-        }
-      }
-
-
-      if(isMobile && props.gridMobileRowsTemplate){
-        dynamicStyles.gridTemplateRows = props.gridMobileRowsTemplate;
-      }
-      else{
-        dynamicStyles.gridTemplateRows = props.gridRowsTemplate;
-        if(props.gridRowsTemplate){
-          dynamicStyles.height = "auto"
-        }
-      }
-
     }
 
-    else if(props.mode == "relative"){
-      dynamicStyles.position = "relative";
+
+    if (isMobile && props.gridMobileRowsTemplate) {
+      dynamicStyles.gridTemplateRows = props.gridMobileRowsTemplate;
+    }
+    else {
+      dynamicStyles.gridTemplateRows = props.gridRowsTemplate;
+      if (props.gridRowsTemplate) {
+        dynamicStyles.height = "auto"
+      }
     }
 
-     else if(props.mode == "flex"){
-      dynamicStyles.display = "flex"
-      dynamicStyles.flexWrap = "wrap"
-    }
+  }
 
-    // else if(props.mode == "horizScroll"){
-    //   dynamicStyles.display = "flex"
+  else if (props.mode == "relative") {
+    dynamicStyles.position = "relative";
+  }
 
-    //   return(
-    //     <>
-    //     <div ref={targetRef} className={`${styles.wallContainer}`} style={dynamicStyles}>
-    //       <div className="sticky top-0 flex items-center overflow-hidden" style={{'height': "50vh"}}>
-    //         <motion.div style={{ x }} className="flex gap-4">
-    //           {
-    //             React.Children.toArray(props.children)
-    //           }
-    //         </motion.div>
-    //       </div>
-    //     </div>
-    //     </>
-    //   )
-    // }
+  else if (props.mode == "flex") {
+    dynamicStyles.display = "flex"
+    dynamicStyles.flexWrap = "wrap"
+    dynamicStyles.flexDirection = "column"
+    dynamicStyles.justifyContent = (props.contentJustify ?? 'flex-start')
+    dynamicStyles.justifyItems = (props.itemsJustify ?? 'start')
+    dynamicStyles.alignItems = (props.itemsAlign ?? 'center')
+  }
+
+  // else if(props.mode == "horizScroll"){
+  //   dynamicStyles.display = "flex"
+
+  //   return(
+  //     <>
+  //     <div ref={targetRef} className={`${styles.wallContainer}`} style={dynamicStyles}>
+  //       <div className="sticky top-0 flex items-center overflow-hidden" style={{'height': "50vh"}}>
+  //         <motion.div style={{ x }} className="flex gap-4">
+  //           {
+  //             React.Children.toArray(props.children)
+  //           }
+  //         </motion.div>
+  //       </div>
+  //     </div>
+  //     </>
+  //   )
+  // }
 
 
   return (
     <>
-    <div className={styles.wallContainer} style={dynamicStyles}>
+      <div className={`${styles.wallContainer} ${props.className}`} style={dynamicStyles}>
         {
           props.children
         }

@@ -17,16 +17,16 @@ export default function ImageLoading({
   style
 }: ImageLoadingProps) {
   return (
-  <motion.div 
-       className={className}
-       style={style}
-       initial="hidden"
-       animate= {{ opacity: isLoaded ? 1 : 0 }}
-            transition={{
-              duration: 0.75,
-              ease: "easeInOut", 
-            }}
-  >
+    <motion.div
+      className={className}
+      style={style}
+      initial={false}
+      animate={{ opacity: isLoaded ? 1 : 0 }}
+      transition={{
+        duration: 0.75,
+        ease: "easeInOut",
+      }}
+    >
       {children}
     </motion.div>
   );

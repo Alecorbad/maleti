@@ -1,0 +1,7 @@
+.modalContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  background: rgba(var(--colorB3), 0.7);
+  z-index: 10;
+}
