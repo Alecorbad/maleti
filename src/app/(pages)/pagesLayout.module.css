@@ -2,14 +2,20 @@
   margin: 0 0 0 2rem;
 }
 
-.wall {
-  scroll-behavior: smooth;
-}
-
 .wall > .paintingFocus {
   scroll-snap-align: center;
 }
 
 .wall > .paintingFocus:first-child {
   scroll-snap-stop: always;
+}
+
+@media (max-width: 767px) {
+  .wall > .paintingFocus {
+    scroll-snap-align: none;
+  }
+
+  .wall > .paintingFocus:first-child {
+    scroll-snap-stop: none;
+  }
 }

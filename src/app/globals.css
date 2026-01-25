@@ -13,6 +13,8 @@
 }
 
 :root {
+  --scroll-snap-type: y proximity; /* Variabile controllata da JS */
+
   --white: 255, 255, 255;
   --beige: 255, 250, 245;
   --lightgrey: 237, 237, 237;
@@ -79,7 +81,7 @@
 html {
   scroll-snap-type: y proximity;
   /* data-scroll-behavior: smooth; */
-  scroll-padding-top: 1px; /* ← Crea punto snap virtuale all'inizio */
+  scroll-padding-top: 1px;
   overscroll-behavior-y: contain;
 }
 
@@ -95,8 +97,6 @@ body,
   min-height: 100vh;
 
   font-size: var(--body-text);
-
-  overflow-anchor: none;
 }
 
 h1 {

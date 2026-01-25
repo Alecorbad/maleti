@@ -20,7 +20,7 @@ export default function AgiliFragili() {
   if (isMobile) {
     return (
       <>
-        <Wall mode="flex" width="100%">
+        <Wall mode="flex" width="100%" className={`${GalleriesStyle.wall}`}>
           {generatePaintings(
             (paint: Painting, key: number) => {
               return (

@@ -4,12 +4,7 @@ import { Gallery, Painting, JustifyContent } from "@/app/types/galleries";
 import Link from "next/link";
 import Image from "next/image";
 
-import {
-  motion,
-  useDragControls,
-  TargetAndTransition,
-  useMotionValue,
-} from "framer-motion";
+import { motion, useDragControls, TargetAndTransition } from "framer-motion";
 import MediaQuery from "@/app/hooks/useMediaQuery";
 
 interface GalleryProps {
@@ -25,9 +20,9 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   const justifyContent: JustifyContent = props.justifyContent ?? "flex-start";
 
   const transAB: TargetAndTransition = {
-    x: ["20%", "100%"],
+    x: isMobile ? ["0", "100%"] : ["20%", "100%"],
     transition: {
-      duration: isMobile ? 10 : 100,
+      duration: isMobile ? 30 : 100,
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -35,9 +30,9 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   };
 
   const transBA: TargetAndTransition = {
-    x: ["-20%", "-100%"],
+    x: isMobile ? ["0", "-100%"] : ["-20%", "-100%"],
     transition: {
-      duration: isMobile ? 10 : 100,
+      duration: isMobile ? 30 : 100,
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -61,13 +56,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
       <div className={`${galleryFacetStyles.GalleryContainer}`}>
         <div className={`${galleryFacetStyles.GalleryName} unmovable`}>
           <Link href={`/${props.gallery.pageName}`}>
-            <h1
-              onPointerDown={(event) => dragControls.start(event)}
-              style={{ touchAction: "none", fontWeight: "bold" }}
-            >
-              {" "}
-              {props.gallery.title}{" "}
-            </h1>
+            <h1 style={{ fontWeight: "bold" }}> {props.gallery.title} </h1>
           </Link>
         </div>
         <div className={`${galleryFacetStyles.GalleryWrapper}`}>

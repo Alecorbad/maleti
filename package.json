@@ -6,7 +6,7 @@
     "predev": "tsx ./scripts/open-browser.ts",
     "genGalleriesJson": "tsx ./scripts/generateGalleries.ts",
     "prebuild": "npm run genGalleriesJson",
-    "dev": "npm run predev && next dev  -p 3000 ",
+    "dev": "npm run predev && next dev -H 0.0.0.0 -p 3000 ",
     "build": "npm run prebuild && next build",
     "start": "next start",
     "lint": "next lint"
