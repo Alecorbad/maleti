@@ -41,14 +41,19 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
 
   // Calcoliamo una durata basata sul numero di elementi per mantenere la velocità costante
   // Più elementi = striscia più lunga = serve più tempo per percorrerla alla stessa velocità visiva
-  const baseDuration = isMobile ? 40 : 450;
+  const baseDuration = isMobile ? 20000 : 15000;
   // Fattore di correzione se abbiamo aggiunto tantissime immagini (opzionale, ma aiuta la fluidità)
   const durationModifier = paintings.length > 0 ? paintings.length / 20 : 1;
 
+  const galleryWidth = paintings.reduce(
+    (sum, painting) => sum + painting.dimensions!.width,
+    0,
+  );
+
   const transAB: TargetAndTransition = {
-    x: ["0%", "50%"],
+    x: ["0%", `${galleryWidth.toString()}px`],
     transition: {
-      duration: baseDuration * Math.max(0.3, durationModifier * 0.2), // Aggiustamento dinamico velocità
+      duration: baseDuration * Math.max(0.3, durationModifier * 0.2),
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -56,7 +61,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   };
 
   const transBA: TargetAndTransition = {
-    x: ["0%", "-50%"],
+    x: ["0%", `-${galleryWidth.toString()}px`],
     transition: {
       duration: baseDuration * Math.max(0.3, durationModifier * 0.2),
       ease: "linear",
@@ -77,7 +82,10 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
 
   return (
     <>
-      <div className={`${galleryFacetStyles.GalleryContainer}`}>
+      <div
+        className={`${galleryFacetStyles.GalleryContainer}`}
+        key={isMobile ? "mobile-anim" : "desktop-anim"}
+      >
         <div className={`${galleryFacetStyles.GalleryName} unmovable`}>
           <Link href={`/${props.gallery.pageName}`}>
             <h1 style={{ fontWeight: "bold" }}> {props.gallery.title} </h1>
