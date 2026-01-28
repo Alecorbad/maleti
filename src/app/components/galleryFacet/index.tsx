@@ -41,14 +41,14 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
 
   // Calcoliamo una durata basata sul numero di elementi per mantenere la velocità costante
   // Più elementi = striscia più lunga = serve più tempo per percorrerla alla stessa velocità visiva
-  const baseDuration = isMobile ? 20 : 120;
+  const baseDuration = isMobile ? 40 : 450;
   // Fattore di correzione se abbiamo aggiunto tantissime immagini (opzionale, ma aiuta la fluidità)
   const durationModifier = paintings.length > 0 ? paintings.length / 20 : 1;
 
   const transAB: TargetAndTransition = {
     x: ["0%", "50%"],
     transition: {
-      duration: baseDuration * Math.max(1, durationModifier * 0.2), // Aggiustamento dinamico velocità
+      duration: baseDuration * Math.max(0.3, durationModifier * 0.2), // Aggiustamento dinamico velocità
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -58,7 +58,7 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   const transBA: TargetAndTransition = {
     x: ["0%", "-50%"],
     transition: {
-      duration: baseDuration * Math.max(1, durationModifier * 0.2),
+      duration: baseDuration * Math.max(0.3, durationModifier * 0.2),
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",

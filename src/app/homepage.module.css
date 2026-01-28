@@ -81,8 +81,8 @@
 }
 
 .galleryContainer {
-  margin: 3rem 0;
-  height: 80vh;
+  margin: 2rem 0;
+  height: 85vh;
   scroll-snap-align: center;
   scroll-snap-stop: always;
   scroll-margin-block: 30vh;
