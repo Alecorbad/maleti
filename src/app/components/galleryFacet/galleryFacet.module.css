@@ -86,5 +86,6 @@
 
   .ImagesContainer img {
     object-fit: cover;
+    margin: 0.2rem;
   }
 }
