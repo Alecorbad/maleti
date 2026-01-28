@@ -4,7 +4,7 @@
 
 .wall > .paintingFocus {
   scroll-snap-align: center;
-  scroll-margin-block: 30vh;
+  scroll-margin-block: 10vh;
 }
 
 .wall > .paintingFocus:first-child {
