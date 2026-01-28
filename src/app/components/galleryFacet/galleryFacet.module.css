@@ -37,6 +37,7 @@
 .GalleryName h1 {
   font-size: clamp(calc(4vw), 4vw, calc(5vw));
   word-break: break-word;
+  border-radius: 3rem;
   line-height: 1.1;
   width: 100%;
   max-width: 100%;
