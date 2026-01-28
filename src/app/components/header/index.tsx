@@ -3,7 +3,6 @@ import { easeInOut, motion } from "framer-motion";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import MediaQuery from "@/app/hooks/useMediaQuery";
-import { randomUUID } from "crypto";
 
 import styles from "./header.module.css";
 import Link from "next/link";

@@ -7,6 +7,8 @@
   flex: 0 1 85vh;
   width: 100%;
   scroll-snap-align: start;
+  /* NUOVO: Facilita il ritorno a inizio pagina */
+  scroll-margin-top: 30vh;
 }
 
 .bannerImage {
@@ -64,8 +66,18 @@
   flex: 0 0 15vh;
 }
 
+/* Nuovo wrapper per garantire che lo sticky funzioni nel contesto della home */
+.stickyHeaderWrapper {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+}
+
 .homepageContainer {
   flex: 1;
+  width: 100%;
+  max-width: 100%;
 }
 
 .galleryContainer {
@@ -73,11 +85,13 @@
   height: 80vh;
   scroll-snap-align: center;
   scroll-snap-stop: always;
+  scroll-margin-block: 30vh;
 }
 
 .homepageFooter {
   scroll-snap-align: end;
   scroll-snap-stop: always;
+  scroll-margin-block: 30vh;
 }
 
 @media (max-width: 767px) {
@@ -88,9 +102,20 @@
   .galleryContainer {
     height: 70vh;
     margin: 0 0 2rem 0;
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
   }
 
   .homepageHeader {
     flex: 0 0 auto;
+  }
+
+  .homepageFooter {
+    scroll-snap-align: none;
+    scroll-snap-stop: none;
+  }
+
+  .homepageContainer {
+    overflow-x: hidden; /* Nascondi contenuto extra orizzontale */
   }
 }

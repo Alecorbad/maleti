@@ -1,10 +1,11 @@
 "use client";
+import { useState, useEffect } from "react";
 import galleryFacetStyles from "./galleryFacet.module.css";
 import { Gallery, Painting, JustifyContent } from "@/app/types/galleries";
 import Link from "next/link";
 import Image from "next/image";
 
-import { motion, useDragControls, TargetAndTransition } from "framer-motion";
+import { motion, TargetAndTransition } from "framer-motion";
 import MediaQuery from "@/app/hooks/useMediaQuery";
 
 interface GalleryProps {
@@ -14,15 +15,40 @@ interface GalleryProps {
 }
 
 const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
-  const dragControls = useDragControls();
-
   const isMobile = MediaQuery(768);
   const justifyContent: JustifyContent = props.justifyContent ?? "flex-start";
+  const [paintings, setPaintings] = useState<Painting[]>([]);
+
+  useEffect(() => {
+    // 1. Prendiamo un set iniziale di dipinti (tutti quelli disponibili o fino a 20 unici)
+    let baseList = takeRandomPaintings(props.gallery, 10);
+
+    // 2. Se la lista è vuota, usciamo
+    if (baseList.length === 0) return;
+
+    // 3. Moltiplichiamo la lista finché non abbiamo abbastanza elementi da coprire schermi grandi (es. 4K)
+    // Una media di 300px per immagine * 15 immagini = 4500px, sufficiente per la maggior parte degli schermi.
+    const MIN_ITEMS_TO_FILL_SCREEN = 20;
+
+    while (baseList.length < MIN_ITEMS_TO_FILL_SCREEN) {
+      baseList = [...baseList, ...baseList];
+    }
+
+    // 4. Creiamo il loop perfetto duplicando l'intera lista "sicura"
+    // La struttura finale sarà [A, A]. L'animazione muove esattamente del 50% (la lunghezza di A).
+    setPaintings([...baseList, ...baseList]);
+  }, [props.gallery]);
+
+  // Calcoliamo una durata basata sul numero di elementi per mantenere la velocità costante
+  // Più elementi = striscia più lunga = serve più tempo per percorrerla alla stessa velocità visiva
+  const baseDuration = isMobile ? 20 : 120;
+  // Fattore di correzione se abbiamo aggiunto tantissime immagini (opzionale, ma aiuta la fluidità)
+  const durationModifier = paintings.length > 0 ? paintings.length / 20 : 1;
 
   const transAB: TargetAndTransition = {
-    x: isMobile ? ["0", "100%"] : ["20%", "100%"],
+    x: ["0%", "50%"],
     transition: {
-      duration: isMobile ? 30 : 100,
+      duration: baseDuration * Math.max(1, durationModifier * 0.2), // Aggiustamento dinamico velocità
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -30,9 +56,9 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
   };
 
   const transBA: TargetAndTransition = {
-    x: isMobile ? ["0", "-100%"] : ["-20%", "-100%"],
+    x: ["0%", "-50%"],
     transition: {
-      duration: isMobile ? 30 : 100,
+      duration: baseDuration * Math.max(1, durationModifier * 0.2),
       ease: "linear",
       repeat: Infinity,
       repeatType: "loop",
@@ -48,8 +74,6 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
       selectedTransaction = transBA;
       break;
   }
-
-  const randomPaintings: Painting[] = takeRandomPaintings(props.gallery, 10);
 
   return (
     <>
@@ -68,12 +92,12 @@ const GalleryFacet: React.FC<GalleryProps> = (props: GalleryProps) => {
               touchAction: "pan-y",
             }}
           >
-            {randomPaintings.map((paint) => {
+            {paintings.map((paint, index) => {
               return (
                 <Image
                   priority
                   fetchPriority="high"
-                  key={paint.id ?? `paint-${Math.random()}`}
+                  key={`${paint.id ?? "paint"}-${index}`}
                   src={paint.url ?? ""}
                   height={
                     paint.dimensions ? (paint.dimensions.height ?? 500) : 500

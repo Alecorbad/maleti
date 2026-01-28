@@ -8,8 +8,8 @@
   height: 15vh;
   width: 100%;
   top: -1px;
-  /* ➜ the trick */
   padding: 0em;
+  background: transparent;
 }
 
 .base {
