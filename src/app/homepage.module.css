@@ -7,8 +7,6 @@
   flex: 0 1 85vh;
   width: 100%;
   scroll-snap-align: start;
-  /* NUOVO: Facilita il ritorno a inizio pagina */
-  scroll-margin-top: 30vh;
 }
 
 .bannerImage {
@@ -76,14 +74,12 @@
   margin: 2rem 0;
   height: 85vh;
   scroll-snap-align: center;
-  scroll-snap-stop: always;
-  scroll-margin-block: 30vh;
+  scroll-margin-block: 12.5vh;
 }
 
 .homepageFooter {
   scroll-snap-align: end;
-  scroll-snap-stop: always;
-  scroll-margin-block: 30vh;
+  scroll-margin-block: 12.5vh;
 }
 
 @media (max-width: 767px) {

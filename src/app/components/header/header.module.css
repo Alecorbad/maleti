@@ -3,8 +3,6 @@
   justify-content: start;
   align-items: center;
   position: sticky;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   z-index: 5;
   height: 15vh;
   width: 100%;

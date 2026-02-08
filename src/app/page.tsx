@@ -11,8 +11,6 @@ import StylesHomePage from "./homepage.module.css";
 import { Gallery } from "@/app/types/galleries";
 import { useGalleryContext } from "@/app/providers/gallery.provider";
 // import VerticalScrollbar from "./components/verticalScrollBar"; // <-- Importa qui
-// import MusicPlayer from "./components/musicPlayer"; // <-- Importa qui
-
 function animateBanner() {
   return (
     <motion.div
@@ -48,7 +46,6 @@ export default function Home() {
     }
   }, []);
 
-  // <MusicPlayer />
   // <VerticalScrollbar />
   return (
     <>
