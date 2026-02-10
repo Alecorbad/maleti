@@ -54,6 +54,8 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  position: relative;
+  align-items: center;
 }
 
 .option {
@@ -63,8 +65,41 @@
   padding: 0.5rem 1.4rem;
   margin: 0 0.8rem;
   letter-spacing: 0.2rem;
-  flex: 0 1 20vw;
+  flex: 0 1 auto; /* Changed from 20vw to auto to avoid offsetting center too much if using flex, but absolute icon fixes this */
   font-size: 5vh;
+}
+
+.iconOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 3vh;
+  transition: transform 0.2s ease;
+  position: absolute;
+  right: 2rem;
+}
+
+.iconOption:hover {
+  transform: scale(1.1);
+}
+
+.mobileIconOption {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  color: inherit;
 }
 
 /* HEADER MOBILE */

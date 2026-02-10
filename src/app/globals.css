@@ -86,6 +86,8 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  user-select: none; /* Disabilita selezione globale */
+  -webkit-user-select: none; /* Supporto Safari */
 }
 
 body,
