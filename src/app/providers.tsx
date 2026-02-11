@@ -1,6 +1,7 @@
 'use client'
 
 import GalleryProvider from "@/app/providers/gallery.provider"
+import FullscreenProvider from "@/app/providers/fullscreen.provider"
 
 
 interface ProvidersProps{
@@ -10,7 +11,9 @@ interface ProvidersProps{
 function Providers(props: ProvidersProps) {
     return (
       <GalleryProvider>
-        {props.children}
+        <FullscreenProvider>
+          {props.children}
+        </FullscreenProvider>
       </GalleryProvider>
     )
 }

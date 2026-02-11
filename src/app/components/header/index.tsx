@@ -3,6 +3,7 @@ import { easeInOut, motion } from "framer-motion";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import MediaQuery from "@/app/hooks/useMediaQuery";
+import { useFullscreen } from "@/app/providers/fullscreen.provider";
 
 import styles from "./header.module.css";
 import Link from "next/link";
@@ -43,49 +44,7 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isSticky, setIsSticky] = useState(false);
   const [isMenuHovered, setMenuHovered] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
-
-  useEffect(() => {
-    // Funzione per sincronizzare lo stato e la sessione
-    const handleFullscreenChange = () => {
-      const isFs = !!document.fullscreenElement;
-      setIsFullscreen(isFs);
-      sessionStorage.setItem("isFullscreen", isFs ? "true" : "false");
-    };
-
-    // Controllo iniziale: sincronizza stato e icona
-    const storedState = sessionStorage.getItem("isFullscreen") === "true";
-    const currentState = !!document.fullscreenElement;
-
-    // Nota: Non possiamo forzare il fullscreen qui se non siamo in un evento utente,
-    // quindi ci limitiamo a sincronizzare l'icona con la realtà.
-    // Se la sessione dice "true" ma non siamo in fullscreen, resettiamo la sessione.
-    if (storedState && !currentState) {
-      setIsFullscreen(false);
-      sessionStorage.setItem("isFullscreen", "false");
-    } else {
-      setIsFullscreen(currentState);
-    }
-
-    document.addEventListener("fullscreenchange", handleFullscreenChange);
-    return () => {
-      document.removeEventListener("fullscreenchange", handleFullscreenChange);
-    };
-  }, []);
-
-  const toggleFullscreen = () => {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen().catch((e) => {
-        console.error(
-          `Error attempting to enable fullscreen mode: ${e.message}`,
-        );
-      });
-    } else {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
-    }
-  };
+  const { isFullscreen, toggleFullscreen } = useFullscreen();
 
   // Controllo la posizione dello scroll
   useEffect(() => {
