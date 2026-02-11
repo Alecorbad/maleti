@@ -74,12 +74,11 @@
   margin: 2rem 0;
   height: 85vh;
   scroll-snap-align: center;
-  scroll-margin-block: 12.5vh;
+  scroll-margin-block: 7.5vh;
 }
 
 .homepageFooter {
   scroll-snap-align: end;
-  scroll-margin-block: 12.5vh;
 }
 
 @media (max-width: 767px) {

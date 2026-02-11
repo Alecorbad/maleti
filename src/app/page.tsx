@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Header />
+      <Header scrollSnapAlign="none" />
 
       <div className={`${StylesHomePage.homepageContainer} pageContainer`}>
         {galleries.map((gallery, key) => (

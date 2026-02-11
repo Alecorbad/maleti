@@ -19,7 +19,13 @@ class Option {
   }
 }
 
-const Header = () => {
+interface HeaderProps {
+  scrollSnapAlign?: string;
+  scrollSnapStop?: "normal" | "always";
+  //scrollMarginBlock: 10vh;
+}
+
+const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   const [menuState, setMenu] = useState<boolean>(false);
   const isMobile = MediaQuery(768);
   const pages: Option[] = [
@@ -28,6 +34,11 @@ const Header = () => {
       href: "/",
     }),
   ];
+
+  const containerStyle: React.CSSProperties = {
+    scrollSnapAlign: props.scrollSnapAlign ?? "start",
+    scrollSnapStop: props.scrollSnapStop ?? "normal",
+  };
 
   const ref = useRef<HTMLDivElement>(null);
   const [isSticky, setIsSticky] = useState(false);
@@ -189,6 +200,7 @@ const Header = () => {
     return (
       <motion.div
         id="headerDesktopWrap"
+        style={containerStyle}
         ref={ref}
         variants={states}
         initial={false}
