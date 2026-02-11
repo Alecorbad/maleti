@@ -240,15 +240,13 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
             </div>
           </motion.div>
           {isSticky && (
-            <div className={styles.hoverMenuContainer}>
-              <motion.div
-                className={styles.hoverMenu}
-                onHoverStart={() => setMenuHovered(true)}
-                onHoverEnd={() => setMenuHovered(false)}
-              >
-                Menu
-              </motion.div>
-            </div>
+            <motion.div
+              className={styles.hoverMenuContainer}
+              onHoverStart={() => setMenuHovered(true)}
+              onHoverEnd={() => setMenuHovered(false)}
+            >
+              <div className={styles.hoverMenu}>Menu</div>
+            </motion.div>
           )}
         </div>
       </motion.div>
