@@ -11,7 +11,7 @@ import GalleriesStyle from "../../pagesLayout.module.css";
 export default function Butterfly() {
   const galleriesContext = useGalleryContext();
   const galleries = galleriesContext.galleries;
-  const pageName: string = usePathname().replace("/", "");
+  const pageName: string = usePathname().split("/").filter(Boolean).pop() ?? "";
   const gallery: Gallery = galleries.filter((g) => g.pageName == pageName)[0];
 
   //import MediaQuery from '@/app/hooks/useMediaQuery';

@@ -12,7 +12,7 @@ import { useEffect } from "react";
 export default function AgiliFragili() {
   const galleriesContext = useGalleryContext();
   const galleries: Gallery[] = galleriesContext.galleries;
-  const pageName: string = usePathname().replace("/", "");
+  const pageName: string = usePathname().split("/").filter(Boolean).pop() ?? "";
   const gallery: Gallery = galleries.filter((g) => g.pageName == pageName)[0];
 
   //import MediaQuery from '@/app/hooks/useMediaQuery';

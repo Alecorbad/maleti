@@ -13,7 +13,7 @@ import GalleriesStyle from "../../pagesLayout.module.css";
 export default function IncontriDeserto() {
   const galleriesContext = useGalleryContext();
   const galleries: Gallery[] = galleriesContext.galleries;
-  const pageName: string = usePathname().replace("/", "");
+  const pageName: string = usePathname().split("/").filter(Boolean).pop() ?? "";
   const gallery: Gallery = galleries.filter((g) => g.pageName == pageName)[0];
   const isMobile = MediaQuery(768);
 
