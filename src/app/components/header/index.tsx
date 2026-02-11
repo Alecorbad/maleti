@@ -46,9 +46,26 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
+    // Funzione per sincronizzare lo stato e la sessione
     const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
+      const isFs = !!document.fullscreenElement;
+      setIsFullscreen(isFs);
+      sessionStorage.setItem("isFullscreen", isFs ? "true" : "false");
     };
+
+    // Controllo iniziale: sincronizza stato e icona
+    const storedState = sessionStorage.getItem("isFullscreen") === "true";
+    const currentState = !!document.fullscreenElement;
+
+    // Nota: Non possiamo forzare il fullscreen qui se non siamo in un evento utente,
+    // quindi ci limitiamo a sincronizzare l'icona con la realtà.
+    // Se la sessione dice "true" ma non siamo in fullscreen, resettiamo la sessione.
+    if (storedState && !currentState) {
+      setIsFullscreen(false);
+      sessionStorage.setItem("isFullscreen", "false");
+    } else {
+      setIsFullscreen(currentState);
+    }
 
     document.addEventListener("fullscreenchange", handleFullscreenChange);
     return () => {
