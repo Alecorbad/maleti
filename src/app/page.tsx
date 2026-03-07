@@ -42,10 +42,7 @@ export default function Home() {
     if (hasBannerAnimated) {
       setHasBannerAnimated(true);
     } else {
-      sessionStorage.setItem("hasBannerAnimated", "yes");
-    }
-  }, []);
-
+      sessionStorage.setItem("hasBannerAnimated", "yes"); } }, []);
   // <VerticalScrollbar />
   return (
     <>

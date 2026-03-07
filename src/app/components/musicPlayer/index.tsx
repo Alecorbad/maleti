@@ -12,11 +12,87 @@ type MusicPlayerProps = {
 
 type Track = {
   title: string;
-  src: string;
+  artist?: string;
+  origin?: string;
+  src?: string; // src è opzionale perché usiamo url dal json
+  url?: string; // url dal json
 };
 
+import musicList from "@/json/music.json";
+
+const PlayIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth="0"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    color="black"
+  >
+    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+  </svg>
+);
+
+const PauseIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth="0"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    color="black"
+  >
+    <rect x="6" y="4" width="4" height="16"></rect>
+    <rect x="14" y="4" width="4" height="16"></rect>
+  </svg>
+);
+
+const PrevIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth="0"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    color="black"
+  >
+    <polygon points="19 20 9 12 19 4 19 20"></polygon>
+    <line x1="5" y1="19" x2="5" y2="5" strokeWidth="2"></line>
+  </svg>
+);
+
+const NextIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth="0"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    color="black"
+  >
+    <polygon points="5 4 15 12 5 20 5 4"></polygon>
+    <line x1="19" y1="5" x2="19" y2="19" strokeWidth="2"></line>
+  </svg>
+);
+
 export default function MusicPlayer({
-  tracks = ["/static/data/music/track1.mp3"],
+  tracks = musicList,
   expandedHeightRem = 8.5,
   collapsedHeightRem = 3.25,
 }: MusicPlayerProps) {
@@ -48,12 +124,19 @@ export default function MusicPlayer({
       tracks
         .map((track) =>
           typeof track === "string"
-            ? { title: titleFromPath(track), src: track }
-            : track,
+            ? { title: titleFromPath(track), src: track, url: track }
+            : { ...track, src: track.src || track.url || "" },
         )
         .filter((track) => track.src),
     [tracks, titleFromPath],
   );
+
+  // Imposta una canzone casuale all'avvio
+  useEffect(() => {
+    if (normalizedTracks.length > 0) {
+      setIndex(Math.floor(Math.random() * normalizedTracks.length));
+    }
+  }, [normalizedTracks.length]);
 
   const currentTrack = normalizedTracks[index];
 
@@ -93,7 +176,7 @@ export default function MusicPlayer({
     if (normalizedTracks.length === 0 || !currentTrack) return;
 
     if (!audioRef.current) {
-      audioRef.current = new Audio(currentTrack.src);
+      audioRef.current = new Audio(currentTrack.src || "");
       audioRef.current.preload = "metadata";
     }
 
@@ -118,7 +201,7 @@ export default function MusicPlayer({
     const audio = audioRef.current;
     const wasPlaying = !audio.paused && !audio.ended;
     setProgress(0);
-    audio.src = currentTrack.src;
+    audio.src = currentTrack.src || "";
     audio.load();
     if (wasPlaying || playing) audio.play().catch(() => setPlaying(false));
   }, [currentTrack, playing]);
@@ -142,90 +225,77 @@ export default function MusicPlayer({
     };
   }, [currentTrack?.title, hovered]);
 
-  const containerHeightCollapsed = `${collapsedHeightRem}rem`;
-  const containerHeightExpanded = `${expandedHeightRem}rem`;
-
   if (!currentTrack) {
     return null;
   }
 
   return (
     <motion.aside
+      className={styles.player}
+      aria-label="Music player"
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      initial={false}
-      animate={{
-        height: hovered ? containerHeightExpanded : containerHeightCollapsed,
-      }}
-      transition={{ type: "spring", stiffness: 280, damping: 30 }}
-      className={styles.player}
-      aria-label="Music player"
     >
-      <div ref={containerRef} className={styles.marqueeContainer}>
-        <motion.div
-          ref={titleRef}
-          animate={
-            needsScroll && !hovered
-              ? { x: [0, -scrollDistance] }
-              : { x: 0 }
-          }
-          transition={
-            needsScroll && !hovered
-              ? {
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  duration: marqueeDuration,
-                  ease: "linear",
-                }
-              : { duration: 0.2 }
-          }
-          className={styles.marqueeText}
-        >
-          {currentTrack.title}
-        </motion.div>
-      </div>
+      <div className={styles.contentWrapper}>
+        <div className={styles.titleRow}>
+          <div ref={containerRef} className={styles.marqueeContainer}>
+            <motion.div
+              ref={titleRef}
+              animate={
+                needsScroll && !hovered
+                  ? { x: [0, -scrollDistance] }
+                  : { x: 0 }
+              }
+              transition={
+                needsScroll && !hovered
+                  ? {
+                      repeat: Infinity,
+                      repeatType: "loop",
+                      duration: marqueeDuration,
+                      ease: "linear",
+                    }
+                  : { duration: 0.2 }
+              }
+              className={styles.marqueeText}
+            >
+              {currentTrack.artist && currentTrack.title
+                ? `${currentTrack.artist} - ${currentTrack.title}`
+                : currentTrack.title}
+            </motion.div>
+          </div>
 
-      <motion.div
-        className={styles.controls}
-        initial={{ opacity: 0, y: 6 }}
-        animate={{ opacity: hovered ? 1 : 0, y: hovered ? 0 : 6 }}
-        transition={{ duration: 0.2 }}
-      >
-        <button
-          type="button"
-          onClick={handlePrev}
-          className={styles.controlButton}
-          aria-label="Previous track"
-        >
-          ⏮️
-        </button>
-        <button
-          type="button"
-          onClick={togglePlay}
-          className={styles.playButton}
-          aria-label={playing ? "Pause" : "Play"}
-        >
-          {playing ? "⏸️" : "▶️"}
-        </button>
-        <button
-          type="button"
-          onClick={handleNext}
-          className={styles.controlButton}
-          aria-label="Next track"
-        >
-          ⏭️
-        </button>
-      </motion.div>
-
-      <div className={styles.meta}>
-        <div className={styles.trackTitle}>{currentTrack.title}</div>
-        <div className={styles.trackCounter}>
-          {index + 1} / {normalizedTracks.length}
+          <div className={styles.controls}>
+            <button
+              type="button"
+              onClick={handlePrev}
+              className={styles.controlButton}
+              aria-label="Previous track"
+            >
+              <PrevIcon />
+            </button>
+            <button
+              type="button"
+              onClick={togglePlay}
+              className={styles.playButton}
+              aria-label={playing ? "Pause" : "Play"}
+            >
+              {playing ? <PauseIcon /> : <PlayIcon />}
+            </button>
+            <button
+              type="button"
+              onClick={handleNext}
+              className={styles.controlButton}
+              aria-label="Next track"
+            >
+              <NextIcon />
+            </button>
+          </div>
         </div>
-        <div className={styles.progressBar}>
-          <div className={styles.progress} style={{ width: `${progress}%` }} />
+
+        <div className={styles.progressBarContainer}>
+          <div className={styles.progressBar} style={{ width: `${progress}%` }} />
         </div>
       </div>
     </motion.aside>

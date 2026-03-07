@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "./providers";
 import ScrollManager from "./utils/scroll-manager";
-// import MusicPlayer from "./components/musicPlayer";
+import MusicPlayer from "./components/musicPlayer";
 
 export const metadata: Metadata = {
   title: "Simona Maleti",
@@ -20,11 +20,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  //<MusicPlayer />
   return (
     <html lang="it">
       <body>
         <ScrollManager />
+        <MusicPlayer />
         <Providers>{children}</Providers>
       </body>
     </html>
