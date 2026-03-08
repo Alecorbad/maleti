@@ -5,7 +5,8 @@
   "scripts": {
     "predev": "tsx ./scripts/open-browser.ts",
     "genGalleriesJson": "tsx ./scripts/generateGalleries.ts",
-    "prebuild": "npm run genGalleriesJson",
+    "genMusicJson": "tsx ./scripts/generateMusic.ts",
+    "prebuild": "npm run genGalleriesJson && npm run genMusicJson",
     "dev": "npm run predev && next dev -H 0.0.0.0 -p 3000 ",
     "build": "npm run prebuild && next build",
     "start": "next start",

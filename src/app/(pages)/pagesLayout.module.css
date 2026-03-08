@@ -7,10 +7,6 @@
   scroll-margin-block: 2.5vh;
 }
 
-.wall > .paintingFocus:first-child {
-  scroll-snap-stop: always;
-}
-
 @media (max-width: 767px) {
   .wall > .paintingFocus {
     scroll-snap-align: none;

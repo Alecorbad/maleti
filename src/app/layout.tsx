@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Providers from "./providers";
 import ScrollManager from "./utils/scroll-manager";
@@ -7,12 +7,13 @@ import MusicPlayer from "./components/musicPlayer";
 export const metadata: Metadata = {
   title: "Simona Maleti",
   description: "Sito dell'artista Simona Maleti",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -24,8 +25,10 @@ export default function RootLayout({
     <html lang="it">
       <body>
         <ScrollManager />
-        <MusicPlayer />
-        <Providers>{children}</Providers>
+        <Providers>
+          <MusicPlayer />
+          {children}
+        </Providers>
       </body>
     </html>
   );

@@ -2,7 +2,7 @@
 
 import { Painting as PaintingType } from "@/app/types/galleries";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import styles from "./painting.module.css";
 import ImageLoading from "@/app/animations/ImageLoading";
@@ -178,14 +178,45 @@ const Painting = (props: PaintingProps) => {
     boxShadow: !displayFrame ? "0px 2px 8px 3px rgba(0,0,0,0.70)" : "none",
   };
 
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const [hasTriggeredAutoplay, setHasTriggeredAutoplay] = useState(false);
+
+  useEffect(() => {
+    if (hasTriggeredAutoplay) return;
+    if (typeof window === "undefined" || typeof IntersectionObserver === "undefined") {
+      return;
+    }
+
+    const element = rootRef.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+          window.dispatchEvent(new CustomEvent("maleti-play-music"));
+          setHasTriggeredAutoplay(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: [0.6] },
+    );
+
+    observer.observe(element);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [hasTriggeredAutoplay]);
+
   return (
     <>
-      <ImageLoading
-        isLoaded={isImageLoaded}
-        className={`${styles.container}`}
-        style={containerStyle}
-      >
-        <div className={styles.frameContainer} style={frameContainerStyle}>
+      <div ref={rootRef}>
+        <ImageLoading
+          isLoaded={isImageLoaded}
+          className={`${styles.container}`}
+          style={containerStyle}
+        >
+          <div className={styles.frameContainer} style={frameContainerStyle}>
           <div className={styles.frameUpWrapper} style={frameUpWrapperStyle}>
             <div className={styles.frameUp} style={frameUpStyle}></div>
           </div>
@@ -245,6 +276,7 @@ const Painting = (props: PaintingProps) => {
           </div>
         )}
       </ImageLoading>
+      </div>
     </>
   );
 };

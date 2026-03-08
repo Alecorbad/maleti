@@ -3,17 +3,17 @@
   left: 1rem;
   bottom: 0;
   z-index: 60;
-  width: min(25rem, calc(100vw - 2.5rem));
+  width: min(30rem, calc(100vw - 2.5rem));
   background: linear-gradient(
     135deg,
-    rgba(255, 252, 246, 0.94),
-    rgba(244, 240, 232, 0.92)
+    rgba(var(--colorB3), 0.96),
+    rgba(var(--colorB1), 0.94)
   );
-  border: 1px solid rgba(120, 90, 70, 0.15);
+  border: 1px solid rgba(var(--colorT1), 0.18);
   border-radius: 0.2rem;
   box-shadow:
-    0 12px 30px rgba(37, 30, 22, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    0 12px 30px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
   padding: 0.5rem 1rem;
   overflow: hidden;
@@ -21,6 +21,12 @@
   align-items: center;
   gap: 0.8rem;
   font-family: LindenHillMaster, "Times New Roman", serif;
+  transform: translateY(0.7rem);
+  transition: transform 0.3s ease;
+}
+
+.playerExpanded {
+  transform: translateY(0);
 }
 
 .contentWrapper {
@@ -33,29 +39,75 @@
   padding-bottom: 0.3rem;
 }
 
-.titleRow {
+.infoArea {
   display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.titleRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.5rem;
+  column-gap: 0.5rem;
   width: 100%;
 }
 
 .marqueeContainer {
   flex: 1;
   position: relative;
-  overflow: hidden;
-  white-space: nowrap;
   height: 1.5rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  min-width: 0; /* permette al titolo di restringersi e non spingere fuori i controlli */
 }
 
 .marqueeText {
   display: inline-block;
   font-size: 1.1rem;
   letter-spacing: 0.04em;
-  color: rgba(55, 40, 30, 0.9);
+  color: rgba(var(--colorT1), 0.9);
   padding-right: 1rem;
+}
+
+.trackTitle {
+  display: inline-block;
+}
+
+.titleScroller {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 0; /* evita che il contenuto forzi la larghezza oltre lo spazio disponibile */
+}
+
+.originWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.originLabel {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+}
+
+.originText,
+.originLink {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: rgba(var(--colorT1), 0.9);
+}
+
+.originLink {
+  border-bottom: 1px dotted rgba(var(--colorT1), 0.5);
+}
+
+.originLink:hover {
+  border-bottom-style: solid;
 }
 
 .controls {
@@ -78,6 +130,7 @@
   opacity: 0.8;
   user-select: none;
   outline: none;
+  color: rgba(var(--colorT1), 0.9);
 }
 
 .controlButton:hover {
@@ -92,7 +145,7 @@
 .playButton {
   border: none;
   background: transparent;
-  color: rgba(30, 30, 30, 1);
+  color: rgba(var(--colorT1), 0.95);
   padding: 0;
   cursor: pointer;
   font-size: 1.2rem;
@@ -112,26 +165,37 @@
   outline: none;
 }
 
+.detailsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(0.25rem);
+  transition:
+    opacity 0.3s ease,
+    max-height 0.3s ease,
+    transform 0.3s ease;
+}
+
+.playerExpanded .detailsRow {
+  opacity: 1;
+  max-height: 1.5rem;
+  transform: translateY(0);
+}
+
 .progressBarContainer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  flex: 1;
   height: 4px;
   background: transparent;
   overflow: hidden;
-  transition: opacity 0.3s ease;
-  opacity: 0;
   border-radius: 2px;
-}
-
-.contentWrapper:hover .progressBarContainer {
-  opacity: 1;
 }
 
 .progressBar {
   height: 100%;
-  background: rgba(104, 64, 44, 0.5);
+  background: rgba(var(--colorT1), 0.55);
 }
 
 @media (max-width: 767px) {

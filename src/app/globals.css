@@ -116,8 +116,6 @@ h2 {
   font-family: LindenHillMaster;
 }
 
-.headerContainer {
-}
 
 .pageContainer {
   flex: 1;
@@ -125,12 +123,9 @@ h2 {
 
 .footerContainer {
   width: 100%;
-  scroll-snap-align: end;
-  scroll-margin-bottom: 20vh;
 }
 
 .unmovable {
-  user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;

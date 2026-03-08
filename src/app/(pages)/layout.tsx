@@ -12,7 +12,7 @@ export default function Layout({
 
   return (
     <>
-          <Header />
+          <Header scrollSnapAlign="none" />
 
           <div className={`container pageContainer`}>
               {children}
@@ -23,4 +23,3 @@ export default function Layout({
     </>
   );
 }
-
