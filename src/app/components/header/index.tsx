@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = (props: HeaderProps) => {
   const pages: Option[] = [
     new Option({
       name: "Home",
-      href: "/",
+      href: "/home",
     }),
   ];
 
