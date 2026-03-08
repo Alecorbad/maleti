@@ -49,12 +49,13 @@ export function useMusic(): MusicContextType {
 export function MusicProvider({ children }: { children: React.ReactNode }) {
   const [playing, setPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [autoplayOnLoad, setAutoplayOnLoad] = useState(true);
+  const [autoplayOnLoad, setAutoplayOnLoad] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [hasEverPlayed, setHasEverPlayed] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const hasTriedAutoplayOnLoadRef = useRef(false);
-   const audioObjectUrlRef = useRef<string | null>(null);
+  const lastSrcRef = useRef<string | null>(null);
 
   const tracks = useMemo<MusicTrack[]>(() => {
     const raw = musicList as Array<{
@@ -77,9 +78,7 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
       .filter((t) => t.src);
   }, []);
 
-  const [index, setIndex] = useState(() =>
-    tracks.length > 0 ? Math.floor(Math.random() * tracks.length) : 0,
-  );
+  const [index, setIndex] = useState(0);
   const currentTrack = tracks[index] ?? null;
 
   // Rileva se siamo in modalita' mobile (viewport stretta)
@@ -94,12 +93,48 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("resize", check);
   }, []);
 
+  // Ripristina da sessionStorage: solo indice traccia
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    try {
+      const storedIndex = window.sessionStorage.getItem("maletiTrackIndex");
+      if (storedIndex !== null) {
+        const parsed = parseInt(storedIndex, 10);
+        if (!Number.isNaN(parsed) && parsed >= 0 && parsed < tracks.length) {
+          setIndex(parsed);
+          return;
+        }
+      }
+
+      // Se non c'e' nulla in storage, scegli una traccia casuale all'inizio della sessione
+      if (tracks.length > 0) {
+        const randomIndex = Math.floor(Math.random() * tracks.length);
+        setIndex(randomIndex);
+        window.sessionStorage.setItem("maletiTrackIndex", String(randomIndex));
+      }
+    } catch {
+      // In caso di errori nello storage, ignora e usa i default
+    }
+  }, [tracks.length]);
+
+  // Persisti indice corrente della traccia
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      window.sessionStorage.setItem("maletiTrackIndex", String(index));
+    } catch {
+      // Ignora errori di storage
+    }
+  }, [index]);
+
   const play = useCallback(async () => {
     if (isMobile) return;
     if (!audioRef.current) return;
     try {
       await audioRef.current.play();
       setPlaying(true);
+      setHasEverPlayed(true);
     } catch (e) {
       console.warn("Playback failed:", e);
       setPlaying(false);
@@ -162,85 +197,55 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
     return () => {
       audio.removeEventListener("ended", onEnded);
       audio.removeEventListener("timeupdate", onTimeUpdate);
-      if (audioObjectUrlRef.current) {
-        URL.revokeObjectURL(audioObjectUrlRef.current);
-        audioObjectUrlRef.current = null;
-      }
     };
   }, [next, isMobile]);
 
-  // Aggiorna src quando cambia la traccia usando fetch + blob per ospiti statici (es. GitHub Pages)
+  // Aggiorna src quando cambia la traccia
   useEffect(() => {
     if (isMobile) return;
     if (!audioRef.current || !currentTrack) return;
-
     const audio = audioRef.current;
-    let cancelled = false;
+    const newSrc = currentTrack.src;
 
-    const wasPlaying = (!audio.paused && !audio.ended) || playing;
+    // Se la sorgente non cambia, non ricarichiamo l'audio (evita restart su navigazioni)
+    if (lastSrcRef.current === newSrc) return;
 
-    const loadTrack = async () => {
-      try {
-        setProgress(0);
+    lastSrcRef.current = newSrc;
+    setProgress(0);
+    audio.src = newSrc;
+    audio.load();
 
-        // Pulisci eventuale URL precedente
-        if (audioObjectUrlRef.current) {
-          URL.revokeObjectURL(audioObjectUrlRef.current);
-          audioObjectUrlRef.current = null;
-        }
-
-        const res = await fetch(currentTrack.src);
-        if (!res.ok || cancelled) return;
-
-        const blob = await res.blob();
-        if (cancelled) return;
-
-        const objectUrl = URL.createObjectURL(blob);
-        audioObjectUrlRef.current = objectUrl;
-        audio.src = objectUrl;
-        audio.load();
-
-        if (wasPlaying) {
-          await audio.play();
-          setPlaying(true);
-        }
-      } catch (e) {
-        console.warn("Audio fetch failed:", e);
-        setPlaying(false);
-      }
-    };
-
-    void loadTrack();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [currentTrack, playing, isMobile]);
+    if (playing) {
+      void play();
+    }
+  }, [currentTrack, playing, isMobile, play]);
 
   // Autoplay all'apertura del sito (una sola volta)
   useEffect(() => {
     if (isMobile) return;
     if (!autoplayOnLoad || hasTriedAutoplayOnLoadRef.current) return;
+    if (hasEverPlayed) return;
     if (!tracks.length) return;
 
     hasTriedAutoplayOnLoadRef.current = true;
     const randomIndex = Math.floor(Math.random() * tracks.length);
     setIndex(randomIndex);
-    setPlaying(true);
 
     // Prova a partire subito (potrebbe essere bloccato dalle policy del browser)
-    // Se viene bloccato, l'effetto di "resume" su interazione utente riproverà.
     setTimeout(() => {
       void play();
     }, 0);
-  }, [autoplayOnLoad, tracks.length, play, isMobile]);
+  }, [autoplayOnLoad, tracks.length, play, hasEverPlayed, isMobile]);
 
   // Avvio della musica quando un paintingFocus entra in viewport
   useEffect(() => {
     if (isMobile) return;
     const handleExternalPlay = () => {
-      if (!playing) {
-        setPlaying(true);
+      // Se la musica non ha mai iniziato a suonare (autoplay bloccato e nessun play manuale),
+      // permettiamo al primo paintingFocus di avviarla.
+      // Se invece l'utente l'ha gia' avviata almeno una volta (haEverPlayed true),
+      // rispettiamo il suo stop e non riavviamo automaticamente.
+      if (!hasEverPlayed && !playing) {
         void play();
       }
     };
@@ -254,7 +259,7 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
         window.removeEventListener("maleti-play-music", handleExternalPlay);
       }
     };
-  }, [playing, play, isMobile]);
+  }, [playing, play, hasEverPlayed, isMobile]);
 
   // Nota: se il browser blocca l'autoplay iniziale, l'utente dovra' usare i controlli
   // del player per avviare la riproduzione. Non forziamo piu' il play sui click generici.

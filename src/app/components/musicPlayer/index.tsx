@@ -82,31 +82,6 @@ export default function MusicPlayer() {
   const [scrollDistance, setScrollDistance] = useState(0);
   const [marqueeDuration, setMarqueeDuration] = useState(10);
   const [detailsVisible, setDetailsVisible] = useState(false);
-  const [isHydrated, setIsHydrated] = useState(false);
-
-  // Evita mismatch di hydratazione: renderizza il player solo dopo il mount sul client
-  useEffect(() => {
-    setIsHydrated(true);
-  }, []);
-
-  // Avvia la musica quando viene emesso un evento globale dal paintingFocus
-  useEffect(() => {
-    const handleExternalPlay = () => {
-      if (!playing) {
-        void togglePlay();
-      }
-    };
-
-    if (typeof window !== "undefined") {
-      window.addEventListener("maleti-play-music", handleExternalPlay);
-    }
-
-    return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("maleti-play-music", handleExternalPlay);
-      }
-    };
-  }, [playing, togglePlay]);
 
   useEffect(() => {
     const updateMarquee = () => {
@@ -127,7 +102,7 @@ export default function MusicPlayer() {
     };
   }, [currentTrack?.title]);
 
-  if (!isHydrated || isMobile || !currentTrack) {
+  if (isMobile || !currentTrack) {
     return null;
   }
 
