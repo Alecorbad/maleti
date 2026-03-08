@@ -48,21 +48,8 @@
 }
 
 .barInner {
-  width: 40%;
+  width: 0;
   height: 100%;
   border-radius: inherit;
   background: rgba(var(--colorT1), 0.7);
-  animation: loadingSlide 1.4s ease-in-out infinite;
-}
-
-@keyframes loadingSlide {
-  0% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(40%);
-  }
-  100% {
-    transform: translateX(120%);
-  }
 }

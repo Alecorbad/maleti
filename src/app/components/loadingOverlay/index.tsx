@@ -5,7 +5,7 @@ import { useLoading } from "@/app/providers/loading.provider";
 import styles from "./loadingOverlay.module.css";
 
 export default function LoadingOverlay() {
-  const { initialLoading } = useLoading();
+  const { initialLoading, progress } = useLoading();
 
   if (!initialLoading) return null;
 
@@ -14,7 +14,10 @@ export default function LoadingOverlay() {
       <div className={styles.panel}>
         <div className={styles.title}>Simona Maleti</div>
         <div className={styles.barOuter}>
-          <div className={styles.barInner} />
+          <div
+            className={styles.barInner}
+            style={{ width: `${Math.round(progress * 100)}%` }}
+          />
         </div>
       </div>
     </div>

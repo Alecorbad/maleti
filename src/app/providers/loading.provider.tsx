@@ -9,6 +9,7 @@ import React, {
 
 type LoadingContextType = {
   initialLoading: boolean;
+  progress: number; // 0-1, frazione di risorse tracciate caricate
 };
 
 const LoadingContext = createContext<LoadingContextType | undefined>(undefined);
@@ -27,35 +28,57 @@ export function LoadingProvider({
   children: React.ReactNode;
 }) {
   const [initialLoading, setInitialLoading] = useState(true);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    // Se abbiamo gia' caricato le risorse in questa sessione, saltiamo lo splash
-    const hasLoaded = sessionStorage.getItem("maletiInitialResourcesLoaded");
-    if (hasLoaded) {
+    // Tracciamo il caricamento delle immagini piu' importanti (fetchPriority="high")
+    // e teniamo il loader finche' almeno il 90% non e' completo.
+    const tracked = Array.from(
+      document.querySelectorAll<HTMLImageElement>("img[fetchpriority='high']"),
+    );
+
+    const total = tracked.length;
+    if (total === 0) {
+      setProgress(1);
       setInitialLoading(false);
       return;
     }
 
-    const handleReady = () => {
-      setInitialLoading(false);
-      sessionStorage.setItem("maletiInitialResourcesLoaded", "yes");
+    let loaded = 0;
+
+    const update = () => {
+      loaded += 1;
+      const p = loaded / total;
+      setProgress(p);
+      if (p >= 0.9) {
+        setInitialLoading(false);
+      }
     };
 
-    if (document.readyState === "complete") {
-      handleReady();
-      return;
-    }
+    tracked.forEach((img) => {
+      if (img.complete && img.naturalWidth > 0) {
+        update();
+      } else {
+        img.addEventListener("load", update, { once: true });
+        img.addEventListener("error", update, { once: true });
+      }
+    });
 
-    window.addEventListener("load", handleReady);
+    // Fallback: se dopo 8 secondi non abbiamo raggiunto il 90%, togli comunque il loader
+    const timeout = window.setTimeout(() => {
+      setInitialLoading(false);
+      setProgress(1);
+    }, 8000);
+
     return () => {
-      window.removeEventListener("load", handleReady);
+      window.clearTimeout(timeout);
     };
   }, []);
 
   return (
-    <LoadingContext.Provider value={{ initialLoading }}>
+    <LoadingContext.Provider value={{ initialLoading, progress }}>
       {children}
     </LoadingContext.Provider>
   );
