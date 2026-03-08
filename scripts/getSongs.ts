@@ -1,6 +1,12 @@
 import fs from "fs";
 import path from "path";
-import { Song } from "@/app/types/songs";
+
+type Song = {
+  title: string;
+  artist: string;
+  origin: string;
+  url: string;
+};
 
 // Funzione helper per parsare il nome del file
 // Formato atteso: "Provenienza - Artista - Titolo.mp3"

@@ -54,6 +54,7 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const hasTriedAutoplayOnLoadRef = useRef(false);
+   const audioObjectUrlRef = useRef<string | null>(null);
 
   const tracks = useMemo<MusicTrack[]>(() => {
     const raw = musicList as Array<{
@@ -139,45 +140,82 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
     setPlaying(true);
   }, [tracks.length, isMobile]);
 
-  // Inizializza audio e listener quando cambia la traccia corrente
+  // Inizializza audio e listener una sola volta
   useEffect(() => {
     if (isMobile) return;
-    if (!tracks.length || !currentTrack) return;
+    if (audioRef.current) return;
 
-    if (!audioRef.current) {
-      audioRef.current = new Audio(currentTrack.src);
-      audioRef.current.preload = "metadata";
-    }
+    const audio = new Audio();
+    audio.preload = "metadata";
 
-    const audio = audioRef.current;
     const onEnded = () => next();
     const onTimeUpdate = () => {
-      if (!audio || !audio.duration) return;
+      if (!audio.duration) return;
       setProgress((audio.currentTime / audio.duration) * 100);
     };
 
     audio.addEventListener("ended", onEnded);
     audio.addEventListener("timeupdate", onTimeUpdate);
 
+    audioRef.current = audio;
+
     return () => {
       audio.removeEventListener("ended", onEnded);
       audio.removeEventListener("timeupdate", onTimeUpdate);
+      if (audioObjectUrlRef.current) {
+        URL.revokeObjectURL(audioObjectUrlRef.current);
+        audioObjectUrlRef.current = null;
+      }
     };
-  }, [tracks, currentTrack, next, isMobile]);
+  }, [next, isMobile]);
 
-  // Aggiorna src quando cambia la traccia
+  // Aggiorna src quando cambia la traccia usando fetch + blob per ospiti statici (es. GitHub Pages)
   useEffect(() => {
     if (isMobile) return;
     if (!audioRef.current || !currentTrack) return;
+
     const audio = audioRef.current;
-    const wasPlaying = !audio.paused && !audio.ended;
-    setProgress(0);
-    audio.src = currentTrack.src;
-    audio.load();
-    if (wasPlaying || playing) {
-      void play();
-    }
-  }, [currentTrack, playing, play, isMobile]);
+    let cancelled = false;
+
+    const wasPlaying = (!audio.paused && !audio.ended) || playing;
+
+    const loadTrack = async () => {
+      try {
+        setProgress(0);
+
+        // Pulisci eventuale URL precedente
+        if (audioObjectUrlRef.current) {
+          URL.revokeObjectURL(audioObjectUrlRef.current);
+          audioObjectUrlRef.current = null;
+        }
+
+        const res = await fetch(currentTrack.src);
+        if (!res.ok || cancelled) return;
+
+        const blob = await res.blob();
+        if (cancelled) return;
+
+        const objectUrl = URL.createObjectURL(blob);
+        audioObjectUrlRef.current = objectUrl;
+        audio.src = objectUrl;
+        audio.load();
+
+        if (wasPlaying) {
+          await audio.play();
+          setPlaying(true);
+        }
+      } catch (e) {
+        console.warn("Audio fetch failed:", e);
+        setPlaying(false);
+      }
+    };
+
+    void loadTrack();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [currentTrack, playing, isMobile]);
 
   // Autoplay all'apertura del sito (una sola volta)
   useEffect(() => {

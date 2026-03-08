@@ -4,34 +4,34 @@
 		"artist": "Bach",
 		"origin": "Classicals.de",
 		"url": "/maleti/static/music/Classicals.de - Bach - Air on the G String BWV 1068 Arranged for Piano.m4a",
-		"originUrl": ""
+		"originUrl": "https://www.classicals.de/bach-bwv-1068"
 	},
 	{
 		"title": "Nocturne Op. 9 no. 1 in B-flat minor",
 		"artist": "Chopin",
 		"origin": "Classicals.de",
 		"url": "/maleti/static/music/Classicals.de - Chopin - Nocturne Op. 9 no. 1 in B-flat minor.m4a",
-		"originUrl": ""
+		"originUrl": "https://www.classicals.de/chopin-collection"
 	},
 	{
 		"title": "Waltz B. 150 in A minor",
 		"artist": "Chopin",
 		"origin": "Classicals.de",
 		"url": "/maleti/static/music/Classicals.de - Chopin - Waltz B. 150 in A minor.m4a",
-		"originUrl": ""
+		"originUrl": "https://www.classicals.de/chopin-collection"
 	},
 	{
 		"title": "Reverie - L. 68",
 		"artist": "Debussy",
 		"origin": "Classicals.de",
 		"url": "/maleti/static/music/Classicals.de - Debussy - Reverie - L. 68.m4a",
-		"originUrl": ""
+		"originUrl": "https://www.classicals.de/debussy-childrens-corner"
 	},
 	{
 		"title": "The Seasons 01 January At the Fireside",
 		"artist": "Tchaikovsky",
 		"origin": "Classicals.de",
 		"url": "/maleti/static/music/Classicals.de - Tchaikovsky - The Seasons 01 January At the Fireside.m4a",
-		"originUrl": ""
+		"originUrl": "https://www.classicals.de/tchaikovsky"
 	}
 ]
