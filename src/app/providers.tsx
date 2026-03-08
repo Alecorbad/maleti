@@ -3,6 +3,7 @@
 import GalleryProvider from "@/app/providers/gallery.provider";
 import FullscreenProvider from "@/app/providers/fullscreen.provider";
 import { MusicProvider } from "@/app/providers/music.provider";
+import { LoadingProvider } from "@/app/providers/loading.provider";
 
 
 interface ProvidersProps {
@@ -11,11 +12,13 @@ interface ProvidersProps {
 
 function Providers(props: ProvidersProps) {
     return (
-      <GalleryProvider>
-        <FullscreenProvider>
-          <MusicProvider>{props.children}</MusicProvider>
-        </FullscreenProvider>
-      </GalleryProvider>
+      <LoadingProvider>
+        <GalleryProvider>
+          <FullscreenProvider>
+            <MusicProvider>{props.children}</MusicProvider>
+          </FullscreenProvider>
+        </GalleryProvider>
+      </LoadingProvider>
     )
 }
 

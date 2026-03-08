@@ -3,6 +3,7 @@ import "./globals.css";
 import Providers from "./providers";
 import ScrollManager from "./utils/scroll-manager";
 import MusicPlayer from "./components/musicPlayer";
+import LoadingOverlay from "./components/loadingOverlay";
 
 export const metadata: Metadata = {
   title: "Simona Maleti",
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body>
         <ScrollManager />
         <Providers>
+          <LoadingOverlay />
           <MusicPlayer />
           {children}
         </Providers>

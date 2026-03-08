@@ -82,6 +82,12 @@ export default function MusicPlayer() {
   const [scrollDistance, setScrollDistance] = useState(0);
   const [marqueeDuration, setMarqueeDuration] = useState(10);
   const [detailsVisible, setDetailsVisible] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  // Evita mismatch di hydratazione: renderizza il player solo dopo il mount sul client
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
 
   // Avvia la musica quando viene emesso un evento globale dal paintingFocus
   useEffect(() => {
@@ -121,11 +127,7 @@ export default function MusicPlayer() {
     };
   }, [currentTrack?.title]);
 
-  if (!currentTrack) {
-    return null;
-  }
-
-  if (isMobile) {
+  if (!isHydrated || isMobile || !currentTrack) {
     return null;
   }
 
