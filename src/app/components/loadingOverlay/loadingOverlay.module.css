@@ -7,8 +7,8 @@
   justify-content: center;
   background: radial-gradient(
     circle at 20% 0%,
-    rgba(var(--colorB3), 0.9),
-    rgba(var(--colorB1), 0.96)
+    rgba(var(--colorB3), 1),
+    rgba(var(--colorB1), 1)
   );
 }
 

@@ -4,7 +4,11 @@ import { Song } from "@/app/types/songs";
 
 // Funzione helper per parsare il nome del file
 // Formato atteso: "Provenienza - Artista - Titolo.mp3"
-function parseFileName(fileName: string): { title: string; artist: string; origin: string } {
+function parseFileName(fileName: string): {
+  title: string;
+  artist: string;
+  origin: string;
+} {
   const nameWithoutExt = path.parse(fileName).name;
   const parts = nameWithoutExt.split(" - ");
 
@@ -38,7 +42,7 @@ export function getSongs(musicFolderPath: string): Song[] {
   const list = fs.readdirSync(musicFolderPath);
 
   // Filtra solo file audio supportati
-  const audioFiles = list.filter(file => /\.(mp3|wav|ogg)$/i.test(file));
+  const audioFiles = list.filter((file) => /\.(mp3|wav|ogg|m4a)$/i.test(file));
 
   return audioFiles.map((file) => {
     // Path relativo per il frontend
